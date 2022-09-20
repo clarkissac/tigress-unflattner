@@ -190,14 +190,14 @@ def find_function_address_by_name(func_name):
 def main():
     ida_auto.auto_wait()
     # Init Variables
-    ea = find_function_address_by_name("str_flip") # function name
+    ea = find_function_address_by_name("str_flip") # put function name here
     func = idaapi.get_func(ea)
     si = get_jumptable(func)
     dispatcher_block = get_dispatcher_block(ea)
     state_var_inst = idc.print_operand(
         dispatcher_block.start_ea, 1)  # state Variable name in IDA
     to_patch_list = []
-    print(state_var_inst)
+    print(f"state variable Instruction: {state_var_inst}")
 
     # prep unfallten Graph
     unflatten_dispatcher(si, dispatcher_block, state_var_inst, to_patch_list)
