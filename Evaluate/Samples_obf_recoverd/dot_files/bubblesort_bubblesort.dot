@@ -1,0 +1,111 @@
+digraph "bubblesort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "bubblesort:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\ljmp     loc_14B6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 0Ch\lja      short loc_13B1\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2060\lmov     eax, ds:(dword_2060 - 2060h)[rdx+rax]\lcdqe\llea     rdx, dword_2060\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_14]\lcmp     eax, [rbp+var_2C]\ljge     short loc_13F1\l"
+	];
+	"4" [
+		label = "jmp     loc_14A5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "jmp     loc_1521\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_10]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     eax, [rax]\lmov     [rbp+var_C], eax\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_10]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rdx, rax\lmov     eax, [rbp+var_C]\lmov     [rdx], eax\ljmp     short loc_1472\ldb  45h ; E\ldb 0F8h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "add     [rbp+var_10], 1\ljmp     short loc_1483\ldb  45h ; E\ldb 0F8h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_2C]\lsub     eax, 1\lcmp     [rbp+var_10], eax\ljge     short loc_149B\l"
+	];
+	"9" [
+		label = "jmp     short loc_14C7\ldb  45h ; E\ldb 0F8h\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "jmp     short loc_150F\ldb  45h ; E\ldb 0F8h\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_10], 0\ljmp     short loc_1483\ldb  45h ; E\ldb 0F8h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_14], 1\ljmp     loc_13DC\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "mov     eax, [rbp+var_10]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rax]\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     eax, [rax]\lcmp     edx, eax\ljle     short loc_1505\l"
+	];
+	"14" [
+		label = "jmp     loc_13FE\ldb    0\ldb    0\ldb    0\l"
+	];
+	"15" [
+		label = "jmp     loc_1472\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "add     [rbp+var_14], 1\ljmp     loc_13DC\ldb    0\ldb    0\ldb    0\l"
+	];
+	"17" [
+		label = "jmp     loc_13B1\l"
+	];
+	"18" [
+		label = "nop\lpop     rbp\lretn\l"
+	];
+	"19" [
+		label = "unk_13DB\l"
+	];
+// node 0
+	"0" -> "12" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "19" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "11" [ ];
+// node 5
+	"5" -> "18" [ ];
+// node 6
+	"6" -> "7" [ ];
+// node 7
+	"7" -> "8" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "13" [ ];
+// node 10
+	"10" -> "16" [ ];
+// node 11
+	"11" -> "8" [ ];
+// node 12
+	"12" -> "3" [ ];
+// node 13
+	"13" -> "14" [ label = "false", color = red ];
+	"13" -> "15" [ label = "true", color = darkgreen ];
+// node 14
+	"14" -> "6" [ ];
+// node 15
+	"15" -> "7" [ ];
+// node 16
+	"16" -> "3" [ ];
+// node 17
+	"17" -> "1" [ ];
+// node 18
+// node 19
+}

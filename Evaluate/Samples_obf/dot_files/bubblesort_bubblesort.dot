@@ -1,0 +1,116 @@
+digraph "bubblesort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "bubblesort:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\lmov     [rbp+var_8], 5\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 0Ch; switch 13 cases\lja      short def_13DA; jumptable 00000000000013DA default case, cases 6,8-10\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_13DA\lmov     eax, ds:(jpt_13DA - 2060h)[rdx+rax]\lcdqe\llea     rdx, jpt_13DA\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_14]; jumptable 00000000000013DA case 4\lcmp     eax, [rbp+var_2C]\ljge     short loc_13F1\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_8], 0Bh\ljmp     loc_151C\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_8], 0\ljmp     loc_151C\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_10]; jumptable 00000000000013DA case 12\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     eax, [rax]\lmov     [rbp+var_C], eax\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_10]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rdx, rax\lmov     eax, [rbp+var_C]\lmov     [rdx], eax\lmov     [rbp+var_8], 1\ljmp     loc_151C\l"
+	];
+	"7" [
+		label = "add     [rbp+var_10], 1; jumptable 00000000000013DA case 1\lmov     [rbp+var_8], 3\ljmp     loc_151C\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_2C]; jumptable 00000000000013DA case 3\lsub     eax, 1\lcmp     [rbp+var_10], eax\ljge     short loc_149B\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_8], 7\ljmp     loc_151C\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_8], 2\ljmp     short loc_151C\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_10], 0; jumptable 00000000000013DA case 11\lmov     [rbp+var_8], 3\ljmp     short loc_151C\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_14], 1; jumptable 00000000000013DA case 5\lmov     [rbp+var_8], 4\ljmp     short loc_151C\l"
+	];
+	"13" [
+		label = "mov     eax, [rbp+var_10]; jumptable 00000000000013DA case 7\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rax]\lmov     eax, [rbp+var_10]\lcdqe\ladd     rax, 1\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     eax, [rax]\lcmp     edx, eax\ljle     short loc_1505\l"
+	];
+	"14" [
+		label = "mov     [rbp+var_8], 0Ch\ljmp     short loc_151C\l"
+	];
+	"15" [
+		label = "mov     [rbp+var_8], 1\ljmp     short loc_151C\l"
+	];
+	"16" [
+		label = "add     [rbp+var_14], 1; jumptable 00000000000013DA case 2\lmov     [rbp+var_8], 4\lnop\l"
+	];
+	"17" [
+		label = "jmp     def_13DA; jumptable 00000000000013DA default case, cases 6,8-10\l"
+	];
+	"18" [
+		label = "nop; jumptable 00000000000013DA case 0\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "11" [ ];
+	"2" -> "12" [ ];
+	"2" -> "13" [ ];
+	"2" -> "16" [ ];
+	"2" -> "18" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "17" [ ];
+// node 5
+	"5" -> "17" [ ];
+// node 6
+	"6" -> "17" [ ];
+// node 7
+	"7" -> "17" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "17" [ ];
+// node 10
+	"10" -> "17" [ ];
+// node 11
+	"11" -> "17" [ ];
+// node 12
+	"12" -> "17" [ ];
+// node 13
+	"13" -> "14" [ label = "false", color = red ];
+	"13" -> "15" [ label = "true", color = darkgreen ];
+// node 14
+	"14" -> "17" [ ];
+// node 15
+	"15" -> "17" [ ];
+// node 16
+	"16" -> "17" [ ];
+// node 17
+	"17" -> "1" [ ];
+// node 18
+}

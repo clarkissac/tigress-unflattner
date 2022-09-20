@@ -1,0 +1,75 @@
+digraph "AES_CBC_encrypt_buffer" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "AES_CBC_encrypt_buffer:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 40h\lmov     [rbp+var_28], rdi\lmov     [rbp+var_30], rsi\lmov     [rbp+var_38], rdx\lmov     [rbp+var_18], 6\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_18], 6; switch 7 cases\lja      short def_2371; jumptable 0000000000002371 default case, cases 1,5\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_18]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_2371\lmov     eax, ds:(jpt_2371 - 4040h)[rdx+rax]\lcdqe\llea     rdx, jpt_2371\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     rdx, [rbp+var_10]; jumptable 0000000000002371 case 4\lmov     rax, [rbp+var_30]\lmov     rsi, rdx\lmov     rdi, rax\lcall    XorWithIv\lmov     rdx, [rbp+var_28]\lmov     rax, [rbp+var_30]\lmov     rsi, rdx\lmov     rdi, rax\lcall    Cipher\lmov     rax, [rbp+var_30]\lmov     [rbp+var_10], rax\ladd     [rbp+var_30], 10h\ladd     [rbp+var_8], 10h\lmov     [rbp+var_18], 0\ljmp     short loc_2419\l"
+	];
+	"4" [
+		label = "mov     rax, [rbp+var_28]; jumptable 0000000000002371 case 3\llea     rcx, [rax+0B0h]\lmov     rax, [rbp+var_10]\lmov     rdx, [rax+8]\lmov     rax, [rax]\lmov     [rcx], rax\lmov     [rcx+8], rdx\lmov     [rbp+var_18], 2\ljmp     short loc_2419\l"
+	];
+	"5" [
+		label = "mov     rax, [rbp+var_28]; jumptable 0000000000002371 case 6\ladd     rax, 0B0h\lmov     [rbp+var_10], rax\lmov     [rbp+var_8], 0\lmov     [rbp+var_18], 0\ljmp     short loc_2419\l"
+	];
+	"6" [
+		label = "mov     rax, [rbp+var_8]; jumptable 0000000000002371 case 0\lcmp     rax, [rbp+var_38]\ljnb     short loc_2410\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_18], 4\ljmp     short loc_2418\l"
+	];
+	"8" [
+		label = "mov     [rbp+var_18], 3\l"
+	];
+	"9" [
+		label = "nop\l"
+	];
+	"10" [
+		label = "jmp     def_2371; jumptable 0000000000002371 default case, cases 1,5\l"
+	];
+	"11" [
+		label = "nop; jumptable 0000000000002371 case 2\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "5" [ ];
+	"2" -> "6" [ ];
+	"2" -> "11" [ ];
+// node 3
+	"3" -> "10" [ ];
+// node 4
+	"4" -> "10" [ ];
+// node 5
+	"5" -> "10" [ ];
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "8" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "9" [ ];
+// node 8
+	"8" -> "9" [ ];
+// node 9
+	"9" -> "10" [ ];
+// node 10
+	"10" -> "1" [ ];
+// node 11
+}

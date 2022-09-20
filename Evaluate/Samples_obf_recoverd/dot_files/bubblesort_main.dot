@@ -1,0 +1,125 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 40h\lmov     [rbp+var_24], edi\lmov     [rbp+var_30], rsi\lmov     [rbp+var_38], rdx\lcall    megaInit\lmov     eax, [rbp+var_24]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_30]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_38]\lmov     cs:_global_envp, rax\lmov     [rbp+var_1C], 1\ljmp     loc_1274\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 0Eh\lja      short loc_11DF\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2024\lmov     eax, ds:(dword_2024 - 2024h)[rdx+rax]\lcdqe\llea     rdx, dword_2024\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     edi, 0Ah; c\lcall    _putchar\ljmp     loc_1326\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_20]\lcdqe\lshl     rax, 2\llea     rdx, [rax-4]\lmov     rax, [rbp+var_18]\ladd     rdx, rax\lmov     eax, [rbp+var_20]\lcdqe\llea     rcx, ds:0[rax*8]\lmov     rax, [rbp+var_30]\ladd     rax, rcx\lmov     rax, [rax]\llea     rcx, format; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; s\lmov     eax, 0\lcall    _sscanf\ladd     [rbp+var_20], 1\ljmp     short loc_12DF\ldb  45h ; E\ldb 0F0h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_24]\lmov     eax, eax\lshl     rax, 2\lsub     rax, 1\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+var_8], rax\lmov     rax, [rbp+var_8]\lmov     [rbp+var_18], rax\ljmp     loc_1357\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_20]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     eax, [rax]\lmov     esi, eax\llea     rax, aD; \"%d \"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ladd     [rbp+var_20], 1\ljmp     loc_1372\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_20]\lcmp     eax, [rbp+var_24]\ljge     short loc_12F4\l"
+	];
+	"8" [
+		label = "jmp     loc_1221\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "jmp     short loc_1301\ldb  45h ; E\ldb 0F0h\ldb  0Bh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "mov     eax, [rbp+var_24]\llea     edx, [rax-1]\lmov     rax, [rbp+var_18]\lmov     esi, edx\lmov     rdi, rax\lcall    bubblesort\lmov     [rbp+var_20], 0\ljmp     short loc_1372\ldb  45h ; E\ldb 0F0h\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "mov     eax, 0\ljmp     short locret_1395\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_20], 1\ljmp     short loc_12DF\ldb  45h ; E\ldb 0F0h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "lea     rax, s; \"Error allocating the array.\"\lmov     rdi, rax; s\lcall    _puts\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"14" [
+		label = "cmp     [rbp+var_18], 0\ljnz     short loc_1368\l"
+	];
+	"15" [
+		label = "jmp     short loc_133E\ldb  45h ; E\ldb 0F0h\ldb    0\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "jmp     short loc_132D\ldb  45h ; E\ldb 0F0h\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"17" [
+		label = "mov     eax, [rbp+var_24]\lsub     eax, 1\lcmp     [rbp+var_20], eax\ljge     short loc_1387\l"
+	];
+	"18" [
+		label = "jmp     loc_12A2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"19" [
+		label = "jmp     loc_120A\ldb    0\ldb    0\ldb    0\l"
+	];
+	"20" [
+		label = "jmp     loc_11DF\l"
+	];
+	"21" [
+		label = "leave\lretn\l"
+	];
+	"22" [
+		label = "unk_1209\l"
+	];
+// node 0
+	"0" -> "5" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "22" [ ];
+// node 3
+	"3" -> "11" [ ];
+// node 4
+	"4" -> "7" [ ];
+// node 5
+	"5" -> "14" [ ];
+// node 6
+	"6" -> "17" [ ];
+// node 7
+	"7" -> "8" [ label = "false", color = red ];
+	"7" -> "9" [ label = "true", color = darkgreen ];
+// node 8
+	"8" -> "4" [ ];
+// node 9
+	"9" -> "10" [ ];
+// node 10
+	"10" -> "17" [ ];
+// node 11
+	"11" -> "21" [ ];
+// node 12
+	"12" -> "7" [ ];
+// node 13
+// node 14
+	"14" -> "15" [ label = "false", color = red ];
+	"14" -> "16" [ label = "true", color = darkgreen ];
+// node 15
+	"15" -> "13" [ ];
+// node 16
+	"16" -> "12" [ ];
+// node 17
+	"17" -> "18" [ label = "false", color = red ];
+	"17" -> "19" [ label = "true", color = darkgreen ];
+// node 18
+	"18" -> "6" [ ];
+// node 19
+	"19" -> "3" [ ];
+// node 20
+	"20" -> "1" [ ];
+// node 21
+// node 22
+}

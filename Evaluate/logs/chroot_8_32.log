@@ -1,0 +1,3311 @@
+cat: /opt/samplegenerator_code/src/chroot_8_32/chroot_8_32.opts: No such file or directory
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress --Environment=x86_64:Linux:Gcc:12.1     --gcc="/usr/sbin/musl-gcc -mno-mmx -mno-sse -Wl,-Map=% -O0"     --Transform=Info --InfoKind=* --Transform=Flatten --Functions=uid_unset,gid_unset,parse_additional_groups,is_root,usage,main /opt/samplegenerator_code/src/chroot_8_32/chroot_8_32.c --out=chroot_8_32.c -o chroot_8_32 
+treating long double constant 3.3621031431120935063e-4932L as double constant at lib/ftoastr.c:132.
+digraph G {
+setfilecon -> externalFun___errno_location
+excluded_file_name -> externalFun_free
+excluded_file_name -> externalFun_strlen
+excluded_file_name -> xmalloc
+excluded_file_name -> file_name_matches
+excluded_file_name -> file_pattern_matches
+parse_expression -> externalFun___builtin_unreachable
+parse_expression -> externalFun___builtin_expect
+parse_expression -> create_token_tree
+parse_expression -> fetch_token
+parse_expression -> create_tree
+parse_expression -> parse_sub_exp
+parse_expression -> parse_bracket_exp
+parse_expression -> parse_expression
+parse_expression -> init_word_char
+parse_expression -> build_charclass_op
+parse_expression -> parse_dup_op
+parse_expression -> postorder
+read_file -> internal_read_file
+debug_print_current_time -> externalFun_fputs
+debug_print_current_time -> externalFun_fputc
+debug_print_current_time -> externalFun_fprintf
+debug_print_current_time -> dbg_printf
+debug_print_current_time -> str_days
+debug_print_current_time -> time_zone_str
+sha384_stream -> shaxxx_stream___0
+randread_free -> externalFun_fclose
+randread_free -> externalFun_free
+randread_free -> externalFun_explicit_bzero
+base64_decode_ctx -> decode_4
+base64_decode_ctx -> get_4
+count_leading_zeros_ll -> externalFun___builtin_clzll
+equal_tm -> isdst_differ___0
+chmod_or_fchmod -> externalFun_chmod
+chmod_or_fchmod -> externalFun_fchmod
+argv_iter -> externalFun_feof
+argv_iter -> externalFun_getdelim
+backup_file_rename -> backupfile_internal
+gettime -> externalFun_clock_gettime
+glthread_recursive_lock_destroy_multithreaded -> externalFun_pthread_mutex_destroy
+match_ctx_clean -> externalFun_free
+get_8 -> externalFun_memchr
+match_ctx_free -> externalFun_free
+match_ctx_free -> match_ctx_clean
+ambsalign -> externalFun_free
+ambsalign -> externalFun_realloc
+ambsalign -> mbsalign
+streq9 -> externalFun_strcmp
+get_fs_usage -> externalFun_statvfs
+get_fs_usage -> statvfs_works
+group_member -> get_group_info
+group_member -> free_group_info
+_obstack_begin_1 -> _obstack_begin_worker
+printf_fetchargs -> externalFun___builtin_va_arg
+check_arrival_add_next_nodes -> externalFun_free
+check_arrival_add_next_nodes -> externalFun___builtin_expect
+check_arrival_add_next_nodes -> externalFun___builtin_unreachable
+check_arrival_add_next_nodes -> externalFun_memset
+check_arrival_add_next_nodes -> check_node_accept_bytes
+check_arrival_add_next_nodes -> re_node_set_merge
+check_arrival_add_next_nodes -> re_node_set_insert
+check_arrival_add_next_nodes -> re_acquire_state
+check_arrival_add_next_nodes -> check_node_accept
+xgetgroups -> externalFun___errno_location
+xgetgroups -> mgetgroups
+xgetgroups -> xalloc_die
+quotearg_n_mem -> quotearg_n_options
+re_node_set_merge -> externalFun_memcpy
+re_node_set_merge -> externalFun___builtin_expect
+re_node_set_merge -> externalFun_realloc
+count_leading_zeros -> externalFun___builtin_clz
+re_node_set_init_1 -> externalFun___builtin_expect
+re_node_set_init_1 -> externalFun_malloc
+fts_lfree -> externalFun_free
+fts_lfree -> externalFun_closedir
+get_version -> __xargmatch_internal
+canonicalize_file_name -> canonicalize_filename_mode
+dup_cloexec -> rpl_fcntl
+quotearg_custom_mem -> quotearg_n_custom_mem
+re_acquire_state -> externalFun___builtin_expect
+re_acquire_state -> calc_state_hash
+re_acquire_state -> re_node_set_compare
+re_acquire_state -> create_ci_newstate
+xvfprintf -> externalFun___errno_location
+xvfprintf -> externalFun_ferror
+xvfprintf -> externalFun_vfprintf
+xvfprintf -> error
+filemodestring -> strmode
+hash_find_entry -> safe_hasher
+hash_find_entry -> free_entry
+mbschr -> externalFun_strchr
+mbschr -> externalFun_memset
+mbschr -> externalFun___ctype_get_mb_cur_max
+mbschr -> mbuiter_multi_next
+vasnprintf -> externalFun_snprintf
+vasnprintf -> externalFun_abort
+vasnprintf -> externalFun_memcpy
+vasnprintf -> externalFun_realloc
+vasnprintf -> externalFun_malloc
+vasnprintf -> externalFun___builtin_alloca
+vasnprintf -> externalFun___errno_location
+vasnprintf -> externalFun_free
+vasnprintf -> printf_parse
+vasnprintf -> printf_fetchargs
+vasnprintf -> xsum4
+vasnprintf -> xsum
+vasnprintf -> xmax
+analyze -> externalFun_free
+analyze -> externalFun___builtin_expect
+analyze -> externalFun_malloc
+analyze -> preorder
+analyze -> postorder
+analyze -> calc_eclosure
+analyze -> calc_inveclosure
+mfile_name_concat -> externalFun_mempcpy
+mfile_name_concat -> externalFun_malloc
+mfile_name_concat -> externalFun_strlen
+mfile_name_concat -> last_component
+mfile_name_concat -> base_len
+_obstack_begin -> _obstack_begin_worker
+calc_first -> externalFun___builtin_expect
+calc_first -> re_dfa_add_node
+transit_state_bkref -> externalFun_free
+transit_state_bkref -> externalFun___builtin_unreachable
+transit_state_bkref -> externalFun___builtin_expect
+transit_state_bkref -> re_string_context_at
+transit_state_bkref -> get_subexp
+transit_state_bkref -> re_acquire_state_context
+transit_state_bkref -> re_node_set_init_union
+transit_state_bkref -> check_subexp_matching_top
+transit_state_bkref -> transit_state_bkref
+sha224_stream -> shaxxx_stream
+xnumtoumax -> externalFun___errno_location
+xnumtoumax -> xstrtoumax
+xnumtoumax -> quote
+xnumtoumax -> error
+free_state -> externalFun_free
+sha512_stream -> shaxxx_stream___0
+savewd_process_files -> savewd_init
+savewd_process_files -> savewd_delegating
+savewd_process_files -> savewd_restore
+savewd_process_files -> savewd_finish
+ino_map_alloc -> externalFun_free
+ino_map_alloc -> externalFun_malloc
+ino_map_alloc -> hash_initialize
+freadseek -> externalFun_ferror
+freadseek -> externalFun_fread
+freadseek -> externalFun_fseeko
+freadseek -> externalFun_lseek
+freadseek -> externalFun_fileno
+freadseek -> externalFun_fgetc
+freadseek -> externalFun___freadptr
+freadseek -> externalFun___freadahead
+freadseek -> freadptrinc
+dirchownmod -> externalFun_close
+dirchownmod -> externalFun_chmod
+dirchownmod -> externalFun_lchmod
+dirchownmod -> externalFun_fchmod
+dirchownmod -> externalFun_chown
+dirchownmod -> externalFun_lchown
+dirchownmod -> externalFun_fchown
+dirchownmod -> externalFun___errno_location
+dirchownmod -> externalFun_fstat
+dirchownmod -> externalFun_stat
+hash_free -> externalFun_free
+verror -> verror_at_line
+md5_read_ctx -> set_uint32
+human_readable -> externalFun_memcpy
+human_readable -> externalFun_memmove
+human_readable -> externalFun_sprintf
+human_readable -> externalFun_strlen
+human_readable -> externalFun_localeconv
+human_readable -> adjust_value
+human_readable -> group_number
+get_nonce -> externalFun_getgid
+get_nonce -> externalFun_getuid
+get_nonce -> externalFun_getppid
+get_nonce -> externalFun_getpid
+get_nonce -> externalFun_memcpy
+get_nonce -> externalFun_gettimeofday
+get_nonce -> externalFun_close
+get_nonce -> externalFun_read
+get_nonce -> externalFun_open
+leave_dir -> externalFun_free
+leave_dir -> externalFun_abort
+leave_dir -> hash_delete
+ext_wmatch -> externalFun_wcscat
+ext_wmatch -> externalFun___assert_fail
+ext_wmatch -> externalFun_wmemcpy
+ext_wmatch -> externalFun___builtin_alloca
+ext_wmatch -> externalFun_getenv
+ext_wmatch -> externalFun_wcslen
+ext_wmatch -> internal_fnwmatch
+match_ctx_add_entry -> externalFun_memset
+match_ctx_add_entry -> externalFun_free
+match_ctx_add_entry -> externalFun___builtin_expect
+match_ctx_add_entry -> externalFun_realloc
+raw_hasher -> rotr_sz
+emit_bug_reporting_address -> externalFun_printf
+emit_bug_reporting_address -> externalFun_fputs_unlocked
+get_permissions -> externalFun_memset
+add_exclude_file -> externalFun_fclose
+add_exclude_file -> externalFun_fopen
+add_exclude_file -> add_exclude_fp
+xstrtol_fatal -> externalFun_abort
+xstrtol_fatal -> xstrtol_error
+di_set_insert -> map_device
+di_set_insert -> map_inode_number
+di_set_insert -> hash_insert_if_absent
+calc_eclosure_iter -> externalFun_free
+calc_eclosure_iter -> externalFun___builtin_expect
+calc_eclosure_iter -> re_node_set_alloc
+calc_eclosure_iter -> duplicate_node_closure
+calc_eclosure_iter -> calc_eclosure_iter
+calc_eclosure_iter -> re_node_set_merge
+calc_eclosure_iter -> re_node_set_insert
+memchr2 -> externalFun_memchr
+rpl_fcntl_DUPFD -> externalFun_fcntl
+get_subexp -> externalFun_calloc
+get_subexp -> externalFun_memcmp
+get_subexp -> externalFun___builtin_expect
+get_subexp -> search_cur_bkref_entry
+get_subexp -> clean_state_log_if_needed
+get_subexp -> get_subexp_sub
+get_subexp -> extend_buffers
+get_subexp -> find_subexp_node
+get_subexp -> check_arrival
+get_subexp -> match_ctx_add_sublast
+c_strtod -> externalFun_strtod_l
+c_strtod -> c_locale
+rpl_regfree -> externalFun_free
+rpl_regfree -> externalFun___builtin_expect
+rpl_regfree -> free_dfa_content
+glthread_recursive_lock_lock_multithreaded -> externalFun_pthread_mutex_unlock
+glthread_recursive_lock_lock_multithreaded -> externalFun_pthread_mutex_lock
+glthread_recursive_lock_lock_multithreaded -> glthread_recursive_lock_init_multithreaded
+time_zone_str -> externalFun_sprintf
+time_zone_str -> externalFun_abs
+debug_print_relative_time -> externalFun_fputc
+debug_print_relative_time -> externalFun_fputs
+debug_print_relative_time -> dbg_printf
+debug_print_relative_time -> print_rel_part
+merge_state_with_log -> externalFun_free
+merge_state_with_log -> externalFun___builtin_expect
+merge_state_with_log -> re_node_set_init_union
+merge_state_with_log -> re_string_context_at
+merge_state_with_log -> re_acquire_state_context
+merge_state_with_log -> check_subexp_matching_top
+merge_state_with_log -> transit_state_bkref
+careadlinkatcwd -> externalFun_readlink
+careadlinkatcwd -> externalFun_abort
+streamsavedir -> externalFun_stpcpy
+streamsavedir -> externalFun_qsort
+streamsavedir -> externalFun_free
+streamsavedir -> externalFun_memcpy
+streamsavedir -> externalFun_strlen
+streamsavedir -> externalFun_readdir
+streamsavedir -> externalFun___errno_location
+streamsavedir -> x2nrealloc
+streamsavedir -> xstrdup
+streamsavedir -> xalloc_die
+streamsavedir -> xmalloc
+streamsavedir -> xrealloc
+dirent_inode_sort_may_be_useful -> filesystem_type
+rpl_re_compile_fastmap -> externalFun_memset
+rpl_re_compile_fastmap -> re_compile_fastmap_iter
+decode_4 -> isbase64
+decode_4 -> to_uchar___1
+hash_rehash -> externalFun_abort
+hash_rehash -> externalFun_free
+hash_rehash -> externalFun_calloc
+hash_rehash -> compute_bucket_size
+hash_rehash -> transfer_entries
+randread_new -> externalFun_setvbuf
+randread_new -> simple_new
+randread_new -> fopen_safer
+randread_new -> get_nonce
+randread_new -> isaac_seed
+parse_additional_groups -> externalFun_free
+parse_additional_groups -> externalFun___errno_location
+parse_additional_groups -> externalFun_getgrnam
+parse_additional_groups -> externalFun_strtok
+parse_additional_groups -> xstrdup
+parse_additional_groups -> xstrtoumax
+parse_additional_groups -> to_uchar
+parse_additional_groups -> __isspace
+parse_additional_groups -> quote
+parse_additional_groups -> error
+parse_additional_groups -> x2nrealloc
+backupfile_internal -> externalFun___errno_location
+backupfile_internal -> externalFun_free
+backupfile_internal -> externalFun_closedir
+backupfile_internal -> externalFun_memcpy
+backupfile_internal -> externalFun_malloc
+backupfile_internal -> externalFun_strlen
+backupfile_internal -> last_component
+backupfile_internal -> set_simple_backup_suffix
+backupfile_internal -> numbered_backup
+backupfile_internal -> check_extension
+backupfile_internal -> renameatu
+glthread_recursive_lock_unlock_multithreaded -> externalFun_pthread_mutex_unlock
+mb_copy -> externalFun_memcpy
+to_tm_year -> dbg_printf
+posix_time_parse -> externalFun_strchr
+posix_time_parse -> externalFun_strlen
+posix_time_parse -> year
+rpl_regexec -> externalFun_strlen
+rpl_regexec -> re_search_internal
+xmemdup -> externalFun_memcpy
+xmemdup -> xmalloc
+xstrdup -> externalFun_strlen
+xstrdup -> xmemdup
+long_int_avg -> shr
+filevercmp -> externalFun_strncmp
+filevercmp -> externalFun_strcmp
+filevercmp -> match_suffix
+filevercmp -> verrevcmp
+glthread_recursive_lock_init_multithreaded -> externalFun_pthread_mutex_init
+glthread_recursive_lock_init_multithreaded -> externalFun_pthread_mutexattr_destroy
+glthread_recursive_lock_init_multithreaded -> externalFun_pthread_mutexattr_settype
+glthread_recursive_lock_init_multithreaded -> externalFun_pthread_mutexattr_init
+mbscasecmp -> externalFun_tolower
+mbscasecmp -> externalFun_memcmp
+mbscasecmp -> externalFun_towlower
+mbscasecmp -> externalFun_memset
+mbscasecmp -> externalFun___ctype_get_mb_cur_max
+mbscasecmp -> mbuiter_multi_next
+quote -> quote_n
+utimecmp -> utimecmpat
+ydhms_diff -> shr
+isaac_seed -> just
+xreadlink -> externalFun___errno_location
+xreadlink -> areadlink
+xreadlink -> xalloc_die
+rpl_fcntl -> externalFun___builtin_va_end
+rpl_fcntl -> externalFun_fcntl
+rpl_fcntl -> externalFun___builtin_va_arg
+rpl_fcntl -> externalFun___builtin_va_start
+rpl_fcntl -> rpl_fcntl_DUPFD
+rpl_fcntl -> rpl_fcntl_DUPFD_CLOEXEC
+hash_insert_if_absent -> externalFun_abort
+hash_insert_if_absent -> hash_find_entry
+hash_insert_if_absent -> check_tuning
+hash_insert_if_absent -> hash_rehash
+hash_insert_if_absent -> allocate_entry
+transit_state_mb -> externalFun_free
+transit_state_mb -> externalFun___builtin_unreachable
+transit_state_mb -> externalFun___builtin_expect
+transit_state_mb -> re_string_context_at
+transit_state_mb -> check_node_accept_bytes
+transit_state_mb -> clean_state_log_if_needed
+transit_state_mb -> re_node_set_init_union
+transit_state_mb -> re_acquire_state_context
+setlocale_null_androidfix -> externalFun_setlocale
+desirable_utmp_entry -> externalFun___errno_location
+desirable_utmp_entry -> externalFun_kill
+lstatat -> externalFun_fstatat
+create_ci_newstate -> externalFun_free
+create_ci_newstate -> externalFun___builtin_expect
+create_ci_newstate -> externalFun_calloc
+create_ci_newstate -> re_node_set_init_copy
+create_ci_newstate -> register_state
+create_ci_newstate -> free_state
+rpl_re_match_2 -> re_search_2_stub
+canon_host_r -> externalFun_freeaddrinfo
+canon_host_r -> externalFun_strdup
+canon_host_r -> externalFun_getaddrinfo
+set_program_name -> externalFun_strncmp
+set_program_name -> externalFun_strrchr
+set_program_name -> externalFun_abort
+set_program_name -> externalFun_fputs
+strintcmp -> numcompare
+fallback_failure_callback -> externalFun_fprintf
+hash_lookup -> safe_hasher
+yylex -> c_isspace
+yylex -> c_isdigit
+yylex -> time_overflow
+yylex -> c_isalpha
+yylex -> lookup_word
+yylex -> dbg_printf
+yylex -> to_uchar___2
+errno_fail -> externalFun___errno_location
+re_node_set_alloc -> externalFun___builtin_expect
+re_node_set_alloc -> externalFun_malloc
+sig2str -> externalFun_sprintf
+sig2str -> externalFun___libc_current_sigrtmax
+sig2str -> externalFun___libc_current_sigrtmin
+sig2str -> externalFun_strcpy
+localtime_rz -> externalFun_localtime_r
+localtime_rz -> externalFun_gmtime_r
+localtime_rz -> set_tz
+localtime_rz -> save_abbr
+localtime_rz -> revert_tz
+sha256_finish_ctx -> sha256_conclude_ctx
+sha256_finish_ctx -> sha256_read_ctx
+simple_new -> xmalloc
+readtokens0_init -> _obstack_begin
+heap_alloc -> xmalloc
+heap_alloc -> xnmalloc
+debug_mktime_not_ok -> externalFun_snprintf
+debug_mktime_not_ok -> dbg_printf
+debug_mktime_not_ok -> debug_strfdatetime
+quotearg_n_custom -> quotearg_n_custom_mem
+streq8 -> streq9
+fts_set -> externalFun___errno_location
+re_node_set_init_copy -> externalFun_memset
+re_node_set_init_copy -> externalFun_memcpy
+re_node_set_init_copy -> externalFun___builtin_expect
+re_node_set_init_copy -> externalFun_malloc
+parse_dup_op -> externalFun___builtin_expect
+parse_dup_op -> fetch_number
+parse_dup_op -> fetch_token
+parse_dup_op -> postorder
+parse_dup_op -> duplicate_tree
+parse_dup_op -> create_tree
+re_string_skip_chars -> externalFun___builtin_expect
+re_string_skip_chars -> externalFun_mbrtowc
+freopen_safer -> externalFun_close
+freopen_safer -> externalFun___errno_location
+freopen_safer -> externalFun_freopen
+freopen_safer -> externalFun_dup2
+freopen_safer -> externalFun_fileno
+freopen_safer -> protect_fd
+printf_frexp -> externalFun_ldexp
+printf_frexp -> externalFun_frexp
+bkm_scale_by_power -> bkm_scale
+end_wpattern -> externalFun_getenv
+end_wpattern -> end_wpattern
+bitset_copy -> externalFun_memcpy
+check_arrival_expand_ecl -> externalFun_free
+check_arrival_expand_ecl -> externalFun___builtin_expect
+check_arrival_expand_ecl -> externalFun___builtin_unreachable
+check_arrival_expand_ecl -> re_node_set_alloc
+check_arrival_expand_ecl -> find_subexp_node
+check_arrival_expand_ecl -> re_node_set_merge
+check_arrival_expand_ecl -> check_arrival_expand_ecl_sub
+num_processors -> externalFun_getenv
+num_processors -> parse_omp_threads
+num_processors -> num_processors_ignoring_omp
+count_leading_zeros_l -> externalFun___builtin_clzl
+memcmp2 -> externalFun_memcmp
+free_cwd -> externalFun_free
+free_cwd -> externalFun_close
+print_rel_part -> externalFun_fprintf
+re_string_realloc_buffers -> externalFun_realloc
+re_string_realloc_buffers -> externalFun___builtin_expect
+di_set_free -> externalFun_free
+di_set_free -> hash_free
+di_set_free -> ino_map_free
+safe_read -> externalFun___errno_location
+safe_read -> externalFun_read
+xmalloc -> externalFun_malloc
+xmalloc -> xalloc_die
+re_set_fastmap -> externalFun_tolower
+xgetcwd -> externalFun___errno_location
+xgetcwd -> rpl_getcwd
+xgetcwd -> xalloc_die
+shaxxx_stream___0 -> externalFun_free
+shaxxx_stream___0 -> externalFun_ferror_unlocked
+shaxxx_stream___0 -> externalFun_fread_unlocked
+shaxxx_stream___0 -> externalFun_feof_unlocked
+shaxxx_stream___0 -> externalFun_malloc
+shaxxx_stream___0 -> afalg_stream
+shaxxx_stream___0 -> sha512_process_block
+shaxxx_stream___0 -> sha512_process_bytes
+xnmalloc -> xalloc_die
+xnmalloc -> xmalloc
+readlinebuffer_delim -> externalFun_ferror_unlocked
+readlinebuffer_delim -> externalFun_getc_unlocked
+readlinebuffer_delim -> externalFun_feof_unlocked
+readlinebuffer_delim -> x2realloc
+randperm_new -> xmalloc
+randperm_new -> randint_choose
+randperm_new -> sparse_new
+randperm_new -> xalloc_die
+randperm_new -> xnmalloc
+randperm_new -> sparse_swap
+randperm_new -> swap
+randperm_new -> sparse_free
+randperm_new -> xnrealloc
+cdb_free -> externalFun___assert_fail
+cdb_free -> externalFun_close
+make_dir_parents -> externalFun_stat
+make_dir_parents -> externalFun_mkdir
+make_dir_parents -> externalFun___errno_location
+make_dir_parents -> savewd_errno
+make_dir_parents -> mkancesdirs
+make_dir_parents -> quote
+make_dir_parents -> error
+make_dir_parents -> savewd_chdir
+make_dir_parents -> dirchownmod
+is_root -> externalFun_free
+is_root -> externalFun_strcmp
+is_root -> canonicalize_file_name
+free_dfa_content -> externalFun_free
+free_dfa_content -> free_token
+free_dfa_content -> free_state
+parse_bracket_element -> externalFun___builtin_expect
+parse_bracket_element -> re_string_char_size_at
+parse_bracket_element -> re_string_wchar_at
+parse_bracket_element -> parse_bracket_symbol
+parse_bracket_element -> peek_token_bracket
+check_node_accept -> bitset_contain
+check_node_accept -> re_string_context_at
+merge_state_array -> externalFun_free
+merge_state_array -> externalFun___builtin_expect
+merge_state_array -> re_node_set_init_union
+merge_state_array -> re_acquire_state
+re_search_internal -> externalFun_free
+re_search_internal -> externalFun_malloc
+re_search_internal -> externalFun___builtin_unreachable
+re_search_internal -> externalFun___builtin_expect
+re_search_internal -> re_string_allocate
+re_search_internal -> match_ctx_init
+re_search_internal -> re_string_reconstruct
+re_search_internal -> check_matching
+re_search_internal -> check_halt_state_context
+re_search_internal -> prune_impossible_nodes
+re_search_internal -> match_ctx_clean
+re_search_internal -> set_regs
+re_search_internal -> match_ctx_free
+re_search_internal -> re_string_destruct
+getenv_TZ -> externalFun_getenv
+re_acquire_state_context -> externalFun___builtin_expect
+re_acquire_state_context -> calc_state_hash
+re_acquire_state_context -> re_node_set_compare
+re_acquire_state_context -> create_cd_newstate
+proceed_next_node -> externalFun_memcmp
+proceed_next_node -> externalFun___builtin_expect
+proceed_next_node -> re_node_set_insert
+proceed_next_node -> re_node_set_contains
+proceed_next_node -> push_fail_stack
+proceed_next_node -> check_node_accept_bytes
+proceed_next_node -> check_node_accept
+re_string_allocate -> externalFun___builtin_expect
+re_string_allocate -> re_string_construct_common
+re_string_allocate -> re_string_realloc_buffers
+free_token -> externalFun_free
+free_token -> free_charset
+sha256_stream -> shaxxx_stream
+re_string_context_at -> externalFun_iswalnum
+re_string_context_at -> externalFun___builtin_unreachable
+re_string_context_at -> externalFun___builtin_expect
+re_string_context_at -> bitset_contain
+pop_fail_stack -> externalFun_free
+pop_fail_stack -> externalFun_memcpy
+pop_fail_stack -> externalFun___builtin_unreachable
+physmem_total -> externalFun_sysinfo
+physmem_total -> externalFun_sysconf
+streq0 -> streq1
+free_dir -> externalFun_free
+free_dir -> hash_free
+str2sig -> str2signum
+base64_encode -> base64_encode_fast
+base64_encode -> to_uchar___1
+_getopt_internal_r -> externalFun_fprintf
+_getopt_internal_r -> externalFun_strchr
+_getopt_internal_r -> externalFun_strcmp
+_getopt_internal_r -> _getopt_initialize
+_getopt_internal_r -> exchange
+_getopt_internal_r -> process_long_option
+initbuffer -> externalFun_memset
+sha512_read_ctx -> __bswap_64
+sha512_read_ctx -> set_uint64
+glthread_rwlock_unlock_multithreaded -> externalFun_pthread_cond_broadcast
+glthread_rwlock_unlock_multithreaded -> externalFun_pthread_cond_signal
+glthread_rwlock_unlock_multithreaded -> externalFun_pthread_mutex_unlock
+glthread_rwlock_unlock_multithreaded -> externalFun_pthread_mutex_lock
+internal_read_file -> externalFun_free
+internal_read_file -> externalFun_fclose
+internal_read_file -> externalFun___errno_location
+internal_read_file -> externalFun_fopen
+internal_read_file -> fread_file
+match_ctx_init -> externalFun_malloc
+match_ctx_init -> externalFun___builtin_expect
+find_backup_file_name -> backupfile_internal
+find_backup_file_name -> xalloc_die
+check_subexp_matching_top -> externalFun___builtin_expect
+check_subexp_matching_top -> match_ctx_add_subtop
+streq1 -> streq2
+openat_save_fail -> externalFun_abort
+openat_save_fail -> error
+parse_user_spec -> externalFun_strchr
+parse_user_spec -> parse_with_separator
+validate_timespec -> externalFun___errno_location
+re_copy_regs -> externalFun___builtin_unreachable
+re_copy_regs -> externalFun_realloc
+re_copy_regs -> externalFun_free
+re_copy_regs -> externalFun___builtin_expect
+re_copy_regs -> externalFun_malloc
+build_sifted_states -> externalFun___builtin_expect
+build_sifted_states -> externalFun___builtin_unreachable
+build_sifted_states -> sift_states_iter_mb
+build_sifted_states -> check_node_accept
+build_sifted_states -> re_node_set_contains
+build_sifted_states -> check_dst_limits
+build_sifted_states -> re_node_set_insert
+cwd_advance_fd -> externalFun_close
+cwd_advance_fd -> externalFun_abort
+cwd_advance_fd -> i_ring_push
+re_string_destruct -> externalFun_free
+base_len -> externalFun_strlen
+setenv_TZ -> externalFun_unsetenv
+setenv_TZ -> externalFun_setenv
+re_search_2_stub -> externalFun_free
+re_search_2_stub -> externalFun_memcpy
+re_search_2_stub -> externalFun_malloc
+re_search_2_stub -> externalFun___builtin_expect
+re_search_2_stub -> re_search_stub
+print_errno_message -> externalFun_fprintf
+print_errno_message -> externalFun_strerror_r
+revert_tz -> externalFun___errno_location
+revert_tz -> change_env
+revert_tz -> tzfree
+careadlinkat -> externalFun_memcpy
+careadlinkat -> externalFun___errno_location
+lsetfileconat -> externalFun_fchdir
+lsetfileconat -> externalFun_free
+lsetfileconat -> externalFun___errno_location
+lsetfileconat -> setfilecon
+lsetfileconat -> openat_proc_name
+lsetfileconat -> save_cwd
+lsetfileconat -> openat_save_fail
+lsetfileconat -> free_cwd
+lsetfileconat -> restore_cwd
+lsetfileconat -> openat_restore_fail
+mbslen -> externalFun_strlen
+mbslen -> externalFun_memset
+mbslen -> externalFun___ctype_get_mb_cur_max
+mbslen -> mbuiter_multi_next
+streq3 -> streq4
+check_node_accept_bytes -> externalFun_iswctype
+check_node_accept_bytes -> externalFun___builtin_expect
+check_node_accept_bytes -> re_string_char_size_at
+check_node_accept_bytes -> re_string_elem_size_at
+check_node_accept_bytes -> re_string_wchar_at
+group_number -> externalFun_memcpy
+group_number -> externalFun_strlen
+getuser -> externalFun_strcpy
+getuser -> externalFun_strlen
+getuser -> externalFun_getpwuid
+getuser -> xmalloc
+xstrtod -> externalFun___errno_location
+quotearg_style -> quotearg_n_style
+rpl_pipe2 -> externalFun_close
+rpl_pipe2 -> externalFun_pipe
+rpl_pipe2 -> externalFun___errno_location
+rpl_pipe2 -> externalFun_pipe2
+rpl_pipe2 -> rpl_fcntl
+try_file -> externalFun_open
+mbsnwidth -> externalFun_iscntrl
+mbsnwidth -> externalFun_mbsinit
+mbsnwidth -> externalFun_iswcntrl
+mbsnwidth -> externalFun_wcwidth
+mbsnwidth -> externalFun_mbrtowc
+mbsnwidth -> externalFun_memset
+mbsnwidth -> externalFun___ctype_get_mb_cur_max
+heap_remove_top -> heapify_down
+xget_version -> externalFun_getenv
+xget_version -> get_version
+num_processors_via_affinity_mask -> externalFun___sched_cpucount
+num_processors_via_affinity_mask -> externalFun_sched_getaffinity
+free_exclude_segment -> externalFun_free
+free_exclude_segment -> rpl_regfree
+free_exclude_segment -> hash_free
+quotearg_n_custom_mem -> set_custom_quoting
+quotearg_n_custom_mem -> quotearg_n_options
+add_epsilon_src_nodes -> externalFun___builtin_expect
+add_epsilon_src_nodes -> re_acquire_state
+add_epsilon_src_nodes -> re_node_set_alloc
+add_epsilon_src_nodes -> re_node_set_merge
+add_epsilon_src_nodes -> re_node_set_add_intersect
+sha256_process_block -> __bswap_32
+readtokens0 -> externalFun_ferror
+readtokens0 -> externalFun_fgetc
+readtokens0 -> _obstack_newchunk
+readtokens0 -> save_token
+xstrtoimax -> externalFun_strchr
+xstrtoimax -> externalFun_strtoimax
+xstrtoimax -> externalFun___errno_location
+xstrtoimax -> externalFun___assert_fail
+xstrtoimax -> bkm_scale
+xstrtoimax -> bkm_scale_by_power
+file_pattern_matches -> exclude_patopts
+nstrftime -> __strftime_internal___0
+glthread_rwlock_rdlock_multithreaded -> externalFun_pthread_mutex_unlock
+glthread_rwlock_rdlock_multithreaded -> externalFun_pthread_cond_wait
+glthread_rwlock_rdlock_multithreaded -> externalFun_pthread_mutex_lock
+quotearg_n -> quotearg_n_options
+clean_state_log_if_needed -> externalFun_memset
+clean_state_log_if_needed -> externalFun___builtin_expect
+clean_state_log_if_needed -> extend_buffers
+re_node_set_insert_last -> externalFun___builtin_expect
+re_node_set_insert_last -> externalFun_realloc
+set_acl -> externalFun___errno_location
+set_acl -> qset_acl
+set_acl -> quote
+set_acl -> error
+xdectoimax -> xnumtoimax
+free_workarea_compile -> externalFun_free
+close_stdin -> externalFun__exit
+close_stdin -> externalFun___errno_location
+close_stdin -> externalFun_fflush
+close_stdin -> externalFun_fseeko
+close_stdin -> externalFun___freadahead
+close_stdin -> close_stream
+close_stdin -> quotearg_colon
+close_stdin -> error
+close_stdin -> close_stdout
+fdutimens -> externalFun_utimes
+fdutimens -> externalFun_futimesat
+fdutimens -> externalFun_futimens
+fdutimens -> externalFun_utimensat
+fdutimens -> externalFun_fstat
+fdutimens -> externalFun_stat
+fdutimens -> externalFun___errno_location
+fdutimens -> validate_timespec
+fdutimens -> get_stat_atime
+fdutimens -> get_stat_mtime
+fdutimens -> update_timespec
+ino_map_free -> externalFun_free
+ino_map_free -> hash_free
+physmem_available -> externalFun_sysinfo
+physmem_available -> externalFun_sysconf
+physmem_available -> physmem_total
+enter_dir -> externalFun_free
+enter_dir -> externalFun_malloc
+enter_dir -> hash_insert
+enter_dir -> cycle_check
+fprintftime -> __strftime_internal
+hash_insert -> hash_insert_if_absent
+string_hasher_ci -> externalFun_towlower
+string_hasher_ci -> externalFun_memset
+string_hasher_ci -> mbuiter_multi_next
+sparse_new -> hash_initialize
+readtokens -> externalFun_free
+readtokens -> externalFun_memcpy
+readtokens -> xnmalloc
+readtokens -> init_tokenbuffer
+readtokens -> readtoken
+readtokens -> x2nrealloc
+readtokens -> xnrealloc
+build_wcs_buffer -> externalFun_mbrtowc
+build_wcs_buffer -> externalFun___builtin_expect
+trim2 -> externalFun_memmove
+trim2 -> externalFun_iswspace
+trim2 -> externalFun_memset
+trim2 -> externalFun_strlen
+trim2 -> externalFun___ctype_get_mb_cur_max
+trim2 -> externalFun_strdup
+trim2 -> xalloc_die
+trim2 -> mbiter_multi_next
+trim2 -> __isspace
+new_exclude -> xzalloc
+fopen_safer -> externalFun_close
+fopen_safer -> externalFun_fdopen
+fopen_safer -> externalFun_fclose
+fopen_safer -> externalFun___errno_location
+fopen_safer -> externalFun_fileno
+fopen_safer -> externalFun_fopen
+fopen_safer -> dup_safer
+xstrndup -> externalFun_strndup
+xstrndup -> xalloc_die
+re_compile_fastmap_iter -> externalFun_wcrtomb
+re_compile_fastmap_iter -> externalFun_towlower
+re_compile_fastmap_iter -> externalFun_mbrtowc
+re_compile_fastmap_iter -> externalFun_memset
+re_compile_fastmap_iter -> re_set_fastmap
+exclude_add_pattern_buffer -> xmalloc
+group_nodes_into_DFAstates -> externalFun_free
+group_nodes_into_DFAstates -> externalFun___builtin_unreachable
+group_nodes_into_DFAstates -> externalFun___builtin_expect
+group_nodes_into_DFAstates -> externalFun_memset
+group_nodes_into_DFAstates -> bitset_empty
+group_nodes_into_DFAstates -> bitset_set
+group_nodes_into_DFAstates -> bitset_merge
+group_nodes_into_DFAstates -> bitset_set_all
+group_nodes_into_DFAstates -> bitset_clear
+group_nodes_into_DFAstates -> bitset_contain
+group_nodes_into_DFAstates -> bitset_copy
+group_nodes_into_DFAstates -> re_node_set_init_copy
+group_nodes_into_DFAstates -> re_node_set_insert
+group_nodes_into_DFAstates -> re_node_set_init_1
+strmode -> ftypelet
+extract_trimmed_name -> externalFun_strlen
+extract_trimmed_name -> externalFun_strncpy
+extract_trimmed_name -> xmalloc
+rpl_re_compile_pattern -> re_compile_internal
+xstrtold -> externalFun___errno_location
+base64_encode_alloc -> externalFun_malloc
+base64_encode_alloc -> base64_encode
+getgroup -> externalFun_strcpy
+getgroup -> externalFun_strlen
+getgroup -> externalFun_getgrgid
+getgroup -> xmalloc
+mdir_name -> externalFun_memcpy
+mdir_name -> externalFun_malloc
+mdir_name -> dir_len
+randperm_bound -> floor_lg
+triple_compare -> same_name
+memcasecmp -> externalFun_toupper
+re_string_reconstruct -> externalFun_iswalnum
+re_string_reconstruct -> externalFun_mbrtowc
+re_string_reconstruct -> externalFun___builtin_unreachable
+re_string_reconstruct -> externalFun_memmove
+re_string_reconstruct -> externalFun_memset
+re_string_reconstruct -> externalFun___builtin_expect
+re_string_reconstruct -> re_string_context_at
+re_string_reconstruct -> re_string_skip_chars
+re_string_reconstruct -> bitset_contain
+re_string_reconstruct -> build_wcs_upper_buffer
+re_string_reconstruct -> build_wcs_buffer
+re_string_reconstruct -> build_upper_buffer
+re_string_reconstruct -> re_string_translate_buffer
+re_string_peek_byte_case -> externalFun___builtin_expect
+string_free -> externalFun_free
+sift_states_iter_mb -> check_node_accept_bytes
+sift_states_iter_mb -> re_node_set_contains
+__strftime_internal -> externalFun_strlen
+__strftime_internal -> externalFun_fwrite
+__strftime_internal -> externalFun_strftime
+__strftime_internal -> externalFun_fputc
+__strftime_internal -> __strftime_internal
+__strftime_internal -> fwrite_lowcase
+__strftime_internal -> fwrite_uppcase
+__strftime_internal -> mktime_z
+__strftime_internal -> iso_week_days
+parse_omp_threads -> externalFun_strtoul
+parse_omp_threads -> c_isspace
+parse_omp_threads -> c_isdigit
+debug_strfdatetime -> externalFun_snprintf
+debug_strfdatetime -> nstrftime
+debug_strfdatetime -> time_zone_str
+fwrite_success_callback -> externalFun_fwrite
+set_cloexec_flag -> rpl_fcntl
+strcaseeq2 -> c_isupper
+strcaseeq2 -> strcaseeq3
+base64_encode_fast -> to_uchar___1
+get_subexp_sub -> externalFun___builtin_expect
+get_subexp_sub -> check_arrival
+get_subexp_sub -> match_ctx_add_entry
+get_subexp_sub -> clean_state_log_if_needed
+seen_triple -> hash_initialize
+seen_triple -> xalloc_die
+seen_triple -> seen_file
+seen_triple -> record_file
+dir_name -> mdir_name
+dir_name -> xalloc_die
+leaf_optimization -> filesystem_type
+rpl_getcwd -> externalFun_free
+rpl_getcwd -> externalFun_close
+rpl_getcwd -> externalFun_memmove
+rpl_getcwd -> externalFun_memcpy
+rpl_getcwd -> externalFun_realloc
+rpl_getcwd -> externalFun_strlen
+rpl_getcwd -> externalFun_fstatat
+rpl_getcwd -> externalFun_rewinddir
+rpl_getcwd -> externalFun_readdir
+rpl_getcwd -> externalFun_fdopendir
+rpl_getcwd -> externalFun_closedir
+rpl_getcwd -> externalFun_fstat
+rpl_getcwd -> externalFun_openat
+rpl_getcwd -> externalFun_lstat
+rpl_getcwd -> externalFun_malloc
+rpl_getcwd -> externalFun_strdup
+rpl_getcwd -> externalFun___errno_location
+rpl_getcwd -> externalFun_getcwd
+rpl_getpass -> externalFun_putc_unlocked
+rpl_getpass -> externalFun_fseeko
+rpl_getpass -> externalFun_getline
+rpl_getpass -> externalFun_fflush_unlocked
+rpl_getpass -> externalFun_fputs_unlocked
+rpl_getpass -> externalFun_tcsetattr
+rpl_getpass -> externalFun_tcgetattr
+rpl_getpass -> externalFun_fileno
+rpl_getpass -> externalFun___fsetlocking
+rpl_getpass -> externalFun_fopen
+rpl_getpass -> call_fclose
+_getopt_long_only_r -> _getopt_internal_r
+process_long_option -> externalFun_strchr
+process_long_option -> externalFun_free
+process_long_option -> externalFun_funlockfile
+process_long_option -> externalFun_flockfile
+process_long_option -> externalFun_fprintf
+process_long_option -> externalFun_memset
+process_long_option -> externalFun_malloc
+process_long_option -> externalFun_strlen
+process_long_option -> externalFun_strncmp
+rpl_getopt -> rpl_getopt_internal
+_obstack_free -> externalFun_abort
+_obstack_free -> call_freefun
+is_cjk_encoding -> streq0
+xdectoumax -> xnumtoumax
+ranged_convert -> externalFun___errno_location
+ranged_convert -> convert_time
+ranged_convert -> long_int_avg
+c_locale___0 -> externalFun_newlocale
+fadvise -> externalFun_fileno
+fadvise -> fdadvise
+seen_file -> hash_lookup
+mbiter_multi_next -> externalFun_mbrtowc
+mbiter_multi_next -> externalFun___assert_fail
+mbiter_multi_next -> externalFun_mbsinit
+mbiter_multi_next -> is_basic
+tm_diff -> ydhms_diff
+ch_strerror -> externalFun_gai_strerror
+add_exclude -> externalFun_free
+add_exclude -> externalFun_strcpy
+add_exclude -> externalFun_memcpy
+add_exclude -> externalFun_strlen
+add_exclude -> fnmatch_pattern_has_wildcards
+add_exclude -> new_exclude_segment
+add_exclude -> x2nrealloc
+add_exclude -> xmalloc
+add_exclude -> rpl_regcomp
+add_exclude -> xstrdup
+add_exclude -> exclude_add_pattern_buffer
+add_exclude -> unescape_pattern
+add_exclude -> hash_insert
+transfer_entries -> safe_hasher
+transfer_entries -> free_entry
+transfer_entries -> allocate_entry
+cdb_advance_fd -> externalFun_openat
+cdb_advance_fd -> cdb_free
+build_upper_buffer -> externalFun_toupper
+build_upper_buffer -> externalFun___builtin_expect
+full_read -> externalFun___errno_location
+full_read -> safe_read
+strcaseeq9 -> c_strcasecmp
+fts_close -> externalFun_fchdir
+fts_close -> externalFun___errno_location
+fts_close -> externalFun_close
+fts_close -> externalFun_free
+fts_close -> fts_lfree
+fts_close -> fd_ring_clear
+fts_close -> hash_free
+fts_close -> free_dir
+quotearg_alloc_mem -> externalFun___errno_location
+quotearg_alloc_mem -> quotearg_buffer_restyled
+quotearg_alloc_mem -> xcharalloc
+setfileconat -> externalFun_fchdir
+setfileconat -> externalFun_free
+setfileconat -> externalFun___errno_location
+setfileconat -> setfilecon
+setfileconat -> openat_proc_name
+setfileconat -> save_cwd
+setfileconat -> openat_save_fail
+setfileconat -> free_cwd
+setfileconat -> restore_cwd
+setfileconat -> openat_restore_fail
+argmatch_to_argument -> externalFun_memcmp
+cl_strtod -> externalFun___errno_location
+cl_strtod -> externalFun_strtod
+cl_strtod -> c_strtod
+knuth_morris_pratt -> externalFun___builtin_alloca
+knuth_morris_pratt -> mmalloca
+knuth_morris_pratt -> freea
+readisaac -> externalFun_memcpy
+readisaac -> isaac_refill
+sparse_swap -> hash_delete
+sparse_swap -> xmalloc
+sparse_swap -> hash_insert
+sparse_swap -> xalloc_die
+isbase64 -> to_uchar___1
+setlocale_null_unlocked -> externalFun_memcpy
+setlocale_null_unlocked -> externalFun_strlen
+setlocale_null_unlocked -> setlocale_null_androidfix
+free_tree -> free_token
+file_name_matches -> externalFun_strchr
+file_name_matches -> externalFun_strrchr
+file_name_matches -> externalFun_strcpy
+file_name_matches -> hash_lookup
+end_pattern -> externalFun_getenv
+end_pattern -> end_pattern
+re_node_set_add_intersect -> externalFun_memcpy
+re_node_set_add_intersect -> externalFun___builtin_expect
+re_node_set_add_intersect -> externalFun_realloc
+readtoken -> externalFun_getc_unlocked
+readtoken -> externalFun_memset
+readtoken -> set_nth_bit
+readtoken -> get_nth_bit
+readtoken -> x2nrealloc
+direntry_cmp_name -> externalFun_strcmp
+map_inode_number -> ino_map_alloc
+map_inode_number -> ino_map_insert
+quotearg_free -> externalFun_free
+update_regs -> externalFun_memcpy
+xnumtoimax -> externalFun___errno_location
+xnumtoimax -> xstrtoimax
+xnumtoimax -> quote
+xnumtoimax -> error
+strcoll_loop -> externalFun_strlen
+strcoll_loop -> externalFun_strcoll
+strcoll_loop -> externalFun___errno_location
+dtoastr -> externalFun_strtod
+dtoastr -> externalFun_snprintf
+xstr_iconv -> externalFun___errno_location
+xstr_iconv -> str_iconv
+xstr_iconv -> xalloc_die
+bkm_scale_by_power___1 -> bkm_scale___1
+dup_safer_flag -> rpl_fcntl
+fd_ring_clear -> externalFun_close
+fd_ring_clear -> i_ring_empty
+fd_ring_clear -> i_ring_pop
+getuidbyname -> externalFun_strcpy
+getuidbyname -> externalFun_strlen
+getuidbyname -> externalFun_getpwnam
+getuidbyname -> externalFun_strcmp
+getuidbyname -> xmalloc
+quotearg_custom -> quotearg_n_custom
+__xargmatch_internal -> argmatch
+__xargmatch_internal -> argmatch_invalid
+__xargmatch_internal -> argmatch_valid
+c_strcasecmp -> c_tolower
+same_name -> same_nameat
+bkm_scale_by_power___0 -> bkm_scale___0
+free_group_info -> externalFun_free
+xalloc_die -> externalFun_abort
+xalloc_die -> error
+peek_token -> externalFun_isalnum
+peek_token -> externalFun_iswalnum
+peek_token -> re_string_peek_byte_case
+peek_token -> re_string_wchar_at
+peek_token -> peek_token
+next_prime -> is_prime
+mode_compile -> externalFun_free
+mode_compile -> octal_to_mode
+mode_compile -> make_node_op_equals
+mode_compile -> xnmalloc
+canon_host -> canon_host_r
+triple_free -> externalFun_free
+strcaseeq8 -> c_isupper
+strcaseeq8 -> strcaseeq9
+strcaseeq1 -> c_isupper
+strcaseeq1 -> strcaseeq2
+utimecmpat -> externalFun_fstatat
+utimecmpat -> externalFun_utimensat
+utimecmpat -> externalFun_malloc
+utimecmpat -> get_stat_mtime_ns
+utimecmpat -> hash_initialize
+utimecmpat -> hash_insert
+utimecmpat -> hash_lookup
+utimecmpat -> get_stat_atime_ns
+utimecmpat -> get_stat_ctime_ns
+xzalloc -> xcalloc
+xvprintf -> externalFun___errno_location
+xvprintf -> externalFun_ferror
+xvprintf -> externalFun_vprintf
+xvprintf -> error
+check_extension -> externalFun_fpathconf
+check_extension -> externalFun_pathconf
+check_extension -> externalFun___errno_location
+check_extension -> externalFun_strcpy
+check_extension -> externalFun_memcpy
+check_extension -> last_component
+check_extension -> base_len
+opendir_safer -> externalFun_closedir
+opendir_safer -> externalFun_close
+opendir_safer -> externalFun_fdopendir
+opendir_safer -> externalFun___errno_location
+opendir_safer -> externalFun_dirfd
+opendir_safer -> externalFun_opendir
+opendir_safer -> rpl_fcntl
+usage -> externalFun_exit
+usage -> externalFun_fputs_unlocked
+usage -> externalFun_printf
+usage -> externalFun_fprintf
+usage -> quotearg_style
+usage -> emit_ancillary_info
+locale_charset -> rpl_nl_langinfo
+try_tempname_len -> externalFun_strlen
+try_tempname_len -> externalFun___errno_location
+try_tempname_len -> check_x_suffix
+try_tempname_len -> randint_all_new
+try_tempname_len -> randint_genmax
+try_tempname_len -> randint_all_free
+renameatu -> externalFun_free
+renameatu -> externalFun_renameat
+renameatu -> externalFun_strlen
+renameatu -> externalFun___errno_location
+renameatu -> externalFun_syscall
+renameatu -> errno_fail
+renameatu -> lstatat
+xstr_cd_iconv -> externalFun___errno_location
+xstr_cd_iconv -> str_cd_iconv
+xstr_cd_iconv -> xalloc_die
+set_simple_backup_suffix -> externalFun_getenv
+set_simple_backup_suffix -> last_component
+posixtime -> externalFun_strcpy
+posixtime -> externalFun_stpcpy
+posixtime -> externalFun_mktime
+posixtime -> posix_time_parse
+posixtime -> posixtime
+fd_safer -> externalFun_close
+fd_safer -> externalFun___errno_location
+fd_safer -> dup_safer
+can_write_any_file -> externalFun_geteuid
+_obstack_newchunk -> externalFun_memcpy
+_obstack_newchunk -> call_chunkfun
+_obstack_newchunk -> call_freefun
+parse_bracket_exp -> externalFun___builtin_unreachable
+parse_bracket_exp -> externalFun_realloc
+parse_bracket_exp -> externalFun_free
+parse_bracket_exp -> externalFun___builtin_expect
+parse_bracket_exp -> externalFun_calloc
+parse_bracket_exp -> peek_token_bracket
+parse_bracket_exp -> bitset_set
+parse_bracket_exp -> parse_bracket_element
+parse_bracket_exp -> build_range_exp
+parse_bracket_exp -> build_equiv_class
+parse_bracket_exp -> build_collating_symbol
+parse_bracket_exp -> build_charclass
+parse_bracket_exp -> bitset_not
+parse_bracket_exp -> bitset_mask
+parse_bracket_exp -> create_token_tree
+parse_bracket_exp -> create_tree
+parse_bracket_exp -> free_charset
+qset_acl -> externalFun_memset
+qset_acl -> set_permissions
+qset_acl -> free_permission_context
+internal_fnwmatch -> externalFun_iswctype
+internal_fnwmatch -> externalFun_getenv
+internal_fnwmatch -> externalFun_wmemchr
+internal_fnwmatch -> externalFun___builtin_expect
+internal_fnwmatch -> externalFun_towlower
+internal_fnwmatch -> ext_wmatch
+internal_fnwmatch -> end_wpattern
+internal_fnwmatch -> internal_fnwmatch
+internal_fnwmatch -> is_char_class
+ext_match -> externalFun_strcat
+ext_match -> externalFun___assert_fail
+ext_match -> externalFun_mempcpy
+ext_match -> externalFun___builtin_alloca
+ext_match -> externalFun_getenv
+ext_match -> externalFun_strlen
+ext_match -> internal_fnmatch
+mpsort_into_tmp -> externalFun_memcpy
+mpsort_into_tmp -> mpsort_with_tmp
+proper_name -> externalFun_sprintf
+proper_name -> externalFun_strlen
+proper_name -> mbsstr_trimmed_wordbounded
+proper_name -> xmalloc
+proper_name -> xnmalloc
+quote_n -> quote_n_mem
+fetch_token -> peek_token
+xnanosleep -> externalFun___errno_location
+xnanosleep -> externalFun_pause
+xnanosleep -> dtotimespec
+xnanosleep -> rpl_nanosleep
+rpl_nanosleep -> externalFun_nanosleep
+rpl_nanosleep -> externalFun___errno_location
+duplicate_node_closure -> externalFun___builtin_expect
+duplicate_node_closure -> duplicate_node
+duplicate_node_closure -> re_node_set_insert
+duplicate_node_closure -> search_duplicated_node
+duplicate_node_closure -> duplicate_node_closure
+main -> externalFun_execvp
+main -> externalFun_setuid
+main -> externalFun_setgid
+main -> externalFun_free
+main -> externalFun_setgroups
+main -> externalFun_getenv
+main -> externalFun_chdir
+main -> externalFun___builtin_unreachable
+main -> externalFun___errno_location
+main -> externalFun_chroot
+main -> externalFun_getpwuid
+main -> externalFun_exit
+main -> externalFun_strlen
+main -> externalFun_atexit
+main -> externalFun_setlocale
+main -> set_program_name
+main -> initialize_exit_failure
+main -> rpl_getopt_long
+main -> usage
+main -> version_etc
+main -> error
+main -> is_root
+main -> quotearg_style
+main -> parse_user_spec
+main -> uid_unset
+main -> gid_unset
+main -> parse_additional_groups
+main -> xgetgroups
+main -> bad_cast
+main -> quote
+cl_strtold -> externalFun___errno_location
+cl_strtold -> externalFun_strtold
+cl_strtold -> c_strtold
+postorder -> externalFun___builtin_expect
+gnu_mbswidth -> externalFun_strlen
+gnu_mbswidth -> mbsnwidth
+randint_all_free -> externalFun___errno_location
+randint_all_free -> randread_free
+randint_all_free -> randint_free
+i_ring_pop -> externalFun_abort
+i_ring_pop -> i_ring_empty
+glthread_rwlock_wrlock_multithreaded -> externalFun_pthread_mutex_unlock
+glthread_rwlock_wrlock_multithreaded -> externalFun_pthread_cond_wait
+glthread_rwlock_wrlock_multithreaded -> externalFun_pthread_mutex_lock
+sha1_finish_ctx -> externalFun_memcpy
+sha1_finish_ctx -> __bswap_32
+sha1_finish_ctx -> sha1_process_block
+sha1_finish_ctx -> sha1_read_ctx
+read_utmp -> externalFun_endutxent
+read_utmp -> externalFun_getutxent
+read_utmp -> externalFun_setutxent
+read_utmp -> externalFun_utmpxname
+read_utmp -> desirable_utmp_entry
+read_utmp -> x2nrealloc
+build_charclass -> externalFun_isxdigit
+build_charclass -> externalFun_ispunct
+build_charclass -> externalFun_isblank
+build_charclass -> externalFun_iscntrl
+build_charclass -> externalFun_isalnum
+build_charclass -> externalFun_wctype
+build_charclass -> externalFun_realloc
+build_charclass -> externalFun___builtin_expect
+build_charclass -> externalFun_strcmp
+build_charclass -> bitset_set
+build_charclass -> __isspace
+fnmatch_no_wildcards -> externalFun_free
+fnmatch_no_wildcards -> externalFun_strchr
+fnmatch_no_wildcards -> externalFun_strncmp
+fnmatch_no_wildcards -> externalFun_strlen
+fnmatch_no_wildcards -> externalFun_strcmp
+fnmatch_no_wildcards -> mbscasecmp
+fnmatch_no_wildcards -> xstrdup
+fdadvise -> externalFun_posix_fadvise
+duplicate_tree -> create_token_tree
+match_suffix -> c_isalpha
+match_suffix -> c_isalnum
+streq4 -> streq5
+xstrtol -> externalFun_strchr
+xstrtol -> externalFun_strtol
+xstrtol -> externalFun___errno_location
+xstrtol -> externalFun___assert_fail
+xstrtol -> bkm_scale___0
+xstrtol -> bkm_scale_by_power___0
+re_node_set_init_union -> externalFun_memcpy
+re_node_set_init_union -> externalFun_memset
+re_node_set_init_union -> externalFun___builtin_expect
+re_node_set_init_union -> externalFun_malloc
+re_node_set_init_union -> re_node_set_init_copy
+base32_decode_ctx -> decode_8
+base32_decode_ctx -> get_8
+strcaseeq6 -> c_isupper
+strcaseeq6 -> strcaseeq7
+base32_encode_alloc -> externalFun_malloc
+base32_encode_alloc -> base32_encode
+dbg_printf -> externalFun___builtin_va_end
+dbg_printf -> externalFun_vfprintf
+dbg_printf -> externalFun___builtin_va_start
+dbg_printf -> externalFun_fputs
+verror_at_line -> externalFun_free
+verror_at_line -> externalFun_abort
+verror_at_line -> externalFun___errno_location
+verror_at_line -> xvasprintf
+verror_at_line -> error_at_line
+verror_at_line -> error
+lookup_word -> externalFun_strncmp
+lookup_word -> externalFun_strlen
+lookup_word -> externalFun_strcmp
+lookup_word -> to_uchar___2
+lookup_word -> c_toupper
+lookup_word -> lookup_zone
+find_recover_state -> merge_state_with_log
+rpl_getopt_long -> rpl_getopt_internal
+randint_free -> externalFun_free
+randint_free -> externalFun_explicit_bzero
+rpl_fcntl_DUPFD_CLOEXEC -> externalFun_close
+rpl_fcntl_DUPFD_CLOEXEC -> externalFun___errno_location
+rpl_fcntl_DUPFD_CLOEXEC -> externalFun_fcntl
+rpl_fcntl_DUPFD_CLOEXEC -> rpl_fcntl_DUPFD
+fts_build -> externalFun_memmove
+fts_build -> externalFun_free
+fts_build -> externalFun_strlen
+fts_build -> externalFun_readdir
+fts_build -> externalFun_close
+fts_build -> externalFun___errno_location
+fts_build -> externalFun_closedir
+fts_build -> externalFun_dirfd
+fts_build -> opendirat
+fts_build -> fts_stat
+fts_build -> leave_dir
+fts_build -> enter_dir
+fts_build -> leaf_optimization
+fts_build -> rpl_fcntl
+fts_build -> fts_safe_changedir
+fts_build -> fts_alloc
+fts_build -> fts_palloc
+fts_build -> fts_lfree
+fts_build -> set_stat_type
+fts_build -> fts_set_stat_required
+fts_build -> dirent_inode_sort_may_be_useful
+fts_build -> fts_padjust
+fts_build -> restore_initial_cwd
+fts_build -> fts_sort
+areadlinkat -> careadlinkat
+savedir -> externalFun_free
+savedir -> externalFun___errno_location
+savedir -> externalFun_closedir
+savedir -> opendir_safer
+savedir -> streamsavedir
+extend_buffers -> externalFun_realloc
+extend_buffers -> externalFun___builtin_expect
+extend_buffers -> re_string_realloc_buffers
+extend_buffers -> build_wcs_upper_buffer
+extend_buffers -> build_upper_buffer
+extend_buffers -> build_wcs_buffer
+extend_buffers -> re_string_translate_buffer
+floor_lg -> count_leading_zeros
+floor_lg -> count_leading_zeros_l
+floor_lg -> count_leading_zeros_ll
+__bswap_64 -> __bswap_32
+current_timespec -> gettime
+qcopy_acl -> get_permissions
+qcopy_acl -> set_permissions
+qcopy_acl -> free_permission_context
+randread -> readsource
+randread -> readisaac
+heap_insert -> x2nrealloc
+heap_insert -> heapify_up
+set_tz -> externalFun___errno_location
+set_tz -> externalFun_strcmp
+set_tz -> getenv_TZ
+set_tz -> tzalloc
+set_tz -> change_env
+set_tz -> tzfree
+set_uint32___0 -> externalFun_memcpy
+openat_safer -> externalFun_openat
+openat_safer -> externalFun___builtin_va_end
+openat_safer -> externalFun___builtin_va_arg
+openat_safer -> externalFun___builtin_va_start
+openat_safer -> fd_safer
+change_env -> externalFun_tzset
+change_env -> setenv_TZ
+c_locale -> externalFun_newlocale
+knuth_morris_pratt_multibyte -> externalFun_abort
+knuth_morris_pratt_multibyte -> externalFun_memcmp
+knuth_morris_pratt_multibyte -> externalFun_memset
+knuth_morris_pratt_multibyte -> externalFun___builtin_alloca
+knuth_morris_pratt_multibyte -> mbslen
+knuth_morris_pratt_multibyte -> mmalloca
+knuth_morris_pratt_multibyte -> mbuiter_multi_next
+knuth_morris_pratt_multibyte -> mb_copy
+knuth_morris_pratt_multibyte -> freea
+parse_bracket_symbol -> re_string_fetch_byte_case
+file_name_concat -> mfile_name_concat
+file_name_concat -> xalloc_die
+fts_open -> externalFun_free
+fts_open -> externalFun_strlen
+fts_open -> externalFun_calloc
+fts_open -> externalFun___errno_location
+fts_open -> fts_maxarglen
+fts_open -> fts_palloc
+fts_open -> fts_alloc
+fts_open -> fts_set_stat_required
+fts_open -> fts_stat
+fts_open -> fts_sort
+fts_open -> setup_dir
+fts_open -> diropen
+fts_open -> i_ring_init
+fts_open -> fts_lfree
+map_device -> externalFun_malloc
+map_device -> hash_insert
+map_device -> hash_initialize
+di_set_lookup -> map_device
+di_set_lookup -> map_inode_number
+di_set_lookup -> hash_lookup
+lookup_zone -> externalFun_strcmp
+rpl_futimens -> fdutimens
+shaxxx_stream -> externalFun_free
+shaxxx_stream -> externalFun_ferror_unlocked
+shaxxx_stream -> externalFun_fread_unlocked
+shaxxx_stream -> externalFun_feof_unlocked
+shaxxx_stream -> externalFun_malloc
+shaxxx_stream -> afalg_stream
+shaxxx_stream -> sha256_process_block
+shaxxx_stream -> sha256_process_bytes
+fetch_number -> externalFun___builtin_expect
+fetch_number -> fetch_token
+sha224_buffer -> sha224_init_ctx
+sha224_buffer -> sha256_process_bytes
+sha224_buffer -> sha224_finish_ctx
+rpl_re_search_2 -> re_search_2_stub
+freadptrinc -> externalFun___freadptrinc
+tzfree -> externalFun_free
+create_initial_state -> externalFun_free
+create_initial_state -> externalFun___builtin_expect
+create_initial_state -> re_node_set_init_copy
+create_initial_state -> re_node_set_contains
+create_initial_state -> re_node_set_merge
+create_initial_state -> re_acquire_state_context
+str_iconv -> externalFun_free
+str_iconv -> externalFun_iconv_close
+str_iconv -> externalFun_iconv_open
+str_iconv -> externalFun___errno_location
+str_iconv -> externalFun_strdup
+str_iconv -> c_strcasecmp
+str_iconv -> str_cd_iconv
+strnlen1 -> externalFun_memchr
+safe_hasher -> externalFun_abort
+sparse_free -> hash_free
+openat_proc_name -> externalFun_strcpy
+openat_proc_name -> externalFun_malloc
+openat_proc_name -> externalFun_strlen
+openat_proc_name -> externalFun_close
+openat_proc_name -> externalFun_access
+openat_proc_name -> externalFun_sprintf
+openat_proc_name -> externalFun_open
+heap_free -> externalFun_free
+freea -> externalFun_free
+freea -> externalFun_abort
+free_fail_stack_return -> externalFun_free
+default_block_size -> externalFun_getenv
+randint_choose -> randint_genmax
+fts_palloc -> externalFun_realloc
+fts_palloc -> externalFun___errno_location
+fts_palloc -> externalFun_free
+fdutimensat -> externalFun___errno_location
+fdutimensat -> externalFun_utimensat
+fdutimensat -> rpl_futimens
+get_group_info -> externalFun_malloc
+get_group_info -> externalFun_getgroups
+isapipe -> externalFun_fstat
+rpl_getopt_internal -> _getopt_internal_r
+strcaseeq3 -> c_isupper
+strcaseeq3 -> strcaseeq4
+expand_bkref_cache -> externalFun___builtin_expect
+expand_bkref_cache -> externalFun_free
+expand_bkref_cache -> search_cur_bkref_entry
+expand_bkref_cache -> re_node_set_contains
+expand_bkref_cache -> re_node_set_init_1
+expand_bkref_cache -> check_arrival_expand_ecl
+expand_bkref_cache -> re_node_set_merge
+expand_bkref_cache -> re_node_set_init_copy
+expand_bkref_cache -> re_node_set_insert
+expand_bkref_cache -> re_acquire_state
+set_regs -> externalFun___builtin_expect
+set_regs -> externalFun_free
+set_regs -> externalFun_memcpy
+set_regs -> externalFun___builtin_alloca
+set_regs -> externalFun_memset
+set_regs -> externalFun_malloc
+set_regs -> externalFun___builtin_unreachable
+set_regs -> free_fail_stack_return
+set_regs -> update_regs
+set_regs -> pop_fail_stack
+set_regs -> proceed_next_node
+x2realloc -> x2nrealloc
+find_non_slash -> externalFun_strspn
+update_cur_sifted_state -> externalFun___builtin_expect
+update_cur_sifted_state -> add_epsilon_src_nodes
+update_cur_sifted_state -> check_subexp_limits
+update_cur_sifted_state -> re_acquire_state
+update_cur_sifted_state -> sift_states_bkref
+quotearg -> quotearg_n
+sha512_process_bytes -> externalFun_memcpy
+sha512_process_bytes -> sha512_process_block
+sub_epsilon_src_nodes -> externalFun_free
+sub_epsilon_src_nodes -> externalFun___builtin_expect
+sub_epsilon_src_nodes -> externalFun_memset
+sub_epsilon_src_nodes -> re_node_set_contains
+sub_epsilon_src_nodes -> re_node_set_add_intersect
+sub_epsilon_src_nodes -> re_node_set_remove_at
+check_arrival_expand_ecl_sub -> externalFun___builtin_expect
+check_arrival_expand_ecl_sub -> re_node_set_contains
+check_arrival_expand_ecl_sub -> re_node_set_insert
+check_arrival_expand_ecl_sub -> check_arrival_expand_ecl_sub
+link_nfa_nodes -> externalFun___builtin_unreachable
+link_nfa_nodes -> re_node_set_init_2
+link_nfa_nodes -> re_node_set_init_1
+parse_reg_exp -> externalFun___builtin_expect
+parse_reg_exp -> parse_branch
+parse_reg_exp -> fetch_token
+parse_reg_exp -> postorder
+parse_reg_exp -> create_tree
+sha224_read_ctx -> __bswap_32
+sha224_read_ctx -> set_uint32___1
+sha384_read_ctx -> __bswap_64
+sha384_read_ctx -> set_uint64
+quotearg_colon -> quotearg_char
+mbsstr_trimmed_wordbounded -> externalFun_free
+mbsstr_trimmed_wordbounded -> externalFun_strlen
+mbsstr_trimmed_wordbounded -> externalFun_isalnum
+mbsstr_trimmed_wordbounded -> externalFun_iswalnum
+mbsstr_trimmed_wordbounded -> externalFun_abort
+mbsstr_trimmed_wordbounded -> externalFun_memset
+mbsstr_trimmed_wordbounded -> externalFun___ctype_get_mb_cur_max
+mbsstr_trimmed_wordbounded -> trim2
+mbsstr_trimmed_wordbounded -> mbsstr
+mbsstr_trimmed_wordbounded -> mbuiter_multi_next
+xstrtol_error -> externalFun_abort
+xstrtol_error -> error
+xvasprintf -> externalFun___errno_location
+xvasprintf -> externalFun_vasprintf
+xvasprintf -> xstrcat
+xvasprintf -> xalloc_die
+asnprintf -> externalFun___builtin_va_end
+asnprintf -> externalFun___builtin_va_start
+asnprintf -> vasnprintf
+push_fail_stack -> externalFun_memcpy
+push_fail_stack -> externalFun_malloc
+push_fail_stack -> externalFun_realloc
+push_fail_stack -> re_node_set_init_copy
+base32_encode -> to_uchar___0
+parse_datetime2 -> externalFun_free
+parse_datetime2 -> externalFun_gmtime_r
+parse_datetime2 -> externalFun_fputc
+parse_datetime2 -> externalFun_fprintf
+parse_datetime2 -> externalFun_strcmp
+parse_datetime2 -> externalFun_malloc
+parse_datetime2 -> externalFun_strncmp
+parse_datetime2 -> externalFun_strlen
+parse_datetime2 -> gettime
+parse_datetime2 -> c_isspace
+parse_datetime2 -> tzalloc
+parse_datetime2 -> localtime_rz
+parse_datetime2 -> dbg_printf
+parse_datetime2 -> time_overflow
+parse_datetime2 -> yyparse
+parse_datetime2 -> time_zone_str
+parse_datetime2 -> to_tm_year
+parse_datetime2 -> to_hour
+parse_datetime2 -> debug_strftime
+parse_datetime2 -> mktime_z
+parse_datetime2 -> mktime_ok
+parse_datetime2 -> tzfree
+parse_datetime2 -> debug_mktime_not_ok
+parse_datetime2 -> debug_strfdatetime
+parse_datetime2 -> str_days
+parse_datetime2 -> debug_strfdate
+parse_datetime2 -> tm_year_str
+set_custom_quoting -> externalFun_abort
+streq7 -> streq8
+_obstack_begin_worker -> call_chunkfun
+parse -> externalFun___builtin_expect
+parse -> fetch_token
+parse -> parse_reg_exp
+parse -> create_tree
+version_etc -> externalFun___builtin_va_end
+version_etc -> externalFun___builtin_va_start
+version_etc -> version_etc_va
+fts_read -> externalFun_fchdir
+fts_read -> externalFun_abort
+fts_read -> externalFun_memmove
+fts_read -> externalFun_free
+fts_read -> externalFun_close
+fts_read -> externalFun___errno_location
+fts_read -> fts_stat
+fts_read -> diropen
+fts_read -> fts_lfree
+fts_read -> leave_dir
+fts_read -> fts_safe_changedir
+fts_read -> fts_build
+fts_read -> restore_initial_cwd
+fts_read -> free_dir
+fts_read -> fts_load
+fts_read -> setup_dir
+fts_read -> leaf_optimization
+fts_read -> enter_dir
+fts_read -> cwd_advance_fd
+build_range_exp -> externalFun_free
+build_range_exp -> externalFun_realloc
+build_range_exp -> externalFun_strlen
+build_range_exp -> externalFun___builtin_expect
+build_range_exp -> parse_byte
+build_range_exp -> bitset_set
+save_abbr -> externalFun___errno_location
+save_abbr -> externalFun_strlen
+save_abbr -> externalFun_strcmp
+save_abbr -> extend_abbrs
+save_abbr -> tzalloc
+filesystem_type -> externalFun_free
+filesystem_type -> externalFun_abort
+filesystem_type -> externalFun_malloc
+filesystem_type -> externalFun_fstatfs
+filesystem_type -> hash_initialize
+filesystem_type -> hash_lookup
+filesystem_type -> hash_insert
+exit_failure_callback -> error
+argv_iter_free -> externalFun_free
+randint_all_new -> randread_new
+randint_all_new -> randint_new
+uc_width -> is_cjk_encoding
+sift_states_bkref -> externalFun_free
+sift_states_bkref -> externalFun___builtin_expect
+sift_states_bkref -> search_cur_bkref_entry
+sift_states_bkref -> re_node_set_contains
+sift_states_bkref -> check_dst_limits
+sift_states_bkref -> re_node_set_init_copy
+sift_states_bkref -> re_node_set_insert
+sift_states_bkref -> sift_states_backward
+sift_states_bkref -> merge_state_array
+sift_states_bkref -> re_node_set_remove_at
+xcharalloc -> xmalloc
+xcharalloc -> xnmalloc
+ftoastr -> externalFun_strtof
+ftoastr -> externalFun_snprintf
+mktime_internal -> externalFun___errno_location
+mktime_internal -> leapyear
+mktime_internal -> ydhms_diff
+mktime_internal -> ranged_convert
+mktime_internal -> tm_diff
+mktime_internal -> isdst_differ
+mktime_internal -> convert_time
+opendirat -> externalFun_close
+opendirat -> externalFun___errno_location
+opendirat -> externalFun_fdopendir
+opendirat -> openat_safer
+xprintf -> externalFun___builtin_va_end
+xprintf -> externalFun___builtin_va_start
+xprintf -> xvprintf
+free_charset -> externalFun_free
+glthread_rwlock_destroy_multithreaded -> externalFun_pthread_cond_destroy
+glthread_rwlock_destroy_multithreaded -> externalFun_pthread_mutex_destroy
+savewd_finish -> externalFun___assert_fail
+savewd_finish -> externalFun_close
+print_unicode_char -> unicode_to_mb
+re_compile_internal -> externalFun_realloc
+re_compile_internal -> externalFun___builtin_expect
+re_compile_internal -> init_dfa
+re_compile_internal -> free_dfa_content
+re_compile_internal -> re_string_construct
+re_compile_internal -> free_workarea_compile
+re_compile_internal -> re_string_destruct
+re_compile_internal -> parse
+re_compile_internal -> analyze
+re_compile_internal -> optimize_utf8
+re_compile_internal -> create_initial_state
+humblock -> externalFun_getenv
+humblock -> default_block_size
+humblock -> argmatch
+humblock -> xstrtoumax
+sift_states_backward -> externalFun_free
+sift_states_backward -> externalFun_memset
+sift_states_backward -> externalFun___builtin_expect
+sift_states_backward -> externalFun___builtin_unreachable
+sift_states_backward -> re_node_set_init_1
+sift_states_backward -> update_cur_sifted_state
+sift_states_backward -> build_sifted_states
+get_root_dev_ino -> externalFun_lstat
+xrealloc -> externalFun_realloc
+xrealloc -> externalFun_free
+xrealloc -> xalloc_die
+xfprintf -> externalFun___builtin_va_end
+xfprintf -> externalFun___builtin_va_start
+xfprintf -> xvfprintf
+num_processors_ignoring_omp -> externalFun_sysconf
+num_processors_ignoring_omp -> num_processors_via_affinity_mask
+chdir_long -> externalFun_memrchr
+chdir_long -> externalFun_memchr
+chdir_long -> externalFun_strspn
+chdir_long -> externalFun___assert_fail
+chdir_long -> externalFun_strlen
+chdir_long -> externalFun___errno_location
+chdir_long -> externalFun_chdir
+chdir_long -> cdb_init
+chdir_long -> cdb_advance_fd
+chdir_long -> find_non_slash
+chdir_long -> cdb_fchdir
+chdir_long -> cdb_free
+base_name -> last_component
+base_name -> base_len
+base_name -> xstrndup
+randread_error -> externalFun_abort
+randread_error -> externalFun___errno_location
+randread_error -> quote
+randread_error -> error
+u8_uctomb -> u8_uctomb_aux
+free_mount_entry -> externalFun_free
+freebuffer -> externalFun_free
+settime -> externalFun_settimeofday
+settime -> externalFun___errno_location
+settime -> externalFun_clock_settime
+unicode_to_mb -> externalFun_iconv
+unicode_to_mb -> externalFun_iconv_open
+unicode_to_mb -> externalFun_strcmp
+unicode_to_mb -> locale_charset
+unicode_to_mb -> u8_uctomb
+fts_safe_changedir -> externalFun_fchdir
+fts_safe_changedir -> externalFun___errno_location
+fts_safe_changedir -> externalFun_fstat
+fts_safe_changedir -> externalFun_close
+fts_safe_changedir -> externalFun_strcmp
+fts_safe_changedir -> i_ring_empty
+fts_safe_changedir -> i_ring_pop
+fts_safe_changedir -> diropen
+fts_safe_changedir -> cwd_advance_fd
+xmem_cd_iconv -> externalFun___errno_location
+xmem_cd_iconv -> mem_cd_iconv
+xmem_cd_iconv -> xalloc_die
+record_file -> xmalloc
+record_file -> xstrdup
+record_file -> hash_insert
+record_file -> xalloc_die
+record_file -> triple_free
+quotearg_char -> quotearg_char_mem
+rpl_regcomp -> externalFun_free
+rpl_regcomp -> externalFun_strlen
+rpl_regcomp -> externalFun___builtin_expect
+rpl_regcomp -> externalFun_malloc
+rpl_regcomp -> re_compile_internal
+rpl_regcomp -> rpl_re_compile_fastmap
+decode_8 -> isbase32
+decode_8 -> to_uchar___0
+fd_safer_flag -> externalFun_close
+fd_safer_flag -> externalFun___errno_location
+fd_safer_flag -> dup_safer_flag
+xcalloc -> externalFun_calloc
+xcalloc -> xalloc_die
+mktime_z -> externalFun_localtime_r
+mktime_z -> externalFun_mktime
+mktime_z -> externalFun_timegm
+mktime_z -> set_tz
+mktime_z -> equal_tm
+mktime_z -> save_abbr
+mktime_z -> revert_tz
+sha256_conclude_ctx -> externalFun_memcpy
+sha256_conclude_ctx -> __bswap_32
+sha256_conclude_ctx -> set_uint32___1
+sha256_conclude_ctx -> sha256_process_block
+yyparse -> externalFun_free
+yyparse -> externalFun___builtin_memcpy
+yyparse -> externalFun_malloc
+yyparse -> yylex
+yyparse -> debug_print_current_time
+yyparse -> debug_print_relative_time
+yyparse -> set_hhmmss
+yyparse -> time_zone_hhmm
+yyparse -> apply_relative_time
+yyparse -> dbg_printf
+yyparse -> time_overflow
+yyparse -> digits_to_date_time
+yyparse -> yyerror
+yyparse -> yydestruct
+open_safer -> externalFun_open
+open_safer -> externalFun___builtin_va_end
+open_safer -> externalFun___builtin_va_arg
+open_safer -> externalFun___builtin_va_start
+open_safer -> fd_safer
+clone_quoting_options -> externalFun___errno_location
+clone_quoting_options -> xmemdup
+argmatch_invalid -> quote_n
+argmatch_invalid -> quotearg_n_style
+argmatch_invalid -> error
+sha512_conclude_ctx -> externalFun_memcpy
+sha512_conclude_ctx -> __bswap_64
+sha512_conclude_ctx -> set_uint64
+sha512_conclude_ctx -> sha512_process_block
+read_binary_file -> internal_read_file
+hash_print_statistics -> externalFun_fprintf
+hash_print_statistics -> hash_get_n_entries
+hash_print_statistics -> hash_get_n_buckets
+hash_print_statistics -> hash_get_n_buckets_used
+hash_print_statistics -> hash_get_max_bucket_length
+sha1_read_ctx -> __bswap_32
+sha1_read_ctx -> set_uint32___0
+fwrite_uppcase -> externalFun_fputc
+fwrite_uppcase -> externalFun_toupper
+savewd_restore -> externalFun_raise
+savewd_restore -> externalFun___assert_fail
+savewd_restore -> externalFun_waitpid
+savewd_restore -> externalFun__exit
+savewd_restore -> externalFun_close
+savewd_restore -> externalFun___errno_location
+savewd_restore -> externalFun_fchdir
+lutimens -> externalFun___errno_location
+lutimens -> externalFun_utimensat
+lutimens -> externalFun_lstat
+lutimens -> validate_timespec
+lutimens -> get_stat_atime
+lutimens -> get_stat_mtime
+lutimens -> update_timespec
+lutimens -> fdutimens
+exclude_patopts -> rpl_regexec
+exclude_patopts -> exclude_fnmatch
+yesno -> externalFun_getchar
+wc_truncate -> externalFun_wcwidth
+quotearg_style_mem -> quotearg_n_style_mem
+xgethostname -> externalFun_realloc
+xgethostname -> externalFun_strlen
+xgethostname -> externalFun_free
+xgethostname -> externalFun_gethostname
+xgethostname -> externalFun___errno_location
+xgethostname -> x2realloc
+build_charclass_op -> externalFun_free
+build_charclass_op -> externalFun___builtin_expect
+build_charclass_op -> externalFun_calloc
+build_charclass_op -> build_charclass
+build_charclass_op -> free_charset
+build_charclass_op -> bitset_set
+build_charclass_op -> bitset_not
+build_charclass_op -> bitset_mask
+build_charclass_op -> create_token_tree
+build_charclass_op -> create_tree
+md5_process_bytes -> externalFun_memcpy
+md5_process_bytes -> md5_process_block
+parse_gnu_standard_options_only -> externalFun_exit
+parse_gnu_standard_options_only -> externalFun___builtin_va_start
+parse_gnu_standard_options_only -> rpl_getopt_long
+parse_gnu_standard_options_only -> version_etc_va
+rpl_re_match -> re_search_stub
+fd_reopen -> externalFun_close
+fd_reopen -> externalFun___errno_location
+fd_reopen -> externalFun_dup2
+fd_reopen -> externalFun_open
+dup_safer -> rpl_fcntl
+readlinebuffer -> readlinebuffer_delim
+version_etc_arn -> externalFun_fputs_unlocked
+version_etc_arn -> externalFun_fprintf
+tzalloc -> externalFun_malloc
+tzalloc -> externalFun_strlen
+tzalloc -> extend_abbrs
+hash_get_first -> externalFun_abort
+gettext_quote -> locale_charset
+gettext_quote -> strcaseeq0
+xstrtoul -> externalFun_strchr
+xstrtoul -> externalFun_strtoul
+xstrtoul -> externalFun___errno_location
+xstrtoul -> externalFun___assert_fail
+xstrtoul -> __isspace
+xstrtoul -> bkm_scale___1
+xstrtoul -> bkm_scale_by_power___1
+fts_set_stat_required -> externalFun_abort
+hard_locale -> externalFun_strcmp
+hard_locale -> setlocale_null_r
+areadlink_with_size -> externalFun_realloc
+areadlink_with_size -> externalFun_memcpy
+areadlink_with_size -> externalFun_free
+areadlink_with_size -> externalFun___errno_location
+areadlink_with_size -> externalFun_readlink
+areadlink_with_size -> externalFun_malloc
+mkancesdirs -> externalFun___errno_location
+mkancesdirs -> savewd_chdir
+tm_year_str -> externalFun_sprintf
+tm_year_str -> externalFun_abs
+streq5 -> streq6
+check_halt_state_context -> externalFun___builtin_unreachable
+check_halt_state_context -> re_string_context_at
+check_halt_state_context -> check_halt_node_context
+sha256_process_bytes -> externalFun_memcpy
+sha256_process_bytes -> sha256_process_block
+getgidbyname -> externalFun_strcpy
+getgidbyname -> externalFun_strlen
+getgidbyname -> externalFun_getgrnam
+getgidbyname -> externalFun_strcmp
+getgidbyname -> xmalloc
+numcompare -> fraccompare
+calc_inveclosure -> externalFun___builtin_expect
+calc_inveclosure -> externalFun_memset
+calc_inveclosure -> re_node_set_insert_last
+string_compare_ci -> mbscasecmp
+creat_safer -> externalFun_creat
+creat_safer -> fd_safer
+streq2 -> streq3
+terminate_at_blank -> externalFun_strchr
+dtotimespec -> make_timespec
+version_etc_ar -> version_etc_arn
+savewd_chdir -> externalFun_close
+savewd_chdir -> externalFun___assert_fail
+savewd_chdir -> externalFun_fchdir
+savewd_chdir -> externalFun_chdir
+savewd_chdir -> externalFun___errno_location
+savewd_chdir -> externalFun_open
+savewd_chdir -> savewd_save
+streq6 -> streq7
+sha512_finish_ctx -> sha512_conclude_ctx
+sha512_finish_ctx -> sha512_read_ctx
+is_open -> externalFun_fcntl
+quotearg_buffer_restyled -> externalFun_mbsinit
+quotearg_buffer_restyled -> externalFun_iswprint
+quotearg_buffer_restyled -> externalFun_mbrtowc
+quotearg_buffer_restyled -> externalFun_memset
+quotearg_buffer_restyled -> externalFun_memcmp
+quotearg_buffer_restyled -> externalFun_abort
+quotearg_buffer_restyled -> externalFun_strlen
+quotearg_buffer_restyled -> externalFun___ctype_get_mb_cur_max
+quotearg_buffer_restyled -> gettext_quote
+quotearg_buffer_restyled -> quotearg_buffer_restyled
+try_tempname -> try_tempname_len
+re_node_set_insert -> externalFun_realloc
+re_node_set_insert -> externalFun___builtin_expect
+re_node_set_insert -> re_node_set_init_1
+dir_len -> last_component
+quotearg_n_style -> quoting_options_from_style
+quotearg_n_style -> quotearg_n_options
+quote_mem -> quote_n_mem
+randint_genmax -> shift_left
+randint_genmax -> randread
+bitset_empty -> externalFun_memset
+calc_eclosure -> externalFun_free
+calc_eclosure -> externalFun___builtin_expect
+calc_eclosure -> externalFun___builtin_unreachable
+calc_eclosure -> calc_eclosure_iter
+mkstemp_safer -> externalFun_mkstemp
+mkstemp_safer -> fd_safer
+rpl_fnmatch -> externalFun_strlen
+rpl_fnmatch -> externalFun_free
+rpl_fnmatch -> externalFun_malloc
+rpl_fnmatch -> externalFun___builtin_alloca
+rpl_fnmatch -> externalFun___errno_location
+rpl_fnmatch -> externalFun___assert_fail
+rpl_fnmatch -> externalFun_mbsinit
+rpl_fnmatch -> externalFun_mbsrtowcs
+rpl_fnmatch -> externalFun_memset
+rpl_fnmatch -> externalFun___builtin_expect
+rpl_fnmatch -> externalFun___ctype_get_mb_cur_max
+rpl_fnmatch -> internal_fnwmatch
+rpl_fnmatch -> internal_fnmatch
+fts_alloc -> externalFun_memcpy
+fts_alloc -> externalFun_malloc
+areadlink -> careadlinkat
+isaac_refill -> ind
+isaac_refill -> just
+xstrcat -> externalFun_memcpy
+xstrcat -> externalFun___errno_location
+xstrcat -> externalFun___builtin_va_end
+xstrcat -> externalFun_strlen
+xstrcat -> externalFun___builtin_va_arg
+xstrcat -> externalFun___builtin_va_copy
+xstrcat -> xsum
+xstrcat -> xmalloc
+xstrcat -> xnmalloc
+create_cd_newstate -> externalFun_malloc
+create_cd_newstate -> externalFun_free
+create_cd_newstate -> externalFun___builtin_expect
+create_cd_newstate -> externalFun_calloc
+create_cd_newstate -> re_node_set_init_copy
+create_cd_newstate -> free_state
+create_cd_newstate -> re_node_set_remove_at
+create_cd_newstate -> register_state
+collate_error -> error
+collate_error -> quotearg_n_style_mem
+allocate_entry -> externalFun_malloc
+realloc_groupbuf -> externalFun_realloc
+realloc_groupbuf -> externalFun___errno_location
+build_equiv_class -> externalFun___builtin_expect
+build_equiv_class -> externalFun_strlen
+build_equiv_class -> bitset_set
+rpl_re_search -> re_search_stub
+fts_sort -> externalFun_qsort
+fts_sort -> externalFun_realloc
+fts_sort -> externalFun_free
+rpl_getopt_long_only -> rpl_getopt_internal
+isbase32 -> to_uchar___0
+di_set_alloc -> externalFun_free
+di_set_alloc -> externalFun_malloc
+di_set_alloc -> hash_initialize
+posix2_version -> externalFun_strtol
+posix2_version -> externalFun_getenv
+savewd_save -> externalFun___assert_fail
+savewd_save -> externalFun_fork
+savewd_save -> externalFun___errno_location
+savewd_save -> open_safer
+sha1_process_bytes -> externalFun_memcpy
+sha1_process_bytes -> sha1_process_block
+error -> externalFun___builtin_va_end
+error -> externalFun___builtin_va_start
+error -> externalFun_fprintf
+error -> flush_stdout
+error -> getprogname
+error -> error_tail
+hash_get_next -> safe_hasher
+strnumcmp -> numcompare
+_getopt_long_r -> _getopt_internal_r
+copy_acl -> externalFun___errno_location
+copy_acl -> qcopy_acl
+copy_acl -> quote
+copy_acl -> error
+fts_stat -> externalFun_memset
+fts_stat -> externalFun_fstatat
+fts_stat -> externalFun_lstat
+fts_stat -> externalFun___errno_location
+fts_stat -> externalFun_stat
+mbuiter_multi_next -> externalFun_strlen
+mbuiter_multi_next -> externalFun_mbrtowc
+mbuiter_multi_next -> externalFun___ctype_get_mb_cur_max
+mbuiter_multi_next -> externalFun___assert_fail
+mbuiter_multi_next -> externalFun_mbsinit
+mbuiter_multi_next -> is_basic
+mbuiter_multi_next -> strnlen1
+parse_sub_exp -> externalFun___builtin_expect
+parse_sub_exp -> fetch_token
+parse_sub_exp -> parse_reg_exp
+parse_sub_exp -> postorder
+parse_sub_exp -> create_tree
+protect_fd -> externalFun___errno_location
+protect_fd -> externalFun_close
+protect_fd -> externalFun_open
+triple_hash -> hash_pjw
+cycle_check -> externalFun___assert_fail
+cycle_check -> is_zero_or_power_of_two
+parse_long_options -> externalFun_exit
+parse_long_options -> externalFun___builtin_va_start
+parse_long_options -> rpl_getopt_long
+parse_long_options -> version_etc_va
+readsource -> externalFun_ferror_unlocked
+readsource -> externalFun___errno_location
+readsource -> externalFun_fread_unlocked
+getfilecon -> externalFun___errno_location
+update_timespec -> get_stat_atime
+update_timespec -> gettime
+update_timespec -> get_stat_mtime
+re_string_fetch_byte_case -> externalFun___builtin_expect
+re_string_fetch_byte_case -> re_string_char_size_at
+same_nameat -> externalFun_free
+same_nameat -> externalFun___errno_location
+same_nameat -> externalFun_fstatat
+same_nameat -> externalFun_memcmp
+same_nameat -> last_component
+same_nameat -> base_len
+same_nameat -> dir_name
+same_nameat -> error
+lower_subexps -> lower_subexp
+md5_buffer -> md5_init_ctx
+md5_buffer -> md5_process_bytes
+md5_buffer -> md5_finish_ctx
+readtokens0_free -> _obstack_free
+pipe_safer -> externalFun_close
+pipe_safer -> externalFun___errno_location
+pipe_safer -> externalFun_pipe
+pipe_safer -> fd_safer
+read_file_system_list -> externalFun_endmntent
+read_file_system_list -> externalFun_hasmntopt
+read_file_system_list -> externalFun_getmntent
+read_file_system_list -> externalFun_setmntent
+read_file_system_list -> externalFun_fclose
+read_file_system_list -> externalFun___errno_location
+read_file_system_list -> externalFun_ferror_unlocked
+read_file_system_list -> externalFun_free
+read_file_system_list -> externalFun_strchr
+read_file_system_list -> externalFun_strcmp
+read_file_system_list -> externalFun_strstr
+read_file_system_list -> externalFun_sscanf
+read_file_system_list -> externalFun_getline
+read_file_system_list -> externalFun_fopen
+read_file_system_list -> terminate_at_blank
+read_file_system_list -> unescape_tab
+read_file_system_list -> xmalloc
+read_file_system_list -> xstrdup
+read_file_system_list -> dev_from_mount_options
+read_file_system_list -> free_mount_entry
+save_cwd -> open_safer
+save_cwd -> rpl_getcwd
+transit_state -> externalFun___builtin_expect
+transit_state -> transit_state_mb
+transit_state -> re_string_context_at
+transit_state -> build_trtable
+re_string_construct -> externalFun___builtin_expect
+re_string_construct -> externalFun_memset
+re_string_construct -> re_string_construct_common
+re_string_construct -> re_string_realloc_buffers
+re_string_construct -> build_wcs_upper_buffer
+re_string_construct -> build_upper_buffer
+re_string_construct -> build_wcs_buffer
+re_string_construct -> re_string_translate_buffer
+get_4 -> externalFun_memchr
+strcaseeq0 -> c_isupper
+strcaseeq0 -> strcaseeq1
+quotearg_colon_mem -> quotearg_char_mem
+check_x_suffix -> externalFun_strspn
+check_dst_limits -> search_cur_bkref_entry
+check_dst_limits -> check_dst_limits_calc_pos
+save_token -> externalFun_memcpy
+save_token -> _obstack_newchunk
+extend_abbrs -> externalFun_memcpy
+xnrealloc -> xalloc_die
+xnrealloc -> xrealloc
+re_node_set_init_2 -> externalFun___builtin_expect
+re_node_set_init_2 -> externalFun_malloc
+base32_decode_alloc_ctx -> externalFun_free
+base32_decode_alloc_ctx -> externalFun_malloc
+base32_decode_alloc_ctx -> base32_decode_ctx
+wc_ensure_printable -> externalFun_iswprint
+close_stream -> externalFun___errno_location
+close_stream -> externalFun_fclose
+close_stream -> externalFun_ferror_unlocked
+close_stream -> externalFun___fpending
+hash_initialize -> externalFun_free
+hash_initialize -> externalFun_calloc
+hash_initialize -> externalFun_malloc
+hash_initialize -> check_tuning
+hash_initialize -> compute_bucket_size
+version_etc_va -> externalFun___builtin_va_arg
+version_etc_va -> version_etc_arn
+base64_decode_alloc_ctx -> externalFun_free
+base64_decode_alloc_ctx -> externalFun_malloc
+base64_decode_alloc_ctx -> base64_decode_ctx
+quotearg_char_mem -> set_char_quoting
+quotearg_char_mem -> quotearg_n_options
+verrevcmp -> c_isdigit
+verrevcmp -> order
+mode_create_from_ref -> externalFun_stat
+mode_create_from_ref -> make_node_op_equals
+fread_file -> externalFun_free
+fread_file -> externalFun_realloc
+fread_file -> externalFun_ferror
+fread_file -> externalFun_fread
+fread_file -> externalFun_malloc
+fread_file -> externalFun___errno_location
+fread_file -> externalFun_ftello
+fread_file -> externalFun_fstat
+fread_file -> externalFun_fileno
+mmalloca -> externalFun_malloc
+debug_strfdate -> externalFun_snprintf
+debug_strfdate -> tm_year_str
+str_cd_iconv -> externalFun___errno_location
+str_cd_iconv -> externalFun_free
+str_cd_iconv -> externalFun_malloc
+str_cd_iconv -> externalFun_realloc
+str_cd_iconv -> externalFun_abort
+str_cd_iconv -> externalFun_strlen
+str_cd_iconv -> mem_cd_iconv
+mem_cd_iconv -> externalFun_free
+mem_cd_iconv -> externalFun_abort
+mem_cd_iconv -> externalFun_malloc
+mem_cd_iconv -> externalFun___errno_location
+mem_cd_iconv -> externalFun_iconv
+canonicalize_filename_mode -> externalFun_free
+canonicalize_filename_mode -> externalFun_memmove
+canonicalize_filename_mode -> externalFun_strlen
+canonicalize_filename_mode -> externalFun_strspn
+canonicalize_filename_mode -> externalFun_lstat
+canonicalize_filename_mode -> externalFun_stat
+canonicalize_filename_mode -> externalFun_strchr
+canonicalize_filename_mode -> externalFun_memcpy
+canonicalize_filename_mode -> externalFun___errno_location
+canonicalize_filename_mode -> xmalloc
+canonicalize_filename_mode -> xgetcwd
+canonicalize_filename_mode -> xrealloc
+canonicalize_filename_mode -> seen_triple
+canonicalize_filename_mode -> areadlink_with_size
+canonicalize_filename_mode -> hash_free
+make_node_op_equals -> xmalloc
+quotearg_n_style_colon -> quoting_options_from_style
+quotearg_n_style_colon -> set_char_quoting
+quotearg_n_style_colon -> quotearg_n_options
+duplicate_node -> externalFun___builtin_expect
+duplicate_node -> re_dfa_add_node
+x2nrealloc -> xalloc_die
+x2nrealloc -> xrealloc
+xmemcoll0 -> externalFun___errno_location
+xmemcoll0 -> memcoll0
+xmemcoll0 -> collate_error
+di_ent_free -> externalFun_free
+di_ent_free -> hash_free
+str2signum -> externalFun_strncmp
+str2signum -> externalFun___libc_current_sigrtmax
+str2signum -> externalFun___libc_current_sigrtmin
+str2signum -> externalFun_strcmp
+str2signum -> externalFun_strtol
+preorder -> externalFun___builtin_expect
+parse_branch -> externalFun___builtin_expect
+parse_branch -> parse_expression
+parse_branch -> postorder
+parse_branch -> create_tree
+printf_parse -> externalFun___errno_location
+printf_parse -> externalFun_free
+printf_parse -> externalFun_memcpy
+printf_parse -> externalFun_malloc
+printf_parse -> externalFun_realloc
+printf_parse -> xsum
+printf_frexpl -> externalFun_ldexpl
+printf_frexpl -> externalFun_frexpl
+check_arrival -> externalFun_free
+check_arrival -> externalFun_memset
+check_arrival -> externalFun_realloc
+check_arrival -> externalFun___builtin_expect
+check_arrival -> re_string_context_at
+check_arrival -> re_node_set_init_1
+check_arrival -> check_arrival_expand_ecl
+check_arrival -> re_node_set_init_copy
+check_arrival -> expand_bkref_cache
+check_arrival -> re_acquire_state_context
+check_arrival -> re_node_set_merge
+check_arrival -> check_arrival_add_next_nodes
+check_arrival -> re_node_set_contains
+numbered_backup -> externalFun_realloc
+numbered_backup -> externalFun_memcmp
+numbered_backup -> externalFun_strlen
+numbered_backup -> externalFun_readdir
+numbered_backup -> externalFun___errno_location
+numbered_backup -> externalFun_strcpy
+numbered_backup -> externalFun_memcpy
+numbered_backup -> externalFun_rewinddir
+numbered_backup -> base_len
+numbered_backup -> opendirat
+set_uint32 -> externalFun_memcpy
+unescape_tab -> externalFun_strlen
+quote_n_mem -> quotearg_n_options
+build_trtable -> externalFun_calloc
+build_trtable -> externalFun_free
+build_trtable -> externalFun___builtin_expect
+build_trtable -> externalFun_malloc
+build_trtable -> externalFun___builtin_alloca
+build_trtable -> group_nodes_into_DFAstates
+build_trtable -> re_node_set_alloc
+build_trtable -> bitset_empty
+build_trtable -> re_node_set_merge
+build_trtable -> re_acquire_state_context
+build_trtable -> bitset_merge
+build_trtable -> bitset_contain
+parse_datetime -> externalFun_getenv
+parse_datetime -> tzalloc
+parse_datetime -> parse_datetime2
+parse_datetime -> tzfree
+re_dfa_add_node -> externalFun_memset
+re_dfa_add_node -> externalFun_free
+re_dfa_add_node -> externalFun_realloc
+re_dfa_add_node -> externalFun___builtin_expect
+check_dst_limits_calc_pos -> check_dst_limits_calc_pos_1
+order -> c_isdigit
+order -> c_isalpha
+memcpy_uppcase -> externalFun_toupper
+__strftime_internal___0 -> externalFun_strlen
+__strftime_internal___0 -> externalFun_memcpy
+__strftime_internal___0 -> externalFun_strftime
+__strftime_internal___0 -> externalFun_memset
+__strftime_internal___0 -> __strftime_internal___0
+__strftime_internal___0 -> memcpy_lowcase
+__strftime_internal___0 -> memcpy_uppcase
+__strftime_internal___0 -> mktime_z
+__strftime_internal___0 -> iso_week_days
+create_tree -> create_token_tree
+quotearg_mem -> quotearg_n_mem
+lower_subexp -> externalFun___builtin_expect
+lower_subexp -> create_tree
+match_ctx_add_subtop -> externalFun_calloc
+match_ctx_add_subtop -> externalFun_realloc
+match_ctx_add_subtop -> externalFun___builtin_expect
+match_ctx_add_subtop -> externalFun___builtin_unreachable
+glthread_rwlock_init_multithreaded -> externalFun_pthread_cond_init
+glthread_rwlock_init_multithreaded -> externalFun_pthread_mutex_init
+print_and_abort -> externalFun_exit
+print_and_abort -> externalFun_fprintf
+c_strncasecmp -> c_tolower
+sha256_read_ctx -> __bswap_32
+sha256_read_ctx -> set_uint32___1
+setlocale_null_r -> setlocale_null_unlocked
+flush_stdout -> externalFun_fflush_unlocked
+flush_stdout -> is_open
+check_dst_limits_calc_pos_1 -> check_dst_limits_calc_pos_1
+gen_tempname_len -> externalFun_abort
+gen_tempname_len -> externalFun___assert_fail
+gen_tempname_len -> try_tempname_len
+match_ctx_add_sublast -> externalFun_calloc
+match_ctx_add_sublast -> externalFun_realloc
+match_ctx_add_sublast -> externalFun___builtin_expect
+call_fclose -> externalFun_fclose
+utimens -> fdutimens
+ino_map_insert -> externalFun_malloc
+ino_map_insert -> hash_insert
+strcaseeq4 -> c_isupper
+strcaseeq4 -> strcaseeq5
+set_uint64 -> externalFun_memcpy
+debug_strftime -> externalFun_snprintf
+close_stdout -> externalFun__exit
+close_stdout -> externalFun___errno_location
+close_stdout -> close_stream
+close_stdout -> quotearg_colon
+close_stdout -> error
+full_write -> externalFun___errno_location
+full_write -> safe_write
+parse_byte -> externalFun_btowc
+check_matching -> externalFun___builtin_unreachable
+check_matching -> externalFun___builtin_expect
+check_matching -> acquire_init_state_context
+check_matching -> check_subexp_matching_top
+check_matching -> transit_state_bkref
+check_matching -> check_halt_state_context
+check_matching -> extend_buffers
+check_matching -> transit_state
+check_matching -> merge_state_with_log
+check_matching -> find_recover_state
+acquire_init_state_context -> re_string_context_at
+acquire_init_state_context -> re_acquire_state_context
+add_exclude_fp -> externalFun___errno_location
+add_exclude_fp -> externalFun_ferror_unlocked
+add_exclude_fp -> externalFun_getc_unlocked
+add_exclude_fp -> x2realloc
+add_exclude_fp -> xrealloc
+add_exclude_fp -> exclude_add_pattern_buffer
+add_exclude_fp -> __isspace
+is_char_class -> externalFun_wctype
+safe_write -> externalFun___errno_location
+safe_write -> externalFun_write
+__argmatch_die -> usage
+mbsalign -> externalFun_free
+mbsalign -> externalFun_mempcpy
+mbsalign -> externalFun_wcstombs
+mbsalign -> externalFun_wcswidth
+mbsalign -> externalFun_malloc
+mbsalign -> externalFun_mbstowcs
+mbsalign -> externalFun___ctype_get_mb_cur_max
+mbsalign -> externalFun_strlen
+mbsalign -> wc_ensure_printable
+mbsalign -> wc_truncate
+mbsalign -> mbs_align_pad
+sha512_process_block -> __bswap_64
+string_hasher -> hash_string
+string_compare -> externalFun_strcmp
+gethrxtime -> externalFun_clock_gettime
+gethrxtime -> xtime_make
+gethrxtime -> gettime
+cdb_fchdir -> externalFun_fchdir
+check_subexp_limits -> externalFun___builtin_expect
+check_subexp_limits -> sub_epsilon_src_nodes
+check_subexp_limits -> re_node_set_contains
+strcaseeq7 -> c_isupper
+strcaseeq7 -> strcaseeq8
+sha256_buffer -> sha256_init_ctx
+sha256_buffer -> sha256_process_bytes
+sha256_buffer -> sha256_finish_ctx
+set_permissions -> externalFun___errno_location
+set_permissions -> chmod_or_fchmod
+proper_name_utf8 -> externalFun_sprintf
+proper_name_utf8 -> externalFun_strlen
+proper_name_utf8 -> externalFun_free
+proper_name_utf8 -> externalFun_strcmp
+proper_name_utf8 -> locale_charset
+proper_name_utf8 -> c_strcasecmp
+proper_name_utf8 -> xstr_iconv
+proper_name_utf8 -> mbsstr_trimmed_wordbounded
+proper_name_utf8 -> xmalloc
+proper_name_utf8 -> xnmalloc
+fts_children -> externalFun_close
+fts_children -> externalFun_fchdir
+fts_children -> externalFun___errno_location
+fts_children -> fts_lfree
+fts_children -> fts_build
+fts_children -> diropen
+fts_children -> cwd_advance_fd
+getugroups -> externalFun_endgrent
+getugroups -> externalFun_strcmp
+getugroups -> externalFun_getgrent
+getugroups -> externalFun___errno_location
+getugroups -> externalFun_setgrent
+lgetfileconat -> externalFun_fchdir
+lgetfileconat -> externalFun_free
+lgetfileconat -> externalFun___errno_location
+lgetfileconat -> getfilecon
+lgetfileconat -> openat_proc_name
+lgetfileconat -> save_cwd
+lgetfileconat -> openat_save_fail
+lgetfileconat -> free_cwd
+lgetfileconat -> restore_cwd
+lgetfileconat -> openat_restore_fail
+set_uint32___1 -> externalFun_memcpy
+getndelim2 -> externalFun_memcpy
+getndelim2 -> externalFun_realloc
+getndelim2 -> externalFun_getc_unlocked
+getndelim2 -> externalFun___freadptr
+getndelim2 -> externalFun_malloc
+getndelim2 -> memchr2
+getndelim2 -> freadseek
+memcoll -> externalFun___errno_location
+memcoll -> externalFun_memcmp
+memcoll -> strcoll_loop
+restore_initial_cwd -> externalFun_fchdir
+restore_initial_cwd -> cwd_advance_fd
+restore_initial_cwd -> fd_ring_clear
+rpl_nl_langinfo -> externalFun_nl_langinfo
+sift_ctx_init -> externalFun_memset
+randint_new -> xmalloc
+mbsstr -> externalFun_strlen
+mbsstr -> externalFun_strnlen
+mbsstr -> externalFun_abort
+mbsstr -> externalFun_memcpy
+mbsstr -> externalFun_memcmp
+mbsstr -> externalFun_memset
+mbsstr -> externalFun___ctype_get_mb_cur_max
+mbsstr -> mbuiter_multi_next
+mbsstr -> knuth_morris_pratt_multibyte
+mbsstr -> knuth_morris_pratt
+new_exclude_segment -> xzalloc
+new_exclude_segment -> hash_initialize
+strcaseeq5 -> c_isupper
+strcaseeq5 -> strcaseeq6
+rpl_regerror -> externalFun_memcpy
+rpl_regerror -> externalFun_strlen
+rpl_regerror -> externalFun_abort
+rpl_regerror -> externalFun___builtin_expect
+md5_finish_ctx -> externalFun_memcpy
+md5_finish_ctx -> md5_process_block
+md5_finish_ctx -> md5_read_ctx
+sha384_buffer -> sha384_init_ctx
+sha384_buffer -> sha512_process_bytes
+sha384_buffer -> sha384_finish_ctx
+ldtoastr -> externalFun_strtold
+ldtoastr -> externalFun_snprintf
+quotearg_buffer -> externalFun___errno_location
+quotearg_buffer -> quotearg_buffer_restyled
+fts_load -> externalFun_strlen
+fts_load -> externalFun_strrchr
+fts_load -> externalFun_memmove
+create_token_tree -> externalFun_malloc
+create_token_tree -> externalFun___builtin_expect
+xsum4 -> xsum
+memcoll0 -> externalFun___errno_location
+memcoll0 -> externalFun_memcmp
+memcoll0 -> strcoll_loop
+fts_maxarglen -> externalFun_strlen
+mpsort_with_tmp -> externalFun_memcpy
+mpsort_with_tmp -> mpsort_with_tmp
+mpsort_with_tmp -> mpsort_into_tmp
+optimize_utf8 -> externalFun_abort
+sha384_finish_ctx -> sha512_conclude_ctx
+sha384_finish_ctx -> sha384_read_ctx
+restore_cwd -> externalFun_fchdir
+restore_cwd -> chdir_long
+mgetgroups -> externalFun_getgroups
+mgetgroups -> externalFun_free
+mgetgroups -> externalFun___errno_location
+mgetgroups -> externalFun_getgrouplist
+mgetgroups -> realloc_groupbuf
+mgetgroups -> getugroups
+str_days -> externalFun_snprintf
+mkostemp_safer -> externalFun_mkostemp
+mkostemp_safer -> fd_safer_flag
+c_strtold -> externalFun_abort
+c_strtold -> externalFun___errno_location
+c_strtold -> externalFun_strtold
+c_strtold -> externalFun_uselocale
+c_strtold -> c_locale___0
+md5_stream -> externalFun_free
+md5_stream -> externalFun_ferror_unlocked
+md5_stream -> externalFun_fread_unlocked
+md5_stream -> externalFun_feof_unlocked
+md5_stream -> externalFun_malloc
+md5_stream -> afalg_stream
+md5_stream -> md5_init_ctx
+md5_stream -> md5_process_block
+md5_stream -> md5_process_bytes
+md5_stream -> md5_finish_ctx
+argmatch_valid -> externalFun_putc_unlocked
+argmatch_valid -> externalFun_memcmp
+argmatch_valid -> externalFun_fprintf
+argmatch_valid -> externalFun_fputs_unlocked
+argmatch_valid -> quote
+build_collating_symbol -> externalFun___builtin_expect
+build_collating_symbol -> externalFun_strlen
+build_collating_symbol -> bitset_set
+fwrite_lowcase -> externalFun_fputc
+fwrite_lowcase -> externalFun_tolower
+human_options -> humblock
+human_options -> default_block_size
+xfts_open -> externalFun___assert_fail
+xfts_open -> externalFun___errno_location
+xfts_open -> fts_open
+xfts_open -> xalloc_die
+error_at_line -> externalFun___builtin_va_end
+error_at_line -> externalFun___builtin_va_start
+error_at_line -> externalFun_fprintf
+error_at_line -> externalFun_strcmp
+error_at_line -> flush_stdout
+error_at_line -> getprogname
+error_at_line -> error_tail
+sha512_buffer -> sha512_init_ctx
+sha512_buffer -> sha512_process_bytes
+sha512_buffer -> sha512_finish_ctx
+getfileconat -> externalFun_fchdir
+getfileconat -> externalFun_free
+getfileconat -> externalFun___errno_location
+getfileconat -> getfilecon
+getfileconat -> openat_proc_name
+getfileconat -> save_cwd
+getfileconat -> openat_save_fail
+getfileconat -> free_cwd
+getfileconat -> restore_cwd
+getfileconat -> openat_restore_fail
+sha1_process_block -> __bswap_32
+triple_compare_ino_str -> externalFun_strcmp
+openat_restore_fail -> externalFun_abort
+openat_restore_fail -> error
+quotearg_n_style_mem -> quoting_options_from_style
+quotearg_n_style_mem -> quotearg_n_options
+xmemcoll -> externalFun___errno_location
+xmemcoll -> memcoll
+xmemcoll -> collate_error
+year -> externalFun_abort
+year -> externalFun_localtime
+year -> externalFun_time
+argmatch -> externalFun_memcmp
+argmatch -> externalFun_strncmp
+argmatch -> externalFun_strlen
+sha1_stream -> externalFun_free
+sha1_stream -> externalFun_ferror_unlocked
+sha1_stream -> externalFun_fread_unlocked
+sha1_stream -> externalFun_feof_unlocked
+sha1_stream -> externalFun_malloc
+sha1_stream -> afalg_stream
+sha1_stream -> sha1_init_ctx
+sha1_stream -> sha1_process_block
+sha1_stream -> sha1_process_bytes
+sha1_stream -> sha1_finish_ctx
+internal_fnmatch -> externalFun_iswctype
+internal_fnmatch -> externalFun_btowc
+internal_fnmatch -> externalFun_wctype
+internal_fnmatch -> externalFun_getenv
+internal_fnmatch -> externalFun_memchr
+internal_fnmatch -> externalFun___builtin_expect
+internal_fnmatch -> externalFun_tolower
+internal_fnmatch -> ext_match
+internal_fnmatch -> end_pattern
+internal_fnmatch -> internal_fnmatch
+quotearg_n_options -> externalFun_free
+quotearg_n_options -> externalFun_memset
+quotearg_n_options -> externalFun_abort
+quotearg_n_options -> externalFun___errno_location
+quotearg_n_options -> xalloc_die
+quotearg_n_options -> xrealloc
+quotearg_n_options -> quotearg_buffer_restyled
+quotearg_n_options -> xcharalloc
+init_dfa -> externalFun_btowc
+init_dfa -> externalFun_strcmp
+init_dfa -> externalFun___ctype_get_mb_cur_max
+init_dfa -> externalFun_calloc
+init_dfa -> externalFun_malloc
+init_dfa -> externalFun___builtin_expect
+init_dfa -> externalFun_memset
+init_dfa -> rpl_nl_langinfo
+setup_dir -> externalFun_malloc
+setup_dir -> hash_initialize
+setup_dir -> cycle_check_init
+xstrtoumax -> externalFun_strchr
+xstrtoumax -> externalFun_strtoumax
+xstrtoumax -> externalFun___errno_location
+xstrtoumax -> externalFun___assert_fail
+xstrtoumax -> __isspace
+xstrtoumax -> bkm_scale___2
+xstrtoumax -> bkm_scale_by_power___2
+sha224_finish_ctx -> sha256_conclude_ctx
+sha224_finish_ctx -> sha224_read_ctx
+memcpy_lowcase -> externalFun_tolower
+try_dir -> externalFun_mkdir
+bitset_set_all -> externalFun_memset
+gen_tempname -> gen_tempname_len
+re_search_stub -> externalFun_free
+re_search_stub -> externalFun___builtin_unreachable
+re_search_stub -> externalFun_malloc
+re_search_stub -> externalFun___builtin_expect
+re_search_stub -> rpl_re_compile_fastmap
+re_search_stub -> re_search_internal
+re_search_stub -> re_copy_regs
+strip_trailing_slashes -> last_component
+strip_trailing_slashes -> base_len
+compute_bucket_size -> next_prime
+diropen -> openat_safer
+diropen -> open_safer
+_getopt_initialize -> externalFun_getenv
+xasprintf -> externalFun___builtin_va_end
+xasprintf -> externalFun___builtin_va_start
+xasprintf -> xvasprintf
+argv_iter_init_argv -> externalFun_malloc
+free_exclude -> externalFun_free
+free_exclude -> free_exclude_segment
+hash_delete -> externalFun_free
+hash_delete -> hash_find_entry
+hash_delete -> check_tuning
+hash_delete -> hash_rehash
+argv_iter_init_stream -> externalFun_malloc
+bkm_scale_by_power___2 -> bkm_scale___2
+error_tail -> externalFun_exit
+error_tail -> externalFun_fflush_unlocked
+error_tail -> externalFun_putc_unlocked
+error_tail -> externalFun_vfprintf
+error_tail -> print_errno_message
+build_wcs_upper_buffer -> externalFun_malloc
+build_wcs_upper_buffer -> externalFun_memcpy
+build_wcs_upper_buffer -> externalFun_wcrtomb
+build_wcs_upper_buffer -> externalFun_towupper
+build_wcs_upper_buffer -> externalFun___builtin_expect
+build_wcs_upper_buffer -> externalFun_mbrtowc
+build_wcs_upper_buffer -> externalFun_toupper
+build_wcs_upper_buffer -> externalFun_mbsinit
+try_nocreate -> externalFun___errno_location
+try_nocreate -> externalFun_lstat
+setlocale_null -> setlocale_null_androidfix
+prune_impossible_nodes -> externalFun_free
+prune_impossible_nodes -> externalFun_memset
+prune_impossible_nodes -> externalFun_malloc
+prune_impossible_nodes -> externalFun___builtin_expect
+prune_impossible_nodes -> externalFun___builtin_unreachable
+prune_impossible_nodes -> sift_ctx_init
+prune_impossible_nodes -> sift_states_backward
+prune_impossible_nodes -> check_halt_state_context
+prune_impossible_nodes -> merge_state_array
+quoting_options_from_style -> externalFun_abort
+parse_with_separator -> externalFun_free
+parse_with_separator -> externalFun_getgrnam
+parse_with_separator -> externalFun_endpwent
+parse_with_separator -> externalFun_endgrent
+parse_with_separator -> externalFun_getgrgid
+parse_with_separator -> externalFun_getpwnam
+parse_with_separator -> xstrdup
+parse_with_separator -> xmemdup
+parse_with_separator -> xstrtoul
+parse_with_separator -> umaxtostr
+emit_ancillary_info -> externalFun_fputs_unlocked
+emit_ancillary_info -> externalFun_strncmp
+emit_ancillary_info -> externalFun_setlocale
+emit_ancillary_info -> externalFun_printf
+emit_ancillary_info -> externalFun_strcmp
+register_state -> externalFun_realloc
+register_state -> externalFun___builtin_expect
+register_state -> re_node_set_alloc
+register_state -> re_node_set_insert_last
+mpsort -> mpsort_with_tmp
+quotearg_alloc -> quotearg_alloc_mem
+init_word_char -> externalFun_isalnum
+init_word_char -> externalFun_memset
+init_word_char -> externalFun___builtin_expect
+sha1_buffer -> sha1_init_ctx
+sha1_buffer -> sha1_process_bytes
+sha1_buffer -> sha1_finish_ctx
+
+}
+/usr/local/musl/include/pthread.h:117: Warning: Array type comparison succeeds only based on machine-dependent constant evaluation: (12U * sizeof(int )) / sizeof(void *) and (12UL * (unsigned long )sizeof(int )) / (unsigned long )sizeof(void *)
+chroot_8_32.c:2307:12: warning: conflicting types for built-in function ‘posix_memalign’; expected ‘int(void **, long unsigned int,  long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+ 2307 | extern int posix_memalign(void **memptr , unsigned int alignment , unsigned int size ) ;
+      |            ^~~~~~~~~~~~~~
+chroot_8_32.c: In function ‘check_arrival_expand_ecl_sub’:
+chroot_8_32.c:5301:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 5301 |   Idx __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c: In function ‘peek_token’:
+chroot_8_32.c:5978:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 5978 |   unsigned char __attribute__((__pure__))  tmp ;
+      |   ^~~~~~~~
+chroot_8_32.c:5980:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 5980 |   wint_t __attribute__((__pure__))  tmp___0 ;
+      |   ^~~~~~
+chroot_8_32.c:5986:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 5986 |   wint_t __attribute__((__pure__))  tmp___5 ;
+      |   ^~~~~~
+chroot_8_32.c: In function ‘get_stat_mtime_ns’:
+chroot_8_32.c:6519:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+ 6519 |   return ((long __attribute__((__pure__))  )st->st_mtim.tv_nsec);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘update_timespec’:
+chroot_8_32.c:6605:10: warning: ‘pure’ attribute ignored [-Wattributes]
+ 6605 |   struct timespec___0  __attribute__((__pure__)) tmp ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c:6606:10: warning: ‘pure’ attribute ignored [-Wattributes]
+ 6606 |   struct timespec___0  __attribute__((__pure__)) tmp___0 ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c: In function ‘set_custom_quoting’:
+chroot_8_32.c:6765:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 6765 |   o->left_quote = left_quote;
+      |                 ^
+chroot_8_32.c:6766:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 6766 |   o->right_quote = right_quote;
+      |                  ^
+chroot_8_32.c: In function ‘parse_bracket_element’:
+chroot_8_32.c:6806:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 6806 |   int __attribute__((__pure__))  tmp ;
+      |   ^~~
+chroot_8_32.c:6807:3: warning: ‘pure’ attribute ignored [-Wattributes]
+ 6807 |   wint_t __attribute__((__pure__))  tmp___0 ;
+      |   ^~~~~~
+chroot_8_32.c: In function ‘re_string_wchar_at’:
+chroot_8_32.c:7102:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+ 7102 |     return ((wint_t __attribute__((__pure__))  )((wint_t )*(pstr->mbs + idx)));
+      |     ^~~~~~
+chroot_8_32.c:7104:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+ 7104 |   return ((wint_t __attribute__((__pure__))  )*(pstr->wcs + idx));
+      |   ^~~~~~
+chroot_8_32.c: In function ‘check_x_suffix’:
+chroot_8_32.c:7657:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+ 7657 |   return ((_Bool __attribute__((__pure__))  )(len <= tmp));
+      |   ^~~~~~
+chroot_8_32.c: In function ‘set_simple_backup_suffix’:
+chroot_8_32.c:8861:30: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 8861 |         simple_backup_suffix = s;
+      |                              ^
+chroot_8_32.c: In function ‘expand_bkref_cache’:
+chroot_8_32.c:10883:3: warning: ‘pure’ attribute ignored [-Wattributes]
+10883 |   Idx __attribute__((__pure__))  tmp___0 ;
+      |   ^~~
+chroot_8_32.c:10887:3: warning: ‘pure’ attribute ignored [-Wattributes]
+10887 |   Idx __attribute__((__pure__))  tmp___1 ;
+      |   ^~~
+chroot_8_32.c:10893:3: warning: ‘pure’ attribute ignored [-Wattributes]
+10893 |   Idx __attribute__((__pure__))  tmp___5 ;
+      |   ^~~
+chroot_8_32.c: In function ‘quoting_options_from_style’:
+chroot_8_32.c:13473:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+13473 |   o.left_quote = (char const   *)((void *)0);
+      |                ^
+chroot_8_32.c:13474:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+13474 |   o.right_quote = (char const   *)((void *)0);
+      |                 ^
+chroot_8_32.c: In function ‘xstrcat’:
+chroot_8_32.c:13620:3: warning: ‘pure’ attribute ignored [-Wattributes]
+13620 |   size_t___0 __attribute__((__pure__))  tmp___2 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘vasnprintf’:
+chroot_8_32.c:14308:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14308 |   size_t___0 __attribute__((__pure__))  tmp___2 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14315:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14315 |   size_t___0 __attribute__((__pure__))  tmp___6 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14324:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14324 |   size_t___0 __attribute__((__pure__))  tmp___12 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14359:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14359 |   size_t___0 __attribute__((__pure__))  tmp___33 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14360:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14360 |   size_t___0 __attribute__((__pure__))  tmp___34 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14363:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14363 |   size_t___0 __attribute__((__pure__))  tmp___37 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14391:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14391 |   size_t___0 __attribute__((__pure__))  tmp___43 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14392:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14392 |   size_t___0 __attribute__((__pure__))  tmp___44 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14402:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14402 |   size_t___0 __attribute__((__pure__))  tmp___50 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14403:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14403 |   size_t___0 __attribute__((__pure__))  tmp___51 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14406:3: warning: ‘pure’ attribute ignored [-Wattributes]
+14406 |   size_t___0 __attribute__((__pure__))  tmp___54 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:14732:9: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+14732 |         if (tmp___37 > (size_t___0 __attribute__((__pure__))  )allocated) {
+      |         ^~
+chroot_8_32.c:14744:11: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+14744 |           if (tmp___34 > (size_t___0 __attribute__((__pure__))  )allocated) {
+      |           ^~
+chroot_8_32.c:15278:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+15278 |   if (tmp___54 > (size_t___0 __attribute__((__pure__))  )allocated) {
+      |   ^~
+chroot_8_32.c:15290:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+15290 |     if (tmp___51 > (size_t___0 __attribute__((__pure__))  )allocated) {
+      |     ^~
+chroot_8_32.c: In function ‘utimecmpat’:
+chroot_8_32.c:16489:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16489 |   long __attribute__((__pure__))  tmp ;
+      |   ^~~~
+chroot_8_32.c:16491:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16491 |   long __attribute__((__pure__))  tmp___0 ;
+      |   ^~~~
+chroot_8_32.c:16502:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16502 |   long __attribute__((__pure__))  tmp___4 ;
+      |   ^~~~
+chroot_8_32.c:16504:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16504 |   long __attribute__((__pure__))  tmp___5 ;
+      |   ^~~~
+chroot_8_32.c:16518:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16518 |   long __attribute__((__pure__))  tmp___9 ;
+      |   ^~~~
+chroot_8_32.c:16521:3: warning: ‘pure’ attribute ignored [-Wattributes]
+16521 |   long __attribute__((__pure__))  tmp___10 ;
+      |   ^~~~
+chroot_8_32.c:16664:9: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+16664 |         if (((long )stat_result | (dst_status.st_mtim.tv_sec ^ dst_m_s)) | (long )(tmp___9 ^ (long __attribute__((__pure__))  )dst_m_ns)) {
+      |         ^~
+chroot_8_32.c: In function ‘re_string_char_size_at’:
+chroot_8_32.c:16943:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+16943 |     return ((int __attribute__((__pure__))  )1);
+      |     ^~~~~~
+chroot_8_32.c:16952:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+16952 |   return ((int __attribute__((__pure__))  )byte_idx);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘verrevcmp’:
+chroot_8_32.c:19463:9: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+19463 |         return ((int __attribute__((__pure__))  )(s1_c - s2_c));
+      |         ^~~~~~
+chroot_8_32.c:19492:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+19492 |       return ((int __attribute__((__pure__))  )1);
+      |       ^~~~~~
+chroot_8_32.c:19496:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+19496 |       return ((int __attribute__((__pure__))  )-1);
+      |       ^~~~~~
+chroot_8_32.c:19499:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+19499 |       return ((int __attribute__((__pure__))  )first_diff);
+      |       ^~~~~~
+chroot_8_32.c:19502:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+19502 |   return ((int __attribute__((__pure__))  )0);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘backup_args_i$nit’:
+chroot_8_32.c:20039:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20039 |   backup_args[0] = (char const   */* const  */)"none";
+      |                  ^
+chroot_8_32.c:20040:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20040 |   backup_args[1] = (char const   */* const  */)"off";
+      |                  ^
+chroot_8_32.c:20041:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20041 |   backup_args[2] = (char const   */* const  */)"simple";
+      |                  ^
+chroot_8_32.c:20042:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20042 |   backup_args[3] = (char const   */* const  */)"never";
+      |                  ^
+chroot_8_32.c:20043:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20043 |   backup_args[4] = (char const   */* const  */)"existing";
+      |                  ^
+chroot_8_32.c:20044:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20044 |   backup_args[5] = (char const   */* const  */)"nil";
+      |                  ^
+chroot_8_32.c:20045:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20045 |   backup_args[6] = (char const   */* const  */)"numbered";
+      |                  ^
+chroot_8_32.c:20046:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20046 |   backup_args[7] = (char const   */* const  */)"t";
+      |                  ^
+chroot_8_32.c:20047:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+20047 |   backup_args[8] = (char const   */* const  */)((void *)0);
+      |                  ^
+chroot_8_32.c: In function ‘block_size_args_i$nit’:
+chroot_8_32.c:21028:22: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+21028 |   block_size_args[0] = (char const   */* const  */)"human-readable";
+      |                      ^
+chroot_8_32.c:21029:22: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+21029 |   block_size_args[1] = (char const   */* const  */)"si";
+      |                      ^
+chroot_8_32.c:21030:22: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+21030 |   block_size_args[2] = (char const   */* const  */)0;
+      |                      ^
+chroot_8_32.c: In function ‘fts_maxarglen’:
+chroot_8_32.c:21191:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+21191 |   return ((size_t___0 __attribute__((__pure__))  )(max + 1UL));
+      |   ^~~~~~
+chroot_8_32.c: In function ‘set_program_name’:
+chroot_8_32.c:22149:16: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+22149 |   program_name = argv0;
+      |                ^
+chroot_8_32.c: In function ‘get_stat_atime’:
+chroot_8_32.c:22872:19: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+22872 |   return ((struct timespec___0  __attribute__((__pure__)) )st->st_atim);
+      |                   ^~~~~~~~~~~~
+chroot_8_32.c: In function ‘parse_datetime2’:
+chroot_8_32.c:24004:36: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+24004 |   pc.local_time_zone_table[0].name = tmp___5.tm_zone;
+      |                                    ^
+chroot_8_32.c:24007:36: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+24007 |   pc.local_time_zone_table[1].name = (char const   *)((void *)0);
+      |                                    ^
+chroot_8_32.c:24269:44: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+24269 |           pc.local_time_zone_table[1].name = probe_tm.tm_zone;
+      |                                            ^
+chroot_8_32.c:24272:44: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+24272 |           pc.local_time_zone_table[2].name = (char const   *)((void *)0);
+      |                                            ^
+chroot_8_32.c:24284:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+24284 |         pc.local_time_zone_table[1].name = (char const   *)((void *)0);
+      |                                          ^
+chroot_8_32.c: In function ‘re_string_peek_byte_case’:
+chroot_8_32.c:30278:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+30278 |     return ((unsigned char __attribute__((__pure__))  )*(pstr->mbs + (pstr->cur_idx + (Idx const   )idx)));
+      |     ^~~~~~
+chroot_8_32.c:30284:11: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+30284 |           return ((unsigned char __attribute__((__pure__))  )*(pstr->mbs + (pstr->cur_idx + (Idx const   )idx)));
+      |           ^~~~~~
+chroot_8_32.c:30288:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+30288 |       return ((unsigned char __attribute__((__pure__))  )*(pstr->mbs + (pstr->cur_idx + (Idx const   )idx)));
+      |       ^~~~~~
+chroot_8_32.c:30298:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+30298 |       return ((unsigned char __attribute__((__pure__))  )*(pstr->mbs + (pstr->cur_idx + (Idx const   )idx)));
+      |       ^~~~~~
+chroot_8_32.c:30301:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+30301 |   return ((unsigned char __attribute__((__pure__))  )ch);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘error_at_line’:
+chroot_8_32.c:31051:19: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+31051 |     old_file_name = file_name___1;
+      |                   ^
+chroot_8_32.c: In function ‘re_acquire_state’:
+chroot_8_32.c:31093:3: warning: ‘pure’ attribute ignored [-Wattributes]
+31093 |   _Bool __attribute__((__pure__))  tmp___0 ;
+      |   ^~~~~
+chroot_8_32.c: In function ‘re_node_set_compare’:
+chroot_8_32.c:31518:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31518 |     return ((_Bool __attribute__((__pure__))  )0);
+      |     ^~~~~~
+chroot_8_32.c:31521:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31521 |     return ((_Bool __attribute__((__pure__))  )0);
+      |     ^~~~~~
+chroot_8_32.c:31524:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31524 |     return ((_Bool __attribute__((__pure__))  )0);
+      |     ^~~~~~
+chroot_8_32.c:31533:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31533 |       return ((_Bool __attribute__((__pure__))  )0);
+      |       ^~~~~~
+chroot_8_32.c:31536:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31536 |   return ((_Bool __attribute__((__pure__))  )1);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘re_node_set_contains’:
+chroot_8_32.c:31643:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31643 |     return ((Idx __attribute__((__pure__))  )0);
+      |     ^~~~~~
+chroot_8_32.c:31660:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+31660 |   return ((Idx __attribute__((__pure__))  )tmp);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘strintcmp’:
+chroot_8_32.c:32317:3: warning: ‘pure’ attribute ignored [-Wattributes]
+32317 |   int __attribute__((__pure__))  tmp ;
+      |   ^~~
+chroot_8_32.c: In function ‘filevercmp’:
+chroot_8_32.c:32434:3: warning: ‘pure’ attribute ignored [-Wattributes]
+32434 |   int __attribute__((__pure__))  tmp___7 ;
+      |   ^~~
+chroot_8_32.c: In function ‘fdutimens’:
+chroot_8_32.c:32589:10: warning: ‘pure’ attribute ignored [-Wattributes]
+32589 |   struct timespec___0  __attribute__((__pure__)) tmp___4 ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c:32590:10: warning: ‘pure’ attribute ignored [-Wattributes]
+32590 |   struct timespec___0  __attribute__((__pure__)) tmp___5 ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c: In function ‘time_units_table_i$nit’:
+chroot_8_32.c:34219:29: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+34219 |   time_units_table[10].name = (char const   *)((void *)0);
+      |                             ^
+chroot_8_32.c: In function ‘military_table_i$nit’:
+chroot_8_32.c:34572:27: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+34572 |   military_table[25].name = (char const   *)((void *)0);
+      |                           ^
+chroot_8_32.c: In function ‘chdir_long’:
+chroot_8_32.c:34593:3: warning: ‘pure’ attribute ignored [-Wattributes]
+34593 |   char * __attribute__((__pure__)) tmp___6 ;
+      |   ^~~~
+chroot_8_32.c:34602:3: warning: ‘pure’ attribute ignored [-Wattributes]
+34602 |   char * __attribute__((__pure__)) tmp___13 ;
+      |   ^~~~
+chroot_8_32.c: In function ‘hash_rehash’:
+chroot_8_32.c:35350:3: warning: ‘pure’ attribute ignored [-Wattributes]
+35350 |   size_t___0 __attribute__((__pure__))  tmp ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘re_string_elem_size_at’:
+chroot_8_32.c:35770:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+35770 |   return ((int __attribute__((__pure__))  )1);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘relative_time_table_i$nit’:
+chroot_8_32.c:35838:32: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+35838 |   relative_time_table[20].name = (char const   *)((void *)0);
+      |                                ^
+chroot_8_32.c: In function ‘sift_states_iter_mb’:
+chroot_8_32.c:36704:3: warning: ‘pure’ attribute ignored [-Wattributes]
+36704 |   Idx __attribute__((__pure__))  tmp ;
+      |   ^~~
+chroot_8_32.c: In function ‘get_stat_mtime’:
+chroot_8_32.c:36730:19: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+36730 |   return ((struct timespec___0  __attribute__((__pure__)) )st->st_mtim);
+      |                   ^~~~~~~~~~~~
+chroot_8_32.c: In function ‘build_sifted_states’:
+chroot_8_32.c:37075:3: warning: ‘pure’ attribute ignored [-Wattributes]
+37075 |   Idx __attribute__((__pure__))  tmp___0 ;
+      |   ^~~
+chroot_8_32.c: In function ‘lutimens’:
+chroot_8_32.c:37257:10: warning: ‘pure’ attribute ignored [-Wattributes]
+37257 |   struct timespec___0  __attribute__((__pure__)) tmp___1 ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c:37258:10: warning: ‘pure’ attribute ignored [-Wattributes]
+37258 |   struct timespec___0  __attribute__((__pure__)) tmp___2 ;
+      |          ^~~~~~~~~~~~
+chroot_8_32.c: In function ‘quote_quoting_options_i$nit’:
+chroot_8_32.c:37458:36: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+37458 |   quote_quoting_options.left_quote = (char const   *)((void *)0);
+      |                                    ^
+chroot_8_32.c:37459:37: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+37459 |   quote_quoting_options.right_quote = (char const   *)((void *)0);
+      |                                     ^
+chroot_8_32.c: In function ‘month_and_day_table_i$nit’:
+chroot_8_32.c:37797:32: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+37797 |   month_and_day_table[24].name = (char const   *)((void *)0);
+      |                                ^
+chroot_8_32.c: In function ‘make_dir_parents’:
+chroot_8_32.c:37851:3: warning: ‘pure’ attribute ignored [-Wattributes]
+37851 |   int __attribute__((__pure__))  tmp ;
+      |   ^~~
+chroot_8_32.c: In function ‘meridian_table_i$nit’:
+chroot_8_32.c:41691:26: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+41691 |   meridian_table[4].name = (char const   *)((void *)0);
+      |                          ^
+chroot_8_32.c: In function ‘universal_time_zone_table_i$nit’:
+chroot_8_32.c:43275:37: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+43275 |   universal_time_zone_table[3].name = (char const   *)((void *)0);
+      |                                     ^
+chroot_8_32.c: In function ‘long_opts_i$nit’:
+chroot_8_32.c:43763:21: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+43763 |   long_opts[5].name = (char const   *)((void *)0);
+      |                     ^
+chroot_8_32.c: In function ‘get_version’:
+chroot_8_32.c:43843:50: warning: passing argument 3 of ‘__xargmatch_internal’ from incompatible pointer type [-Wincompatible-pointer-types]
+43843 |     tmp = __xargmatch_internal(context, version, backup_args, (void const   *)(backup_types),
+      |                                                  ^~~~~~~~~~~
+      |                                                  |
+      |                                                  char **
+chroot_8_32.c:3654:92: note: expected ‘const char * const*’ but argument is of type ‘char **’
+ 3654 | ptrdiff_t __xargmatch_internal(char const   *context , char const   *arg , char const   * const  *arglist ,
+      |                                                                        ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+chroot_8_32.c: In function ‘printf_parse’:
+chroot_8_32.c:43875:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43875 |   size_t___0 __attribute__((__pure__))  tmp___1 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:43879:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43879 |   size_t___0 __attribute__((__pure__))  tmp___3 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:43884:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43884 |   size_t___0 __attribute__((__pure__))  tmp___5 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:43893:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43893 |   size_t___0 __attribute__((__pure__))  tmp___11 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:43898:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43898 |   size_t___0 __attribute__((__pure__))  tmp___13 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:43911:3: warning: ‘pure’ attribute ignored [-Wattributes]
+43911 |   size_t___0 __attribute__((__pure__))  tmp___20 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘hash_initialize’:
+chroot_8_32.c:46989:3: warning: ‘pure’ attribute ignored [-Wattributes]
+46989 |   size_t___0 __attribute__((__pure__))  tmp___1 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘strnumcmp’:
+chroot_8_32.c:47558:3: warning: ‘pure’ attribute ignored [-Wattributes]
+47558 |   int __attribute__((__pure__))  tmp ;
+      |   ^~~
+chroot_8_32.c: In function ‘get_fs_usage’:
+chroot_8_32.c:48770:26: warning: left shift count >= width of type [-Wshift-count-overflow]
+48770 |           tmp___2 = - (1 << (unsigned long )sizeof(vfsd.f_frsize) * 8UL);
+      |                          ^~
+chroot_8_32.c:48786:26: warning: left shift count >= width of type [-Wshift-count-overflow]
+48786 |           tmp___5 = - (1 << (unsigned long )sizeof(vfsd.f_bsize) * 8UL);
+      |                          ^~
+chroot_8_32.c:48802:24: warning: left shift count >= width of type [-Wshift-count-overflow]
+48802 |         tmp___7 = - (1 << (unsigned long )sizeof(vfsd.f_blocks) * 8UL);
+      |                        ^~
+chroot_8_32.c:48816:24: warning: left shift count >= width of type [-Wshift-count-overflow]
+48816 |         tmp___9 = - (1 << (unsigned long )sizeof(vfsd.f_bfree) * 8UL);
+      |                        ^~
+chroot_8_32.c:48832:25: warning: left shift count >= width of type [-Wshift-count-overflow]
+48832 |         tmp___11 = - (1 << (unsigned long )sizeof(vfsd.f_files) * 8UL);
+      |                         ^~
+chroot_8_32.c:48846:25: warning: left shift count >= width of type [-Wshift-count-overflow]
+48846 |         tmp___13 = - (1 << (unsigned long )sizeof(vfsd.f_ffree) * 8UL);
+      |                         ^~
+chroot_8_32.c: In function ‘close_stdin_set_file_name’:
+chroot_8_32.c:49666:13: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+49666 |   file_name = file;
+      |             ^
+chroot_8_32.c: In function ‘lookup_word’:
+chroot_8_32.c:49805:3: warning: ‘pure’ attribute ignored [-Wattributes]
+49805 |   table const   * __attribute__((__pure__)) tmp___7 ;
+      |   ^~~~~
+chroot_8_32.c:49811:3: warning: ‘pure’ attribute ignored [-Wattributes]
+49811 |   table const   * __attribute__((__pure__)) tmp___13 ;
+      |   ^~~~~
+chroot_8_32.c: In function ‘create_initial_state’:
+chroot_8_32.c:51413:3: warning: ‘pure’ attribute ignored [-Wattributes]
+51413 |   Idx __attribute__((__pure__))  tmp___1 ;
+      |   ^~~
+chroot_8_32.c: In function ‘savewd_errno’:
+chroot_8_32.c:52348:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+52348 |   return ((int __attribute__((__pure__))  )tmp);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘try_tempname_len’:
+chroot_8_32.c:53624:3: warning: ‘pure’ attribute ignored [-Wattributes]
+53624 |   _Bool __attribute__((__pure__))  tmp___1 ;
+      |   ^~~~~
+chroot_8_32.c: In function ‘check_subexp_limits’:
+chroot_8_32.c:55315:3: warning: ‘pure’ attribute ignored [-Wattributes]
+55315 |   Idx __attribute__((__pure__))  tmp___1 ;
+      |   ^~~
+chroot_8_32.c:55316:3: warning: ‘pure’ attribute ignored [-Wattributes]
+55316 |   Idx __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c: In function ‘sift_states_bkref’:
+chroot_8_32.c:55442:3: warning: ‘pure’ attribute ignored [-Wattributes]
+55442 |   Idx __attribute__((__pure__))  tmp___0 ;
+      |   ^~~
+chroot_8_32.c:55448:3: warning: ‘pure’ attribute ignored [-Wattributes]
+55448 |   Idx __attribute__((__pure__))  tmp___6 ;
+      |   ^~~
+chroot_8_32.c:55538:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+55538 |       re_node_set_remove_at(& local_sctx.limits, (Idx )(tmp___6 - (Idx __attribute__((__pure__))  )1));
+      |       ^~~~~~~~~~~~~~~~~~~~~
+chroot_8_32.c: In function ‘re_acquire_state_context’:
+chroot_8_32.c:56720:3: warning: ‘pure’ attribute ignored [-Wattributes]
+56720 |   _Bool __attribute__((__pure__))  tmp ;
+      |   ^~~~~
+chroot_8_32.c: In function ‘time_zone_table_i$nit’:
+chroot_8_32.c:57099:28: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+57099 |   time_zone_table[47].name = (char const   *)((void *)0);
+      |                            ^
+chroot_8_32.c: In function ‘fts_open’:
+chroot_8_32.c:59942:3: warning: ‘pure’ attribute ignored [-Wattributes]
+59942 |   size_t___0 __attribute__((__pure__))  tmp___13 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘humblock’:
+chroot_8_32.c:60212:30: warning: passing argument 2 of ‘argmatch’ from incompatible pointer type [-Wincompatible-pointer-types]
+60212 |     tmp___0 = argmatch(spec, block_size_args, (void const   *)(block_size_opts), (size_t___0 )sizeof(block_size_opts[0]));
+      |                              ^~~~~~~~~~~~~~~
+      |                              |
+      |                              char **
+chroot_8_32.c:36640:58: note: expected ‘const char * const*’ but argument is of type ‘char **’
+36640 | ptrdiff_t argmatch(char const   *arg , char const   * const  *arglist , void const   *vallist ,
+      |                                      ~~~~~~~~~~~~~~~~~~~~^~~~~~~
+chroot_8_32.c: In function ‘get_stat_atime_ns’:
+chroot_8_32.c:62456:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+62456 |   return ((long __attribute__((__pure__))  )st->st_atim.tv_nsec);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘get_stat_ctime_ns’:
+chroot_8_32.c:66468:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+66468 |   return ((long __attribute__((__pure__))  )st->st_ctim.tv_nsec);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘xsum’:
+chroot_8_32.c:66580:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+66580 |   return ((size_t___0 __attribute__((__pure__))  )tmp);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘quoting_style_args_i$nit’:
+chroot_8_32.c:70784:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70784 |   quoting_style_args[0] = (char const   */* const  */)"literal";
+      |                         ^
+chroot_8_32.c:70785:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70785 |   quoting_style_args[1] = (char const   */* const  */)"shell";
+      |                         ^
+chroot_8_32.c:70786:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70786 |   quoting_style_args[2] = (char const   */* const  */)"shell-always";
+      |                         ^
+chroot_8_32.c:70787:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70787 |   quoting_style_args[3] = (char const   */* const  */)"shell-escape";
+      |                         ^
+chroot_8_32.c:70788:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70788 |   quoting_style_args[4] = (char const   */* const  */)"shell-escape-always";
+      |                         ^
+chroot_8_32.c:70789:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70789 |   quoting_style_args[5] = (char const   */* const  */)"c";
+      |                         ^
+chroot_8_32.c:70790:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70790 |   quoting_style_args[6] = (char const   */* const  */)"c-maybe";
+      |                         ^
+chroot_8_32.c:70791:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70791 |   quoting_style_args[7] = (char const   */* const  */)"escape";
+      |                         ^
+chroot_8_32.c:70792:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70792 |   quoting_style_args[8] = (char const   */* const  */)"locale";
+      |                         ^
+chroot_8_32.c:70793:25: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70793 |   quoting_style_args[9] = (char const   */* const  */)"clocale";
+      |                         ^
+chroot_8_32.c:70794:26: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+70794 |   quoting_style_args[10] = (char const   */* const  */)0;
+      |                          ^
+chroot_8_32.c: In function ‘check_node_accept_bytes’:
+chroot_8_32.c:72111:3: warning: ‘pure’ attribute ignored [-Wattributes]
+72111 |   int __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c:72112:3: warning: ‘pure’ attribute ignored [-Wattributes]
+72112 |   int __attribute__((__pure__))  tmp___3 ;
+      |   ^~~
+chroot_8_32.c:72116:3: warning: ‘pure’ attribute ignored [-Wattributes]
+72116 |   wint_t __attribute__((__pure__))  tmp___4 ;
+      |   ^~~~~~
+chroot_8_32.c:72117:3: warning: ‘pure’ attribute ignored [-Wattributes]
+72117 |   wint_t __attribute__((__pure__))  tmp___5 ;
+      |   ^~~~~~
+chroot_8_32.c:72245:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72245 |       tmp___5 = (wint_t __attribute__((__pure__))  )0;
+      |       ^~~~~~~
+chroot_8_32.c: In function ‘compute_bucket_size’:
+chroot_8_32.c:72836:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72836 |       return ((size_t___0 __attribute__((__pure__))  )0);
+      |       ^~~~~~
+chroot_8_32.c:72842:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72842 |     return ((size_t___0 __attribute__((__pure__))  )0);
+      |     ^~~~~~
+chroot_8_32.c:72844:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72844 |   return ((size_t___0 __attribute__((__pure__))  )candidate);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘fraccompare’:
+chroot_8_32.c:72949:11: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72949 |           return ((int __attribute__((__pure__))  )0);
+      |           ^~~~~~
+chroot_8_32.c:72954:11: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72954 |           return ((int __attribute__((__pure__))  )((int const   )*a - (int const   )*b));
+      |           ^~~~~~
+chroot_8_32.c:72963:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72963 |       return ((int __attribute__((__pure__))  )0);
+      |       ^~~~~~
+chroot_8_32.c:72976:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72976 |       return ((int __attribute__((__pure__))  )((unsigned int )*a - 48U <= 9U));
+      |       ^~~~~~
+chroot_8_32.c:72985:9: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72985 |         return ((int __attribute__((__pure__))  )(- ((unsigned int )*b - 48U <= 9U)));
+      |         ^~~~~~
+chroot_8_32.c:72989:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+72989 |   return ((int __attribute__((__pure__))  )0);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘close_stdout_set_file_name’:
+chroot_8_32.c:73528:17: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+73528 |   file_name___0 = file;
+      |                 ^
+chroot_8_32.c: In function ‘long_options_i$nit’:
+chroot_8_32.c:74883:24: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+74883 |   long_options[2].name = (char const   *)((void *)0);
+      |                        ^
+chroot_8_32.c: In function ‘check_arrival’:
+chroot_8_32.c:77384:3: warning: ‘pure’ attribute ignored [-Wattributes]
+77384 |   Idx __attribute__((__pure__))  tmp___16 ;
+      |   ^~~
+chroot_8_32.c: In function ‘sub_epsilon_src_nodes’:
+chroot_8_32.c:78125:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78125 |   Idx __attribute__((__pure__))  tmp___1 ;
+      |   ^~~
+chroot_8_32.c:78126:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78126 |   Idx __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c:78127:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78127 |   Idx __attribute__((__pure__))  tmp___3 ;
+      |   ^~~
+chroot_8_32.c:78128:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78128 |   Idx __attribute__((__pure__))  tmp___4 ;
+      |   ^~~
+chroot_8_32.c:78131:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78131 |   Idx __attribute__((__pure__))  tmp___5 ;
+      |   ^~~
+chroot_8_32.c:78132:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78132 |   Idx __attribute__((__pure__))  tmp___6 ;
+      |   ^~~
+chroot_8_32.c:78187:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+78187 |       idx = (Idx )(tmp___5 - (Idx __attribute__((__pure__))  )1);
+      |       ^~~
+chroot_8_32.c: In function ‘xsum4’:
+chroot_8_32.c:78460:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78460 |   size_t___0 __attribute__((__pure__))  tmp ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:78461:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78461 |   size_t___0 __attribute__((__pure__))  tmp___0 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c:78462:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78462 |   size_t___0 __attribute__((__pure__))  tmp___1 ;
+      |   ^~~~~~~~~~
+chroot_8_32.c: In function ‘re_string_fetch_byte_case’:
+chroot_8_32.c:78617:3: warning: ‘pure’ attribute ignored [-Wattributes]
+78617 |   int __attribute__((__pure__))  tmp___4 ;
+      |   ^~~
+chroot_8_32.c: In function ‘proceed_next_node’:
+chroot_8_32.c:79682:3: warning: ‘pure’ attribute ignored [-Wattributes]
+79682 |   Idx __attribute__((__pure__))  tmp___0 ;
+      |   ^~~
+chroot_8_32.c:79684:3: warning: ‘pure’ attribute ignored [-Wattributes]
+79684 |   Idx __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c:79693:3: warning: ‘pure’ attribute ignored [-Wattributes]
+79693 |   Idx __attribute__((__pure__))  tmp___6 ;
+      |   ^~~
+chroot_8_32.c:79695:3: warning: ‘pure’ attribute ignored [-Wattributes]
+79695 |   Idx __attribute__((__pure__))  tmp___7 ;
+      |   ^~~
+chroot_8_32.c: In function ‘numcompare’:
+chroot_8_32.c:80281:3: warning: ‘pure’ attribute ignored [-Wattributes]
+80281 |   int __attribute__((__pure__))  tmp___0 ;
+      |   ^~~
+chroot_8_32.c:80283:3: warning: ‘pure’ attribute ignored [-Wattributes]
+80283 |   int __attribute__((__pure__))  tmp___2 ;
+      |   ^~~
+chroot_8_32.c:80310:9: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80310 |         return ((int __attribute__((__pure__))  )-1);
+      |         ^~~~~~
+chroot_8_32.c:80330:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80330 |       return ((int __attribute__((__pure__))  )(- ((unsigned int )tmpb - 48U <= 9U)));
+      |       ^~~~~~
+chroot_8_32.c:80408:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80408 |       return ((int __attribute__((__pure__))  )tmp___1);
+      |       ^~~~~~
+chroot_8_32.c:80411:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80411 |       return ((int __attribute__((__pure__))  )0);
+      |       ^~~~~~
+chroot_8_32.c:80413:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80413 |     return ((int __attribute__((__pure__))  )tmp);
+      |     ^~~~~~
+chroot_8_32.c:80435:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80435 |       return ((int __attribute__((__pure__))  )1);
+      |       ^~~~~~
+chroot_8_32.c:80455:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80455 |     return ((int __attribute__((__pure__))  )((unsigned int )tmpa - 48U <= 9U));
+      |     ^~~~~~
+chroot_8_32.c:80542:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80542 |       return ((int __attribute__((__pure__))  )tmp___3);
+      |       ^~~~~~
+chroot_8_32.c:80545:7: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80545 |       return ((int __attribute__((__pure__))  )0);
+      |       ^~~~~~
+chroot_8_32.c:80547:5: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+80547 |     return ((int __attribute__((__pure__))  )tmp);
+      |     ^~~~~~
+chroot_8_32.c: In function ‘xmax’:
+chroot_8_32.c:81511:3: warning: ‘pure’ attribute does not apply to types [-Wattributes]
+81511 |   return ((size_t___0 __attribute__((__pure__))  )tmp);
+      |   ^~~~~~
+chroot_8_32.c: In function ‘ftoastr’:
+chroot_8_32.c:20638:15: error: SSE register return with SSE disabled
+20638 |       tmp___6 = strtof((char const   */* __restrict  */)buf___0, (char **/* __restrict  */)((void *)0));
+      |       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+real	0m37.317s
+user	0m20.803s
+sys	0m0.246s

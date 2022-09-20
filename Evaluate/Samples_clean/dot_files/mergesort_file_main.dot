@@ -1,0 +1,134 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 240h\lmov     [rbp+var_234], edi\lmov     [rbp+var_240], rsi\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\lmov     [rbp+var_220], 0\lmov     [rbp+var_225], 0\lcmp     [rbp+var_234], 2\ljz      short loc_1564\l"
+	];
+	"1" [
+		label = "mov     edi, 1; status\lcall    _exit\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_240]\ladd     rax, 8\lmov     rcx, [rax]\llea     rax, [rbp+dest]\lmov     edx, 200h; n\lmov     rsi, rcx; src\lmov     rdi, rax; dest\lcall    _strncpy\ltest    rax, rax\ljnz     short loc_15BB\l"
+	];
+	"3" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 1Eh; n\lmov     esi, 1; size\llea     rax, aErrorCopyingAr; \"Error copying argv to string!\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"4" [
+		label = "lea     rax, [rbp+dest]\llea     rdx, modes; \"rb\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\lcmp     [rbp+stream], 0\ljnz     short loc_1612\l"
+	];
+	"5" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 14h; n\lmov     esi, 1; size\llea     rax, aUnableToReadFi; \"Unable to read file\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"6" [
+		label = "lea     rdx, [rbp+var_225]\lmov     rax, [rbp+stream]\llea     rcx, format; \"%c\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     short loc_167B\l"
+	];
+	"7" [
+		label = "movzx   eax, [rbp+var_225]\lcmp     al, 20h ; ' '\ljz      short loc_164F\l"
+	];
+	"8" [
+		label = "movzx   eax, [rbp+var_225]\lcmp     al, 0Ah\ljnz     short loc_1656\l"
+	];
+	"9" [
+		label = "add     [rbp+var_220], 1\l"
+	];
+	"10" [
+		label = "lea     rdx, [rbp+var_225]\lmov     rax, [rbp+stream]\llea     rcx, format; \"%c\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\l"
+	];
+	"11" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _feof\ltest    eax, eax\ljz      short loc_1639\l"
+	];
+	"12" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     eax, [rbp+var_220]\lcdqe\lshl     rax, 2\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+var_210], rax\lmov     [rbp+var_21C], 0\ljmp     short loc_16EB\l"
+	];
+	"13" [
+		label = "mov     eax, [rbp+var_21C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_210]\ladd     rax, rdx\lmov     dword ptr [rax], 0\ladd     [rbp+var_21C], 1\l"
+	];
+	"14" [
+		label = "mov     eax, [rbp+var_21C]\lcmp     eax, [rbp+var_220]\ljl      short loc_16C4\l"
+	];
+	"15" [
+		label = "lea     rax, [rbp+dest]\llea     rdx, aR; \"r\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\lmov     [rbp+var_224], 0\lmov     eax, [rbp+var_224]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_210]\ladd     rdx, rax\lmov     rax, [rbp+stream]\llea     rcx, aD; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     short loc_179C\l"
+	];
+	"16" [
+		label = "add     [rbp+var_224], 1\lmov     eax, [rbp+var_224]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_210]\ladd     rdx, rax\lmov     rax, [rbp+stream]\llea     rcx, aD; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\l"
+	];
+	"17" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _feof\ltest    eax, eax\ljz      short loc_175D\l"
+	];
+	"18" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     eax, [rbp+var_220]\llea     edx, [rax-1]\lmov     rax, [rbp+var_210]\lmov     esi, 0\lmov     rdi, rax\lcall    mergeSort\lmov     [rbp+var_224], 0\ljmp     short loc_1820\l"
+	];
+	"19" [
+		label = "mov     eax, [rbp+var_224]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_210]\ladd     rax, rdx\lmov     eax, [rax]\lmov     esi, eax\llea     rax, aD_0; \"%d \"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ladd     [rbp+var_224], 1\l"
+	];
+	"20" [
+		label = "mov     eax, [rbp+var_224]\lcmp     eax, [rbp+var_220]\ljl      short loc_17E7\l"
+	];
+	"21" [
+		label = "mov     edi, 0Ah; c\lcall    _putchar\lmov     eax, 0\lmov     rdx, [rbp+var_8]\lsub     rdx, fs:28h\ljz      short locret_1851\l"
+	];
+	"22" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"23" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ label = "false", color = red ];
+	"0" -> "2" [ label = "true", color = darkgreen ];
+// node 1
+// node 2
+	"2" -> "3" [ label = "false", color = red ];
+	"2" -> "4" [ label = "true", color = darkgreen ];
+// node 3
+// node 4
+	"4" -> "5" [ label = "false", color = red ];
+	"4" -> "6" [ label = "true", color = darkgreen ];
+// node 5
+// node 6
+	"6" -> "11" [ ];
+// node 7
+	"7" -> "8" [ label = "false", color = red ];
+	"7" -> "9" [ label = "true", color = darkgreen ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "10" [ ];
+// node 10
+	"10" -> "11" [ ];
+// node 11
+	"11" -> "7" [ label = "true", color = darkgreen ];
+	"11" -> "12" [ label = "false", color = red ];
+// node 12
+	"12" -> "14" [ ];
+// node 13
+	"13" -> "14" [ ];
+// node 14
+	"14" -> "13" [ label = "true", color = darkgreen ];
+	"14" -> "15" [ label = "false", color = red ];
+// node 15
+	"15" -> "17" [ ];
+// node 16
+	"16" -> "17" [ ];
+// node 17
+	"17" -> "16" [ label = "true", color = darkgreen ];
+	"17" -> "18" [ label = "false", color = red ];
+// node 18
+	"18" -> "20" [ ];
+// node 19
+	"19" -> "20" [ ];
+// node 20
+	"20" -> "19" [ label = "true", color = darkgreen ];
+	"20" -> "21" [ label = "false", color = red ];
+// node 21
+	"21" -> "22" [ label = "false", color = red ];
+	"21" -> "23" [ label = "true", color = darkgreen ];
+// node 22
+// node 23
+}

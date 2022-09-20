@@ -1,0 +1,56 @@
+digraph "selectionSort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "selectionSort:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_C], 0\ljmp     loc_126B\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_C]\lmov     [rbp+var_4], eax\lmov     eax, [rbp+var_C]\ladd     eax, 1\lmov     [rbp+var_8], eax\ljmp     short loc_122C\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_8]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     edx, [rax]\lmov     eax, [rbp+var_4]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rcx\lmov     eax, [rax]\lcmp     edx, eax\ljge     short loc_1228\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_8]\lmov     [rbp+var_4], eax\l"
+	];
+	"4" [
+		label = "add     [rbp+var_8], 1\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_8]\lcmp     eax, [rbp+var_1C]\ljl      short loc_11F2\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rdx, rax\lmov     eax, [rbp+var_4]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rcx\lmov     rsi, rdx\lmov     rdi, rax\lcall    swap\ladd     [rbp+var_C], 1\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_1C]\lsub     eax, 1\lcmp     [rbp+var_C], eax\ljl      loc_11E1\l"
+	];
+	"8" [
+		label = "nop\lnop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "7" [ ];
+// node 1
+	"1" -> "5" [ ];
+// node 2
+	"2" -> "3" [ label = "false", color = red ];
+	"2" -> "4" [ label = "true", color = darkgreen ];
+// node 3
+	"3" -> "4" [ ];
+// node 4
+	"4" -> "5" [ ];
+// node 5
+	"5" -> "2" [ label = "true", color = darkgreen ];
+	"5" -> "6" [ label = "false", color = red ];
+// node 6
+	"6" -> "7" [ ];
+// node 7
+	"7" -> "1" [ label = "true", color = darkgreen ];
+	"7" -> "8" [ label = "false", color = red ];
+// node 8
+}

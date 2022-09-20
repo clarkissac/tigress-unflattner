@@ -1,0 +1,69 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 240h\lmov     [rbp+var_234], edi\lmov     [rbp+var_240], rsi\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\lcmp     [rbp+var_234], 2\ljz      short loc_1299\l"
+	];
+	"1" [
+		label = "mov     edi, 1; status\lcall    _exit\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_240]\ladd     rax, 8\lmov     rcx, [rax]\llea     rax, [rbp+dest]\lmov     edx, 200h; n\lmov     rsi, rcx; src\lmov     rdi, rax; dest\lcall    _strncpy\ltest    rax, rax\ljnz     short loc_12F0\l"
+	];
+	"3" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 1Eh; n\lmov     esi, 1; size\llea     rax, aErrorCopyingAr; \"Error copying argv to string!\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"4" [
+		label = "lea     rax, [rbp+dest]\llea     rdx, modes; \"rb\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\lcmp     [rbp+stream], 0\ljnz     short loc_1347\l"
+	];
+	"5" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 14h; n\lmov     esi, 1; size\llea     rax, aUnableToReadFi; \"Unable to read file\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"6" [
+		label = "mov     rax, [rbp+stream]\lmov     edx, 2; whence\lmov     esi, 0; off\lmov     rdi, rax; stream\lcall    _fseek\lmov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _ftell\lmov     [rbp+n], rax\lmov     rax, [rbp+stream]\lmov     edx, 0; whence\lmov     esi, 0; off\lmov     rdi, rax; stream\lcall    _fseek\lmov     rax, [rbp+n]\ladd     rax, 1\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+ptr], rax\lmov     rdx, [rbp+n]; n\lmov     rcx, [rbp+stream]; stream\lmov     rax, [rbp+ptr]\lmov     esi, 1; size\lmov     rdi, rax; ptr\lcall    _fread\lmov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     rax, [rbp+ptr]\lmov     rdi, rax; s\lcall    _strlen\lmov     edx, eax\lmov     rax, [rbp+ptr]\lmov     esi, edx\lmov     rdi, rax\lcall    FNVHash\lmov     [rbp+var_224], eax\lcmp     [rbp+var_224], 0EE3C81D4h\ljnz     short loc_141F\l"
+	];
+	"7" [
+		label = "lea     rax, s; \"You win!\"\lmov     rdi, rax; s\lcall    _puts\ljmp     short loc_142E\l"
+	];
+	"8" [
+		label = "lea     rax, aYouLoose; \"You loose!\"\lmov     rdi, rax; s\lcall    _puts\l"
+	];
+	"9" [
+		label = "mov     eax, [rbp+var_224]\lmov     esi, eax\llea     rax, format; \"Hash: 0x%x\\n\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\lmov     eax, 0\lmov     rdx, [rbp+var_8]\lsub     rdx, fs:28h\ljz      short locret_1463\l"
+	];
+	"10" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"11" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ label = "false", color = red ];
+	"0" -> "2" [ label = "true", color = darkgreen ];
+// node 1
+// node 2
+	"2" -> "3" [ label = "false", color = red ];
+	"2" -> "4" [ label = "true", color = darkgreen ];
+// node 3
+// node 4
+	"4" -> "5" [ label = "false", color = red ];
+	"4" -> "6" [ label = "true", color = darkgreen ];
+// node 5
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "8" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "9" [ ];
+// node 8
+	"8" -> "9" [ ];
+// node 9
+	"9" -> "10" [ label = "false", color = red ];
+	"9" -> "11" [ label = "true", color = darkgreen ];
+// node 10
+// node 11
+}

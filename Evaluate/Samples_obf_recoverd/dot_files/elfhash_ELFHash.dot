@@ -1,0 +1,95 @@
+digraph "ELFHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "ELFHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\ljmp     loc_1388\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 8\lja      short loc_12BF\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2038\lmov     eax, ds:(dword_2038 - 2038h)[rdx+rax]\lcdqe\llea     rdx, dword_2038\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_10]\lnot     eax\land     [rbp+var_14], eax\ladd     [rbp+var_28], 1\ladd     [rbp+var_C], 1\ljmp     short loc_1352\ldb  45h ; E\ldb 0F8h\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_14]\ljmp     loc_13B2\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_10]\lshr     eax, 18h\lxor     [rbp+var_14], eax\ljmp     short loc_12EA\ldb  45h ; E\ldb 0F8h\ldb    4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_14]\lshl     eax, 4\lmov     edx, eax\lmov     rax, [rbp+var_28]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_14], eax\lmov     eax, [rbp+var_14]\land     eax, 0F0000000h\lmov     [rbp+var_10], eax\ljmp     short loc_136E\ldb  45h ; E\ldb 0F8h\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_C]\lcmp     eax, [rbp+var_2C]\ljnb     short loc_1364\l"
+	];
+	"8" [
+		label = "jmp     short loc_1326\ldb  45h ; E\ldb 0F8h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "jmp     short loc_1308\ldb  45h ; E\ldb 0F8h\ldb    8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "cmp     [rbp+var_10], 0\ljz      short loc_137E\l"
+	];
+	"11" [
+		label = "jmp     short loc_1310\ldb  45h ; E\ldb 0F8h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "jmp     loc_12EA\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "mov     [rbp+var_14], 0\lmov     [rbp+var_10], 0\lmov     [rbp+var_C], 0\lmov     [rbp+var_C], 0\ljmp     short loc_1352\ldb  45h ; E\ldb 0F8h\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"14" [
+		label = "jmp     loc_12BF\l"
+	];
+	"15" [
+		label = "pop     rbp\lretn\l"
+	];
+	"16" [
+		label = "unk_12E9\l"
+	];
+// node 0
+	"0" -> "13" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "16" [ ];
+// node 3
+	"3" -> "7" [ ];
+// node 4
+	"4" -> "15" [ ];
+// node 5
+	"5" -> "3" [ ];
+// node 6
+	"6" -> "10" [ ];
+// node 7
+	"7" -> "8" [ label = "false", color = red ];
+	"7" -> "9" [ label = "true", color = darkgreen ];
+// node 8
+	"8" -> "6" [ ];
+// node 9
+	"9" -> "4" [ ];
+// node 10
+	"10" -> "11" [ label = "false", color = red ];
+	"10" -> "12" [ label = "true", color = darkgreen ];
+// node 11
+	"11" -> "5" [ ];
+// node 12
+	"12" -> "3" [ ];
+// node 13
+	"13" -> "7" [ ];
+// node 14
+	"14" -> "1" [ ];
+// node 15
+// node 16
+}

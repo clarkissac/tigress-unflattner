@@ -1,0 +1,93 @@
+digraph "AddRoundKey" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "AddRoundKey:\lpush    rbp\lmov     rbp, rsp\lmov     eax, edi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_28], rdx\lmov     [rbp+var_14], al\lmov     [rbp+var_10], 6\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 0Ah; switch 11 cases\lja      short def_2F38; jumptable 0000000000002F38 default case, cases 3,4,8,9\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_2F38\lmov     eax, ds:(jpt_2F38 - 4080h)[rdx+rax]\lcdqe\llea     rdx, jpt_2F38\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "add     [rbp+var_1], 1; jumptable 0000000000002F38 case 1\lmov     [rbp+var_10], 0Ah\ljmp     loc_301F\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_1], 0; jumptable 0000000000002F38 case 6\lmov     [rbp+var_10], 0Ah\ljmp     loc_301F\l"
+	];
+	"5" [
+		label = "cmp     [rbp+var_2], 3; jumptable 0000000000002F38 case 5\lja      short loc_2F6F\l"
+	];
+	"6" [
+		label = "mov     [rbp+var_10], 7\ljmp     loc_301F\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_10], 1\ljmp     loc_301F\l"
+	];
+	"8" [
+		label = "cmp     [rbp+var_1], 3; jumptable 0000000000002F38 case 10\lja      short loc_2F8F\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_10], 2\ljmp     loc_301F\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_10], 0\ljmp     loc_301F\l"
+	];
+	"11" [
+		label = "movzx   eax, [rbp+var_1]; jumptable 0000000000002F38 case 7\lmovzx   edx, [rbp+var_2]\lmov     rcx, [rbp+var_20]\lmovsxd  rdx, edx\lcdqe\lshl     rax, 2\ladd     rax, rcx\ladd     rax, rdx\lmovzx   esi, byte ptr [rax]\lmovzx   eax, [rbp+var_14]\llea     edx, ds:0[rax*4]\lmovzx   eax, [rbp+var_1]\ladd     eax, edx\llea     edx, ds:0[rax*4]\lmovzx   eax, [rbp+var_2]\ladd     eax, edx\lmovsxd  rdx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   edx, byte ptr [rax]\lmovzx   eax, [rbp+var_1]\lmovzx   ecx, [rbp+var_2]\lxor     edx, esi\lmov     rsi, [rbp+var_20]\lmovsxd  rcx, ecx\lcdqe\lshl     rax, 2\ladd     rax, rsi\ladd     rax, rcx\lmov     [rax], dl\ladd     [rbp+var_2], 1\lmov     [rbp+var_10], 5\ljmp     short loc_301F\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_2], 0; jumptable 0000000000002F38 case 2\lmov     [rbp+var_10], 5\lnop\l"
+	];
+	"13" [
+		label = "jmp     def_2F38; jumptable 0000000000002F38 default case, cases 3,4,8,9\l"
+	];
+	"14" [
+		label = "nop; jumptable 0000000000002F38 case 0\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "5" [ ];
+	"2" -> "8" [ ];
+	"2" -> "11" [ ];
+	"2" -> "12" [ ];
+	"2" -> "14" [ ];
+// node 3
+	"3" -> "13" [ ];
+// node 4
+	"4" -> "13" [ ];
+// node 5
+	"5" -> "6" [ label = "false", color = red ];
+	"5" -> "7" [ label = "true", color = darkgreen ];
+// node 6
+	"6" -> "13" [ ];
+// node 7
+	"7" -> "13" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "13" [ ];
+// node 10
+	"10" -> "13" [ ];
+// node 11
+	"11" -> "13" [ ];
+// node 12
+	"12" -> "13" [ ];
+// node 13
+	"13" -> "1" [ ];
+// node 14
+}

@@ -1,0 +1,40 @@
+digraph "swap" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "swap:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_8], 0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 0\ljz      short loc_120D\l"
+	];
+	"2" [
+		label = "cmp     [rbp+var_8], 1\ljnz     short loc_11FD\l"
+	];
+	"3" [
+		label = "jmp     short loc_1236\l"
+	];
+	"4" [
+		label = "mov     rax, [rbp+var_18]\lmov     eax, [rax]\lmov     [rbp+var_C], eax\lmov     rax, [rbp+var_20]\lmov     edx, [rax]\lmov     rax, [rbp+var_18]\lmov     [rax], edx\lmov     rax, [rbp+var_20]\lmov     edx, [rbp+var_C]\lmov     [rax], edx\lmov     [rbp+var_8], 1\lnop\ljmp     short loc_11FD\l"
+	];
+	"5" [
+		label = "pop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "4" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+	"3" -> "5" [ ];
+// node 4
+	"4" -> "1" [ ];
+// node 5
+}

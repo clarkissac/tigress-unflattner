@@ -1,0 +1,95 @@
+digraph "RSHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "RSHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\lmov     [rbp+var_8], 2\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 5\ljz      short loc_11D3\l"
+	];
+	"2" [
+		label = "cmp     [rbp+var_8], 5\lja      short loc_1183\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_8], 4\ljz      short loc_11AF\l"
+	];
+	"4" [
+		label = "cmp     [rbp+var_8], 4\lja      short loc_1183\l"
+	];
+	"5" [
+		label = "cmp     [rbp+var_8], 2\ljz      short loc_1208\l"
+	];
+	"6" [
+		label = "cmp     [rbp+var_8], 3\ljz      short loc_11B7\l"
+	];
+	"7" [
+		label = "jmp     short loc_1183\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_10]\ljmp     loc_1239\l"
+	];
+	"9" [
+		label = "mov     eax, [rbp+var_C]\lcmp     eax, [rbp+var_2C]\ljnb     short loc_11C9\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_8], 5\ljmp     short loc_1234\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_8], 4\ljmp     short loc_1234\l"
+	];
+	"12" [
+		label = "mov     eax, [rbp+var_10]\limul    eax, [rbp+var_14]\lmov     edx, eax\lmov     rax, [rbp+var_28]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_10], eax\lmov     eax, [rbp+var_14]\limul    eax, [rbp+var_18]\lmov     [rbp+var_14], eax\ladd     [rbp+var_28], 1\ladd     [rbp+var_C], 1\lmov     [rbp+var_8], 3\ljmp     short loc_1234\l"
+	];
+	"13" [
+		label = "mov     [rbp+var_18], 5C6B7h\lmov     [rbp+var_14], 0F8C9h\lmov     [rbp+var_10], 0\lmov     [rbp+var_C], 0\lmov     [rbp+var_C], 0\lmov     [rbp+var_8], 3\lnop\l"
+	];
+	"14" [
+		label = "jmp     loc_1183\l"
+	];
+	"15" [
+		label = "pop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "12" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "8" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "1" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+	"5" -> "6" [ label = "false", color = red ];
+	"5" -> "13" [ label = "true", color = darkgreen ];
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "9" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "1" [ ];
+// node 8
+	"8" -> "15" [ ];
+// node 9
+	"9" -> "10" [ label = "false", color = red ];
+	"9" -> "11" [ label = "true", color = darkgreen ];
+// node 10
+	"10" -> "14" [ ];
+// node 11
+	"11" -> "14" [ ];
+// node 12
+	"12" -> "14" [ ];
+// node 13
+	"13" -> "14" [ ];
+// node 14
+	"14" -> "1" [ ];
+// node 15
+}

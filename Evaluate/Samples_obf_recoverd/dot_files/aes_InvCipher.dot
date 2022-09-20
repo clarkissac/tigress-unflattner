@@ -1,0 +1,69 @@
+digraph "InvCipher" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "InvCipher:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\ljmp     short loc_2193\ldb  45h ; E\ldb 0F0h\ldb    4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 6\lja      short loc_2168\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, dword_4004\lmov     eax, ds:(dword_4004 - 4004h)[rdx+rax]\lcdqe\llea     rdx, dword_4004\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     [rbp+var_1], 0\lmov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0Ah\lcall    AddRoundKey\lmov     [rbp+var_1], 9\ljmp     short loc_21BA\ldb  45h ; E\ldb 0F0h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    InvShiftRows\lmov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    InvSubBytes\lmovzx   eax, [rbp+var_1]\lmov     rdx, [rbp+var_20]\lmov     rcx, [rbp+var_18]\lmov     rsi, rcx\lmov     edi, eax\lcall    AddRoundKey\ljmp     short loc_220C\ldb  45h ; E\ldb 0F0h\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    InvMixColumns\lsub     [rbp+var_1], 1\ljmp     short loc_21BA\ldb  45h ; E\ldb 0F0h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "cmp     [rbp+var_1], 0\ljnz     short loc_221C\l"
+	];
+	"7" [
+		label = "jmp     short loc_222A\ldb  45h ; E\ldb 0F0h\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "jmp     short loc_21F2\ldb  45h ; E\ldb 0F0h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "jmp     loc_2168\l"
+	];
+	"10" [
+		label = "nop\lleave\lretn\l"
+	];
+	"11" [
+		label = "unk_2192\l"
+	];
+// node 0
+	"0" -> "3" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "11" [ ];
+// node 3
+	"3" -> "4" [ ];
+// node 4
+	"4" -> "6" [ ];
+// node 5
+	"5" -> "4" [ ];
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "8" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "10" [ ];
+// node 8
+	"8" -> "5" [ ];
+// node 9
+	"9" -> "1" [ ];
+// node 10
+// node 11
+}

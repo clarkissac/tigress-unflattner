@@ -1,0 +1,56 @@
+digraph "KeyExpansion" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "KeyExpansion:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_30], rsi\lmov     [rbp+var_4], 0\ljmp     loc_11DF\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_4]\lshl     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 1\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 2\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 3\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\ladd     [rbp+var_4], 1\l"
+	];
+	"2" [
+		label = "cmp     [rbp+var_4], 3\ljbe     loc_113D\l"
+	];
+	"3" [
+		label = "mov     [rbp+var_4], 4\ljmp     loc_13AC\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_4]\lsub     eax, 1\lshl     eax, 2\lmov     [rbp+var_8], eax\lmov     edx, [rbp+var_8]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_14], al\lmov     eax, [rbp+var_8]\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_13], al\lmov     eax, [rbp+var_8]\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_12], al\lmov     eax, [rbp+var_8]\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_11], al\lmov     eax, [rbp+var_4]\land     eax, 3\ltest    eax, eax\ljnz     loc_12F9\l"
+	];
+	"5" [
+		label = "movzx   eax, [rbp+var_14]\lmov     [rbp+var_9], al\lmovzx   eax, [rbp+var_13]\lmov     [rbp+var_14], al\lmovzx   eax, [rbp+var_12]\lmov     [rbp+var_13], al\lmovzx   eax, [rbp+var_11]\lmov     [rbp+var_12], al\lmovzx   eax, [rbp+var_9]\lmov     [rbp+var_11], al\lmovzx   eax, [rbp+var_14]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_14], al\lmovzx   eax, [rbp+var_13]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_13], al\lmovzx   eax, [rbp+var_12]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_12], al\lmovzx   eax, [rbp+var_11]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_11], al\lmovzx   edx, [rbp+var_14]\lmov     eax, [rbp+var_4]\lshr     eax, 2\lmov     ecx, eax\llea     rax, Rcon\lmovzx   eax, byte ptr [rcx+rax]\lxor     eax, edx\lmov     [rbp+var_14], al\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_4]\lshl     eax, 2\lmov     [rbp+var_10], eax\lmov     eax, [rbp+var_4]\lsub     eax, 4\lshl     eax, 2\lmov     [rbp+var_8], eax\lmov     edx, [rbp+var_8]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_14]\lmov     esi, [rbp+var_10]\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_8]\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_13]\lmov     eax, [rbp+var_10]\ladd     eax, 1\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_8]\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_12]\lmov     eax, [rbp+var_10]\ladd     eax, 2\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_8]\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_11]\lmov     eax, [rbp+var_10]\ladd     eax, 3\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\ladd     [rbp+var_4], 1\l"
+	];
+	"7" [
+		label = "cmp     [rbp+var_4], 2Bh ; '+'\ljbe     loc_11F5\l"
+	];
+	"8" [
+		label = "nop\lnop\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "2" [ ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+	"3" -> "7" [ ];
+// node 4
+	"4" -> "5" [ label = "false", color = red ];
+	"4" -> "6" [ label = "true", color = darkgreen ];
+// node 5
+	"5" -> "6" [ ];
+// node 6
+	"6" -> "7" [ ];
+// node 7
+	"7" -> "4" [ label = "true", color = darkgreen ];
+	"7" -> "8" [ label = "false", color = red ];
+// node 8
+}

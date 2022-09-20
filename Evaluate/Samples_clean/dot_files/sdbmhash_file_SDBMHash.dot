@@ -1,0 +1,29 @@
+digraph "SDBMHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "SDBMHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_8], 0\lmov     [rbp+var_4], 0\lmov     [rbp+var_4], 0\ljmp     short loc_1254\l"
+	];
+	"1" [
+		label = "mov     rax, [rbp+var_18]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\lmov     edx, [rbp+var_8]\lshl     edx, 6\ladd     edx, eax\lmov     eax, [rbp+var_8]\lshl     eax, 10h\ladd     eax, edx\lsub     eax, [rbp+var_8]\lmov     [rbp+var_8], eax\ladd     [rbp+var_18], 1\ladd     [rbp+var_4], 1\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_4]\lcmp     eax, [rbp+var_1C]\ljb      short loc_122B\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_8]\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "2" [ ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+}

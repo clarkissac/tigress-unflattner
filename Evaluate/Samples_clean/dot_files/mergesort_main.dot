@@ -1,0 +1,55 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_14], edi\lmov     [rbp+var_20], rsi\lmov     eax, [rbp+var_14]\lcdqe\lshl     rax, 2\lsub     rax, 1\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+var_8], rax\lcmp     [rbp+var_8], 0\ljnz     short loc_1521\l"
+	];
+	"1" [
+		label = "lea     rax, s; \"Error Allocating the array\"\lmov     rdi, rax; s\lcall    _puts\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"2" [
+		label = "mov     [rbp+var_C], 1\ljmp     short loc_1570\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_C]\lcdqe\lshl     rax, 2\llea     rdx, [rax-4]\lmov     rax, [rbp+var_8]\ladd     rdx, rax\lmov     eax, [rbp+var_C]\lcdqe\llea     rcx, ds:0[rax*8]\lmov     rax, [rbp+var_20]\ladd     rax, rcx\lmov     rax, [rax]\llea     rcx, format; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; s\lmov     eax, 0\lcall    _sscanf\ladd     [rbp+var_C], 1\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_C]\lcmp     eax, [rbp+var_14]\ljl      short loc_152A\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_14]\llea     edx, [rax-2]\lmov     rax, [rbp+var_8]\lmov     esi, 0\lmov     rdi, rax\lcall    mergeSort\lmov     [rbp+var_C], 0\ljmp     short loc_15C8\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_8]\ladd     rax, rdx\lmov     eax, [rax]\lmov     esi, eax\llea     rax, aD_0; \"%d \"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ladd     [rbp+var_C], 1\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_14]\lsub     eax, 1\lcmp     [rbp+var_C], eax\ljl      short loc_1598\l"
+	];
+	"8" [
+		label = "mov     edi, 0Ah; c\lcall    _putchar\lmov     eax, 0\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ label = "false", color = red ];
+	"0" -> "2" [ label = "true", color = darkgreen ];
+// node 1
+// node 2
+	"2" -> "4" [ ];
+// node 3
+	"3" -> "4" [ ];
+// node 4
+	"4" -> "3" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+	"5" -> "7" [ ];
+// node 6
+	"6" -> "7" [ ];
+// node 7
+	"7" -> "6" [ label = "true", color = darkgreen ];
+	"7" -> "8" [ label = "false", color = red ];
+// node 8
+}

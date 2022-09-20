@@ -1,0 +1,76 @@
+digraph "Cipher" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "Cipher:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_10], 1\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 7; switch 8 cases\lja      short def_226E; jumptable 000000000000226E default case, cases 0,2\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_226E\lmov     eax, ds:(jpt_226E - 4020h)[rdx+rax]\lcdqe\llea     rdx, jpt_226E\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     [rbp+var_1], 0; jumptable 000000000000226E case 1\lmov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0\lcall    AddRoundKey\lmov     [rbp+var_1], 1\lmov     [rbp+var_10], 7\ljmp     loc_2324\l"
+	];
+	"4" [
+		label = "mov     rdx, [rbp+var_20]; jumptable 000000000000226E case 3\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0Ah\lcall    AddRoundKey\lmov     [rbp+var_10], 4\ljmp     short loc_2324\l"
+	];
+	"5" [
+		label = "cmp     [rbp+var_1], 0Ah; jumptable 000000000000226E case 6\ljnz     short loc_22C9\l"
+	];
+	"6" [
+		label = "mov     [rbp+var_10], 3\ljmp     short loc_2324\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_10], 5\ljmp     short loc_2324\l"
+	];
+	"8" [
+		label = "mov     rax, [rbp+var_18]; jumptable 000000000000226E case 5\lmov     rdi, rax\lcall    MixColumns\lmovzx   eax, [rbp+var_1]\lmov     rdx, [rbp+var_20]\lmov     rcx, [rbp+var_18]\lmov     rsi, rcx\lmov     edi, eax\lcall    AddRoundKey\ladd     [rbp+var_1], 1\lmov     [rbp+var_10], 7\ljmp     short loc_2324\l"
+	];
+	"9" [
+		label = "mov     rax, [rbp+var_18]; jumptable 000000000000226E case 7\lmov     rdi, rax\lcall    SubBytes\lmov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    ShiftRows\lmov     [rbp+var_10], 6\lnop\l"
+	];
+	"10" [
+		label = "jmp     def_226E; jumptable 000000000000226E default case, cases 0,2\l"
+	];
+	"11" [
+		label = "nop; jumptable 000000000000226E case 4\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "5" [ ];
+	"2" -> "8" [ ];
+	"2" -> "9" [ ];
+	"2" -> "11" [ ];
+// node 3
+	"3" -> "10" [ ];
+// node 4
+	"4" -> "10" [ ];
+// node 5
+	"5" -> "6" [ label = "false", color = red ];
+	"5" -> "7" [ label = "true", color = darkgreen ];
+// node 6
+	"6" -> "10" [ ];
+// node 7
+	"7" -> "10" [ ];
+// node 8
+	"8" -> "10" [ ];
+// node 9
+	"9" -> "10" [ ];
+// node 10
+	"10" -> "1" [ ];
+// node 11
+}

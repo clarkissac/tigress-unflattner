@@ -1,0 +1,29 @@
+digraph "Cipher" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "Cipher:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_1], 0\lmov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0\lcall    AddRoundKey\lmov     [rbp+var_1], 1\l"
+	];
+	"1" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    SubBytes\lmov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    ShiftRows\lcmp     [rbp+var_1], 0Ah\ljz      short loc_21DF\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    MixColumns\lmovzx   eax, [rbp+var_1]\lmov     rdx, [rbp+var_20]\lmov     rcx, [rbp+var_18]\lmov     rsi, rcx\lmov     edi, eax\lcall    AddRoundKey\ladd     [rbp+var_1], 1\ljmp     short loc_2199\l"
+	];
+	"3" [
+		label = "nop\lmov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0Ah\lcall    AddRoundKey\lnop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "3" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+// node 3
+}

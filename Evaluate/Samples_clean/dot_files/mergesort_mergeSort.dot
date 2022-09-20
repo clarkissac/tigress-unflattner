@@ -1,0 +1,24 @@
+digraph "mergeSort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "mergeSort:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_20], edx\lmov     eax, [rbp+var_1C]\lcmp     eax, [rbp+var_20]\ljge     short loc_14D6\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_20]\lsub     eax, [rbp+var_1C]\lmov     edx, eax\lshr     edx, 1Fh\ladd     eax, edx\lsar     eax, 1\lmov     edx, eax\lmov     eax, [rbp+var_1C]\ladd     eax, edx\lmov     [rbp+var_4], eax\lmov     edx, [rbp+var_4]\lmov     ecx, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    mergeSort\lmov     eax, [rbp+var_4]\llea     ecx, [rax+1]\lmov     edx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    mergeSort\lmov     ecx, [rbp+var_20]\lmov     edx, [rbp+var_4]\lmov     esi, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    merge\l"
+	];
+	"2" [
+		label = "nop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ label = "false", color = red ];
+	"0" -> "2" [ label = "true", color = darkgreen ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+}

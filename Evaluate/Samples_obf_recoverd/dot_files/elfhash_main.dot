@@ -1,0 +1,79 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 50h\lmov     [rbp+var_34], edi\lmov     [rbp+var_40], rsi\lmov     [rbp+var_48], rdx\lcall    megaInit\lmov     eax, [rbp+var_34]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_40]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_48]\lmov     cs:_global_envp, rax\lmov     [rbp+var_20], 1\ljmp     loc_1246\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_18], 5\lja      short loc_11B6\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_18]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2020\lmov     eax, ds:(dword_2020 - 2020h)[rdx+rax]\lcdqe\llea     rdx, dword_2020\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "lea     rax, s; \"You loose!\"\lmov     rdi, rax; s\lcall    _puts\ljmp     short loc_1223\ldb  45h ; E\ldb 0E8h\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     eax, 0\ljmp     locret_12AA\l"
+	];
+	"5" [
+		label = "lea     rax, aYouWin; \"You win!\"\lmov     rdi, rax; s\lcall    _puts\ljmp     short loc_1223\ldb  45h ; E\ldb 0E8h\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_24]\lmov     esi, eax\llea     rax, format; \"Hash: 0x%x\\n\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ljmp     short loc_11FD\ldb  45h ; E\ldb 0E8h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "mov     rax, [rbp+var_40]\lmov     rax, [rax+8]\lmov     [rbp+s], rax\lmov     rax, [rbp+s]\lmov     rdi, rax; s\lcall    _strlen\lmov     [rbp+var_8], rax\lmov     rax, [rbp+var_8]\lmov     edx, eax\lmov     rax, [rbp+s]\lmov     esi, edx\lmov     rdi, rax\lcall    ELFHash\lmov     [rbp+var_1C], eax\lmov     eax, [rbp+var_1C]\lmov     [rbp+var_24], eax\ljmp     short loc_1289\ldb  45h ; E\ldb 0E8h\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "cmp     [rbp+var_24], 0AF9BEC9h\ljnz     short loc_129C\l"
+	];
+	"9" [
+		label = "jmp     loc_1207\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "jmp     loc_11E1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "jmp     loc_11B6\l"
+	];
+	"12" [
+		label = "leave\lretn\l"
+	];
+	"13" [
+		label = "unk_11E0\l"
+	];
+// node 0
+	"0" -> "7" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "13" [ ];
+// node 3
+	"3" -> "6" [ ];
+// node 4
+	"4" -> "12" [ ];
+// node 5
+	"5" -> "6" [ ];
+// node 6
+	"6" -> "4" [ ];
+// node 7
+	"7" -> "8" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "5" [ ];
+// node 10
+	"10" -> "3" [ ];
+// node 11
+	"11" -> "1" [ ];
+// node 12
+// node 13
+}

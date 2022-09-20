@@ -1,0 +1,90 @@
+digraph "AddRoundKey" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "AddRoundKey:\lpush    rbp\lmov     rbp, rsp\lmov     eax, edi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_28], rdx\lmov     [rbp+var_14], al\ljmp     short loc_2F4B\ldb  45h ; E\ldb 0F0h\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 0Ah\lja      short loc_2F0F\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, dword_4080\lmov     eax, ds:(dword_4080 - 4080h)[rdx+rax]\lcdqe\llea     rdx, dword_4080\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "add     [rbp+var_1], 1\ljmp     short loc_2F7C\ldb  45h ; E\ldb 0F0h\ldb  0Ah\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_1], 0\ljmp     short loc_2F7C\ldb  45h ; E\ldb 0F0h\ldb  0Ah\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "cmp     [rbp+var_2], 3\lja      short loc_2F6F\l"
+	];
+	"6" [
+		label = "jmp     short loc_2F9C\ldb  45h ; E\ldb 0F0h\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "jmp     short loc_2F3A\ldb  45h ; E\ldb 0F0h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "cmp     [rbp+var_1], 3\lja      short loc_2F8F\l"
+	];
+	"9" [
+		label = "jmp     loc_3012\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "jmp     loc_3024\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "movzx   eax, [rbp+var_1]\lmovzx   edx, [rbp+var_2]\lmov     rcx, [rbp+var_20]\lmovsxd  rdx, edx\lcdqe\lshl     rax, 2\ladd     rax, rcx\ladd     rax, rdx\lmovzx   esi, byte ptr [rax]\lmovzx   eax, [rbp+var_14]\llea     edx, ds:0[rax*4]\lmovzx   eax, [rbp+var_1]\ladd     eax, edx\llea     edx, ds:0[rax*4]\lmovzx   eax, [rbp+var_2]\ladd     eax, edx\lmovsxd  rdx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   edx, byte ptr [rax]\lmovzx   eax, [rbp+var_1]\lmovzx   ecx, [rbp+var_2]\lxor     edx, esi\lmov     rsi, [rbp+var_20]\lmovsxd  rcx, ecx\lcdqe\lshl     rax, 2\ladd     rax, rsi\ladd     rax, rcx\lmov     [rax], dl\ladd     [rbp+var_2], 1\ljmp     loc_2F5C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_2], 0\ljmp     loc_2F5C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "jmp     loc_2F0F\l"
+	];
+	"14" [
+		label = "nop\lpop     rbp\lretn\l"
+	];
+	"15" [
+		label = "unk_2F39\l"
+	];
+// node 0
+	"0" -> "4" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "15" [ ];
+// node 3
+	"3" -> "8" [ ];
+// node 4
+	"4" -> "8" [ ];
+// node 5
+	"5" -> "6" [ label = "false", color = red ];
+	"5" -> "7" [ label = "true", color = darkgreen ];
+// node 6
+	"6" -> "11" [ ];
+// node 7
+	"7" -> "3" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "12" [ ];
+// node 10
+	"10" -> "14" [ ];
+// node 11
+	"11" -> "5" [ ];
+// node 12
+	"12" -> "5" [ ];
+// node 13
+	"13" -> "1" [ ];
+// node 14
+// node 15
+}

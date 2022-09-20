@@ -1,0 +1,85 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 50h\lmov     [rbp+var_34], edi\lmov     [rbp+var_40], rsi\lmov     [rbp+var_48], rdx\lcall    megaInit\lmov     eax, [rbp+var_34]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_40]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_48]\lmov     cs:_global_envp, rax\lmov     [rbp+var_20], 1\lmov     [rbp+var_18], 0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_18], 5; switch 6 cases\lja      short def_11DF; jumptable 00000000000011DF default case\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_18]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_11DF\lmov     eax, ds:(jpt_11DF - 2020h)[rdx+rax]\lcdqe\llea     rdx, jpt_11DF\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "lea     rax, s; jumptable 00000000000011DF case 4\lmov     rdi, rax; s\lcall    _puts\lmov     [rbp+var_18], 5\ljmp     loc_12A5\l"
+	];
+	"4" [
+		label = "mov     eax, 0; jumptable 00000000000011DF case 1\ljmp     locret_12AA\l"
+	];
+	"5" [
+		label = "lea     rax, aYouWin; jumptable 00000000000011DF case 3\lmov     rdi, rax; s\lcall    _puts\lmov     [rbp+var_18], 5\ljmp     loc_12A5\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_24]; jumptable 00000000000011DF case 5\lmov     esi, eax\llea     rax, format; \"Hash: 0x%x\\n\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\lmov     [rbp+var_18], 1\ljmp     short loc_12A5\l"
+	];
+	"7" [
+		label = "mov     rax, [rbp+var_40]; jumptable 00000000000011DF case 0\lmov     rax, [rax+8]\lmov     [rbp+s], rax\lmov     rax, [rbp+s]\lmov     rdi, rax; s\lcall    _strlen\lmov     [rbp+var_8], rax\lmov     rax, [rbp+var_8]\lmov     edx, eax\lmov     rax, [rbp+s]\lmov     esi, edx\lmov     rdi, rax\lcall    ELFHash\lmov     [rbp+var_1C], eax\lmov     eax, [rbp+var_1C]\lmov     [rbp+var_24], eax\lmov     [rbp+var_18], 2\ljmp     short loc_12A5\l"
+	];
+	"8" [
+		label = "cmp     [rbp+var_24], 0AF9BEC9h; jumptable 00000000000011DF case 2\ljnz     short loc_129C\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_18], 3\ljmp     short loc_12A4\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_18], 4\l"
+	];
+	"11" [
+		label = "nop\l"
+	];
+	"12" [
+		label = "jmp     def_11DF; jumptable 00000000000011DF default case\l"
+	];
+	"13" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "5" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+// node 3
+	"3" -> "12" [ ];
+// node 4
+	"4" -> "13" [ ];
+// node 5
+	"5" -> "12" [ ];
+// node 6
+	"6" -> "12" [ ];
+// node 7
+	"7" -> "12" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "11" [ ];
+// node 10
+	"10" -> "11" [ ];
+// node 11
+	"11" -> "12" [ ];
+// node 12
+	"12" -> "1" [ ];
+// node 13
+}

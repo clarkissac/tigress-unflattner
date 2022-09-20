@@ -1,0 +1,98 @@
+digraph "partition" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "partition:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 30h\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\lmov     [rbp+var_30], edx\lmov     [rbp+var_8], 7\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 8; switch 9 cases\lja      short def_193B; jumptable 000000000000193B default case, cases 2,5\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_193B\lmov     eax, ds:(jpt_193B - 20DCh)[rdx+rax]\lcdqe\llea     rdx, jpt_193B\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_10]; jumptable 000000000000193B case 4\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     eax, [rax]\lcmp     [rbp+var_14], eax\ljle     short loc_1965\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_8], 8\ljmp     loc_1A60\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_8], 1\ljmp     loc_1A60\l"
+	];
+	"6" [
+		label = "add     [rbp+var_C], 1; jumptable 000000000000193B case 8\lmov     eax, [rbp+var_10]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rdx, rax\lmov     eax, [rbp+var_C]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     rsi, rdx\lmov     rdi, rax\lcall    swap\lmov     [rbp+var_8], 1\ljmp     loc_1A60\l"
+	];
+	"7" [
+		label = "add     [rbp+var_10], 1; jumptable 000000000000193B case 1\lmov     [rbp+var_8], 6\ljmp     loc_1A60\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_C]; jumptable 000000000000193B case 3\ladd     eax, 1\ljmp     locret_1A65\l"
+	];
+	"9" [
+		label = "mov     eax, [rbp+var_30]; jumptable 000000000000193B case 6\lcmp     eax, [rbp+var_10]\ljle     short loc_19E4\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_8], 4\ljmp     short loc_1A60\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_8], 0\ljmp     short loc_1A60\l"
+	];
+	"12" [
+		label = "mov     eax, [rbp+var_30]; jumptable 000000000000193B case 0\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rdx, rax\lmov     eax, [rbp+var_C]\lcdqe\ladd     rax, 1\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     rsi, rdx\lmov     rdi, rax\lcall    swap\lmov     [rbp+var_8], 3\ljmp     short loc_1A60\l"
+	];
+	"13" [
+		label = "mov     eax, [rbp+var_30]; jumptable 000000000000193B case 7\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     eax, [rax]\lmov     [rbp+var_14], eax\lmov     eax, [rbp+var_2C]\lsub     eax, 1\lmov     [rbp+var_C], eax\lmov     eax, [rbp+var_2C]\lmov     [rbp+var_10], eax\lmov     [rbp+var_8], 6\lnop\l"
+	];
+	"14" [
+		label = "jmp     def_193B; jumptable 000000000000193B default case, cases 2,5\l"
+	];
+	"15" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "9" [ ];
+	"2" -> "12" [ ];
+	"2" -> "13" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "14" [ ];
+// node 5
+	"5" -> "14" [ ];
+// node 6
+	"6" -> "14" [ ];
+// node 7
+	"7" -> "14" [ ];
+// node 8
+	"8" -> "15" [ ];
+// node 9
+	"9" -> "10" [ label = "false", color = red ];
+	"9" -> "11" [ label = "true", color = darkgreen ];
+// node 10
+	"10" -> "14" [ ];
+// node 11
+	"11" -> "14" [ ];
+// node 12
+	"12" -> "14" [ ];
+// node 13
+	"13" -> "14" [ ];
+// node 14
+	"14" -> "1" [ ];
+// node 15
+}

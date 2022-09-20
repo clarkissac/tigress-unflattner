@@ -1,0 +1,98 @@
+digraph "PJWHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "PJWHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_38], rdi\lmov     [rbp+var_3C], esi\lmov     [rbp+var_8], 2\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 8; switch 9 cases\lja      short def_124C; jumptable 000000000000124C default case, cases 0,7\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_124C\lmov     eax, ds:(jpt_124C - 2000h)[rdx+rax]\lcdqe\llea     rdx, jpt_124C\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "add     [rbp+var_38], 1; jumptable 000000000000124C case 4\ladd     [rbp+var_10], 1\lmov     [rbp+var_8], 6\ljmp     loc_134F\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_18]; jumptable 000000000000124C case 8\ljmp     loc_1354\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_24]; jumptable 000000000000124C case 1\lmov     edx, [rbp+var_14]\lmov     ecx, eax\lshr     edx, cl\lmov     eax, edx\lxor     eax, [rbp+var_18]\lmov     edx, [rbp+var_1C]\lnot     edx\land     eax, edx\lmov     [rbp+var_18], eax\lmov     [rbp+var_8], 4\ljmp     loc_134F\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_20]; jumptable 000000000000124C case 3\lmov     edx, [rbp+var_18]\lmov     ecx, eax\lshl     edx, cl\lmov     rax, [rbp+var_38]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_18], eax\lmov     eax, [rbp+var_18]\land     eax, [rbp+var_1C]\lmov     [rbp+var_14], eax\lmov     [rbp+var_8], 5\ljmp     loc_134F\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_10]; jumptable 000000000000124C case 6\lcmp     eax, [rbp+var_3C]\ljnb     short loc_12D3\l"
+	];
+	"8" [
+		label = "mov     [rbp+var_8], 3\ljmp     short loc_134F\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_8], 8\ljmp     short loc_134F\l"
+	];
+	"10" [
+		label = "cmp     [rbp+var_14], 0; jumptable 000000000000124C case 5\ljz      short loc_12ED\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_8], 1\ljmp     short loc_134F\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_8], 4\ljmp     short loc_134F\l"
+	];
+	"13" [
+		label = "mov     [rbp+var_C], 20h ; ' '; jumptable 000000000000124C case 2\lmov     edx, [rbp+var_C]\lmov     eax, edx\ladd     eax, eax\ladd     eax, edx\lshr     eax, 2\lmov     [rbp+var_24], eax\lmov     eax, [rbp+var_C]\lshr     eax, 3\lmov     [rbp+var_20], eax\lmov     eax, [rbp+var_C]\lsub     eax, [rbp+var_20]\lmov     edx, 0FFFFFFFFh\lmov     ecx, eax\lshl     edx, cl\lmov     eax, edx\lmov     [rbp+var_1C], eax\lmov     [rbp+var_18], 0\lmov     [rbp+var_14], 0\lmov     [rbp+var_10], 0\lmov     [rbp+var_10], 0\lmov     [rbp+var_8], 6\lnop\l"
+	];
+	"14" [
+		label = "jmp     def_124C; jumptable 000000000000124C default case, cases 0,7\l"
+	];
+	"15" [
+		label = "pop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "5" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "10" [ ];
+	"2" -> "13" [ ];
+// node 3
+	"3" -> "14" [ ];
+// node 4
+	"4" -> "15" [ ];
+// node 5
+	"5" -> "14" [ ];
+// node 6
+	"6" -> "14" [ ];
+// node 7
+	"7" -> "8" [ label = "false", color = red ];
+	"7" -> "9" [ label = "true", color = darkgreen ];
+// node 8
+	"8" -> "14" [ ];
+// node 9
+	"9" -> "14" [ ];
+// node 10
+	"10" -> "11" [ label = "false", color = red ];
+	"10" -> "12" [ label = "true", color = darkgreen ];
+// node 11
+	"11" -> "14" [ ];
+// node 12
+	"12" -> "14" [ ];
+// node 13
+	"13" -> "14" [ ];
+// node 14
+	"14" -> "1" [ ];
+// node 15
+}

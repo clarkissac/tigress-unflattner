@@ -1,0 +1,98 @@
+digraph "SubBytes" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "SubBytes:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_10], 0Ah\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 0Ah; switch 11 cases\lja      short def_3B31; jumptable 0000000000003B31 default case, cases 0,2,4,6\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_3B31\lmov     eax, ds:(jpt_3B31 - 40E4h)[rdx+rax]\lcdqe\llea     rdx, jpt_3B31\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     [rbp+var_2], 0; jumptable 0000000000003B31 case 8\lmov     [rbp+var_10], 7\ljmp     loc_3BF3\l"
+	];
+	"4" [
+		label = "cmp     [rbp+var_1], 3; jumptable 0000000000003B31 case 1\lja      short loc_3B57\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_10], 8\ljmp     loc_3BF3\l"
+	];
+	"6" [
+		label = "mov     [rbp+var_10], 9\ljmp     loc_3BF3\l"
+	];
+	"7" [
+		label = "movzx   eax, [rbp+var_2]; jumptable 0000000000003B31 case 3\lmovzx   edx, [rbp+var_1]\lmov     rcx, [rbp+var_18]\lmovsxd  rdx, edx\lcdqe\lshl     rax, 2\ladd     rax, rcx\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmovzx   eax, al\lmovzx   ecx, [rbp+var_2]\lmovzx   esi, [rbp+var_1]\lcdqe\llea     rdx, sbox\lmovzx   edx, byte ptr [rax+rdx]\lmov     rdi, [rbp+var_18]\lmovsxd  rsi, esi\lmovsxd  rax, ecx\lshl     rax, 2\ladd     rax, rdi\ladd     rax, rsi\lmov     [rax], dl\ladd     [rbp+var_2], 1\lmov     [rbp+var_10], 7\ljmp     short loc_3BF3\l"
+	];
+	"8" [
+		label = "add     [rbp+var_1], 1; jumptable 0000000000003B31 case 5\lmov     [rbp+var_10], 1\ljmp     short loc_3BF3\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_1], 0; jumptable 0000000000003B31 case 10\lmov     [rbp+var_10], 1\ljmp     short loc_3BF3\l"
+	];
+	"10" [
+		label = "cmp     [rbp+var_2], 3; jumptable 0000000000003B31 case 7\lja      short loc_3BEA\l"
+	];
+	"11" [
+		label = "mov     [rbp+var_10], 3\ljmp     short loc_3BF2\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_10], 5\l"
+	];
+	"13" [
+		label = "nop\l"
+	];
+	"14" [
+		label = "jmp     def_3B31; jumptable 0000000000003B31 default case, cases 0,2,4,6\l"
+	];
+	"15" [
+		label = "nop; jumptable 0000000000003B31 case 9\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "4" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "9" [ ];
+	"2" -> "10" [ ];
+	"2" -> "15" [ ];
+// node 3
+	"3" -> "14" [ ];
+// node 4
+	"4" -> "5" [ label = "false", color = red ];
+	"4" -> "6" [ label = "true", color = darkgreen ];
+// node 5
+	"5" -> "14" [ ];
+// node 6
+	"6" -> "14" [ ];
+// node 7
+	"7" -> "14" [ ];
+// node 8
+	"8" -> "14" [ ];
+// node 9
+	"9" -> "14" [ ];
+// node 10
+	"10" -> "11" [ label = "false", color = red ];
+	"10" -> "12" [ label = "true", color = darkgreen ];
+// node 11
+	"11" -> "13" [ ];
+// node 12
+	"12" -> "13" [ ];
+// node 13
+	"13" -> "14" [ ];
+// node 14
+	"14" -> "1" [ ];
+// node 15
+}

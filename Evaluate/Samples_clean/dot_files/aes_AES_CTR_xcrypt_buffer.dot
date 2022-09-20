@@ -1,0 +1,67 @@
+digraph "AES_CTR_xcrypt_buffer" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "AES_CTR_xcrypt_buffer:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 38h\lmov     [rbp+var_28], rdi\lmov     [rbp+var_30], rsi\lmov     [rbp+var_38], rdx\lmov     [rbp+var_8], 0\lmov     [rbp+var_C], 10h\ljmp     loc_251A\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_C], 10h\ljnz     loc_24EA\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_28]\ladd     rax, 0B0h\lmov     rdx, [rax+8]\lmov     rax, [rax]\lmov     [rbp+var_20], rax\lmov     [rbp+var_18], rdx\lmov     rdx, [rbp+var_28]\llea     rax, [rbp+var_20]\lmov     rsi, rdx\lmov     rdi, rax\lcall    Cipher\lmov     [rbp+var_C], 0Fh\ljmp     short loc_24DD\l"
+	];
+	"3" [
+		label = "mov     rdx, [rbp+var_28]\lmov     eax, [rbp+var_C]\lcdqe\lmovzx   eax, byte ptr [rdx+rax+0B0h]\lcmp     al, 0FFh\ljnz     short loc_24B7\l"
+	];
+	"4" [
+		label = "mov     rdx, [rbp+var_28]\lmov     eax, [rbp+var_C]\lcdqe\lmov     byte ptr [rdx+rax+0B0h], 0\lsub     [rbp+var_C], 1\ljmp     short loc_24DD\l"
+	];
+	"5" [
+		label = "mov     rdx, [rbp+var_28]\lmov     eax, [rbp+var_C]\lcdqe\lmovzx   eax, byte ptr [rdx+rax+0B0h]\llea     ecx, [rax+1]\lmov     rdx, [rbp+var_28]\lmov     eax, [rbp+var_C]\lcdqe\lmov     [rdx+rax+0B0h], cl\ljmp     short loc_24E3\l"
+	];
+	"6" [
+		label = "cmp     [rbp+var_C], 0\ljns     short loc_248B\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_C], 0\l"
+	];
+	"8" [
+		label = "mov     rdx, [rbp+var_30]\lmov     rax, [rbp+var_8]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmov     eax, [rbp+var_C]\lcdqe\lmovzx   edx, byte ptr [rbp+rax+var_20]\lmov     rsi, [rbp+var_30]\lmov     rax, [rbp+var_8]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\ladd     [rbp+var_8], 1\ladd     [rbp+var_C], 1\l"
+	];
+	"9" [
+		label = "mov     rax, [rbp+var_8]\lcmp     rax, [rbp+var_38]\ljb      loc_244C\l"
+	];
+	"10" [
+		label = "nop\lnop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "9" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "8" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "6" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "6" [ ];
+// node 5
+	"5" -> "7" [ ];
+// node 6
+	"6" -> "3" [ label = "true", color = darkgreen ];
+	"6" -> "7" [ label = "false", color = red ];
+// node 7
+	"7" -> "8" [ ];
+// node 8
+	"8" -> "9" [ ];
+// node 9
+	"9" -> "1" [ label = "true", color = darkgreen ];
+	"9" -> "10" [ label = "false", color = red ];
+// node 10
+}

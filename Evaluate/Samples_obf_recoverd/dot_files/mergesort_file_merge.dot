@@ -1,0 +1,210 @@
+digraph "merge" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "merge:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 70h\lmov     [rbp+var_58], rdi\lmov     [rbp+var_5C], esi\lmov     [rbp+var_60], edx\lmov     [rbp+var_64], ecx\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\ljmp     loc_1AF5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_20], 1Ch\lja      short loc_18E7\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_20]\llea     rdx, ds:0[rax*4]\llea     rax, dword_20DC\lmov     eax, ds:(dword_20DC - 20DCh)[rdx+rax]\lcdqe\llea     rdx, dword_20DC\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_4C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rax]\lmov     eax, [rbp+var_48]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     eax, [rax]\lcmp     edx, eax\ljg      short loc_194F\l"
+	];
+	"4" [
+		label = "jmp     loc_1BB6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "jmp     loc_1C4F\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "add     [rbp+var_44], 1\ljmp     loc_1A09\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_48], 0\ljmp     loc_1AD3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_4C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\ladd     [rbp+var_44], 1\ljmp     short loc_1A2B\ldb  45h ; E\ldb 0E0h\ldb  15h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "mov     eax, [rbp+var_60]\llea     edx, [rax+1]\lmov     eax, [rbp+var_48]\ladd     eax, edx\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_58]\ladd     rax, rdx\lmov     edx, [rbp+var_48]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\ljmp     loc_1AD3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "mov     eax, [rbp+var_4C]\lcmp     eax, [rbp+var_40]\ljge     short loc_1A1E\l"
+	];
+	"11" [
+		label = "jmp     loc_1AB1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "jmp     short loc_1A2B\ldb  45h ; E\ldb 0E0h\ldb  15h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "mov     eax, [rbp+var_4C]\lcmp     eax, [rbp+var_40]\ljge     short loc_1A40\l"
+	];
+	"14" [
+		label = "jmp     loc_1981\ldb    0\ldb    0\ldb    0\l"
+	];
+	"15" [
+		label = "jmp     loc_1C8A\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "mov     [rbp+var_4C], 0\lmov     [rbp+var_48], 0\lmov     eax, [rbp+var_5C]\lmov     [rbp+var_44], eax\ljmp     short loc_1A09\ldb  45h ; E\ldb 0E0h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"17" [
+		label = "mov     edx, [rbp+var_5C]\lmov     eax, [rbp+var_4C]\ladd     eax, edx\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_58]\ladd     rax, rdx\lmov     edx, [rbp+var_4C]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_30]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\ljmp     loc_1C33\ldb    0\ldb    0\ldb    0\l"
+	];
+	"18" [
+		label = "mov     eax, [rbp+var_48]\lcmp     eax, [rbp+var_3C]\ljge     short loc_1AC6\l"
+	];
+	"19" [
+		label = "jmp     loc_1912\ldb    0\ldb    0\ldb    0\l"
+	];
+	"20" [
+		label = "jmp     loc_1A2B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"21" [
+		label = "mov     eax, [rbp+var_48]\lcmp     eax, [rbp+var_3C]\ljge     short loc_1AE8\l"
+	];
+	"22" [
+		label = "jmp     loc_19C3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"23" [
+		label = "jmp     loc_1A4D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"24" [
+		label = "mov     eax, [rbp+var_60]\lsub     eax, [rbp+var_5C]\ladd     eax, 1\lmov     [rbp+var_40], eax\lmov     eax, [rbp+var_64]\lsub     eax, [rbp+var_60]\lmov     [rbp+var_3C], eax\lmov     eax, [rbp+var_40]\lmov     [rbp+var_38], eax\lmov     eax, [rbp+var_38]\lshl     rax, 2\llea     rdx, [rax+8]\lmov     eax, 10h\lsub     rax, 1\ladd     rax, rdx\lmov     esi, 10h\lmov     edx, 0\ldiv     rsi\limul    rax, 10h\lsub     rsp, rax\lmov     rax, rsp\ladd     rax, 0Fh\lshr     rax, 4\lshl     rax, 4\lmov     [rbp+var_18], rax\lmov     rax, [rbp+var_18]\lmov     [rbp+var_30], rax\lmov     eax, [rbp+var_3C]\lmov     [rbp+var_34], eax\lmov     eax, [rbp+var_34]\lshl     rax, 2\llea     rdx, [rax+8]\lmov     eax, 10h\lsub     rax, 1\ladd     rax, rdx\lmov     edi, 10h\lmov     edx, 0\ldiv     rdi\limul    rax, 10h\lsub     rsp, rax\lmov     rax, rsp\ladd     rax, 0Fh\lshr     rax, 4\lshl     rax, 4\lmov     [rbp+var_10], rax\lmov     rax, [rbp+var_10]\lmov     [rbp+var_28], rax\lmov     [rbp+var_4C], 0\ljmp     loc_1C33\ldb    0\ldb    0\ldb    0\l"
+	];
+	"25" [
+		label = "mov     eax, [rbp+var_4C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\ljmp     loc_195C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"26" [
+		label = "mov     eax, [rbp+var_48]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\ladd     [rbp+var_44], 1\ljmp     short loc_1C8A\ldb  45h ; E\ldb 0E0h\ldb  14h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"27" [
+		label = "mov     eax, [rbp+var_4C]\lcmp     eax, [rbp+var_40]\ljge     short loc_1C45\l"
+	];
+	"28" [
+		label = "jmp     loc_1A6E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"29" [
+		label = "jmp     loc_196D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"30" [
+		label = "mov     eax, [rbp+var_48]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\ljmp     loc_195C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"31" [
+		label = "mov     eax, [rbp+var_48]\lcmp     eax, [rbp+var_3C]\ljge     short loc_1C9C\l"
+	];
+	"32" [
+		label = "jmp     loc_1BF4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"33" [
+		label = "jmp     short loc_1CAA\ldb  45h ; E\ldb 0E0h\ldb  17h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"34" [
+		label = "jmp     loc_18E7\l"
+	];
+	"35" [
+		label = "nop\lmov     rax, [rbp+var_8]\lsub     rax, fs:28h\ljz      short locret_1CBF\l"
+	];
+	"36" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"37" [
+		label = "leave\lretn\l"
+	];
+	"38" [
+		label = "unk_1911\l"
+	];
+// node 0
+	"0" -> "24" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "38" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "25" [ ];
+// node 5
+	"5" -> "30" [ ];
+// node 6
+	"6" -> "10" [ ];
+// node 7
+	"7" -> "21" [ ];
+// node 8
+	"8" -> "13" [ ];
+// node 9
+	"9" -> "21" [ ];
+// node 10
+	"10" -> "11" [ label = "false", color = red ];
+	"10" -> "12" [ label = "true", color = darkgreen ];
+// node 11
+	"11" -> "18" [ ];
+// node 12
+	"12" -> "13" [ ];
+// node 13
+	"13" -> "14" [ label = "false", color = red ];
+	"13" -> "15" [ label = "true", color = darkgreen ];
+// node 14
+	"14" -> "8" [ ];
+// node 15
+	"15" -> "31" [ ];
+// node 16
+	"16" -> "10" [ ];
+// node 17
+	"17" -> "27" [ ];
+// node 18
+	"18" -> "19" [ label = "false", color = red ];
+	"18" -> "20" [ label = "true", color = darkgreen ];
+// node 19
+	"19" -> "3" [ ];
+// node 20
+	"20" -> "13" [ ];
+// node 21
+	"21" -> "22" [ label = "false", color = red ];
+	"21" -> "23" [ label = "true", color = darkgreen ];
+// node 22
+	"22" -> "9" [ ];
+// node 23
+	"23" -> "16" [ ];
+// node 24
+	"24" -> "27" [ ];
+// node 25
+	"25" -> "6" [ ];
+// node 26
+	"26" -> "31" [ ];
+// node 27
+	"27" -> "28" [ label = "false", color = red ];
+	"27" -> "29" [ label = "true", color = darkgreen ];
+// node 28
+	"28" -> "17" [ ];
+// node 29
+	"29" -> "7" [ ];
+// node 30
+	"30" -> "6" [ ];
+// node 31
+	"31" -> "32" [ label = "false", color = red ];
+	"31" -> "33" [ label = "true", color = darkgreen ];
+// node 32
+	"32" -> "26" [ ];
+// node 33
+	"33" -> "35" [ ];
+// node 34
+	"34" -> "1" [ ];
+// node 35
+	"35" -> "36" [ label = "false", color = red ];
+	"35" -> "37" [ label = "true", color = darkgreen ];
+// node 36
+// node 37
+// node 38
+}

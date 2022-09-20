@@ -1,0 +1,1006 @@
+digraph "positionBoat" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "positionBoat:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 60h\lmov     [rbp+var_58], rdi\lmov     [rbp+var_5C], esi\ljmp     short loc_1877\ldb  45h ; E\ldb 0B8h\ldb  12h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_48], 76h ; 'v'\lja      short loc_184C\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_48]\llea     rdx, ds:0[rax*4]\llea     rax, dword_6078\lmov     eax, ds:(dword_6078 - 6078h)[rdx+rax]\lcdqe\llea     rdx, dword_6078\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_5C], 1\ljnz     short loc_188A\l"
+	];
+	"4" [
+		label = "jmp     loc_19AF\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "jmp     loc_2477\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "cmp     [rbp+var_30], 0\ljs      short loc_18AA\l"
+	];
+	"7" [
+		label = "jmp     loc_2068\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "jmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "add     [rbp+var_40], 1\ljmp     loc_1D8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "cmp     [rbp+var_5C], 3\ljnz     short loc_18DB\l"
+	];
+	"11" [
+		label = "jmp     loc_23E1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "jmp     loc_1B21\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "movzx   eax, [rbp+var_4E]\lcmp     al, 48h ; 'H'\ljnz     short loc_18FD\l"
+	];
+	"14" [
+		label = "jmp     loc_1A09\ldb    0\ldb    0\ldb    0\l"
+	];
+	"15" [
+		label = "jmp     loc_20E8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "mov     eax, [rbp+var_18]\lsub     eax, 1\lmov     [rbp+var_38], eax\ljmp     loc_1A78\ldb    0\ldb    0\ldb    0\l"
+	];
+	"17" [
+		label = "mov     eax, [rbp+var_4]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\llea     rcx, [rdx+rax]\lmov     eax, [rbp+var_18]\lcdqe\lmov     edx, [rbp+var_5C]\lmov     [rcx+rax*4], edx\ladd     [rbp+var_4], 1\ljmp     loc_1D55\ldb    0\ldb    0\ldb    0\l"
+	];
+	"18" [
+		label = "cmp     [rbp+var_24], 0\ljs      short loc_196E\l"
+	];
+	"19" [
+		label = "jmp     loc_1D15\ldb    0\ldb    0\ldb    0\l"
+	];
+	"20" [
+		label = "jmp     loc_19F8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"21" [
+		label = "movzx   eax, [rbp+var_4D]\lmovsx   edx, al\lmov     eax, [rbp+var_4C]\lmov     esi, edx\lmov     edi, eax\lcall    validEntryLineColumn\lmov     [rbp+var_10], eax\ljmp     loc_1BF6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"22" [
+		label = "add     [rbp+var_30], 1\ljmp     loc_2160\ldb    0\ldb    0\ldb    0\l"
+	];
+	"23" [
+		label = "lea     rdx, [rbp+var_4D]\llea     rax, [rbp+var_4C]\lmov     rsi, rax\llea     rdi, aDC; \"%d %c\"\lmov     eax, 0\lcall    ___isoc99_scanf\ljmp     loc_2457\ldb    0\ldb    0\ldb    0\l"
+	];
+	"24" [
+		label = "cmp     [rbp+var_28], 0\ljs      short loc_19EB\l"
+	];
+	"25" [
+		label = "jmp     loc_22D4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"26" [
+		label = "jmp     short loc_19F8\ldb  45h ; E\ldb 0B8h\ldb  52h ; R\ldb    0\ldb    0\ldb    0\l"
+	];
+	"27" [
+		label = "add     [rbp+var_28], 1\ljmp     loc_2436\ldb    0\ldb    0\ldb    0\l"
+	];
+	"28" [
+		label = "mov     eax, [rbp+var_18]\lmov     [rbp+var_4], eax\ljmp     loc_1ADA\ldb    0\ldb    0\ldb    0\l"
+	];
+	"29" [
+		label = "add     [rbp+var_1C], 1\ljmp     loc_1FFC\ldb    0\ldb    0\ldb    0\l"
+	];
+	"30" [
+		label = "mov     eax, [rbp+var_18]\lsub     eax, 1\lmov     [rbp+var_20], eax\ljmp     loc_1EC4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"31" [
+		label = "movzx   eax, [rbp+var_4D]\lmovsx   eax, al\llea     ecx, [rax-41h]\lmov     eax, [rbp+var_4C]\llea     edx, [rax-1]\lmov     esi, [rbp+var_5C]\lmov     rax, [rbp+var_58]\lmov     r8d, 48h ; 'H'\lmov     rdi, rax\lcall    validatePosition\lmov     [rbp+var_C], eax\ljmp     loc_1C16\ldb    0\ldb    0\ldb    0\l"
+	];
+	"32" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lsub     eax, 1\lcmp     [rbp+var_38], eax\ljge     short loc_1A95\l"
+	];
+	"33" [
+		label = "jmp     short loc_1B01\ldb  45h ; E\ldb 0B8h\ldb  76h ; v\ldb    0\ldb    0\ldb    0\l"
+	];
+	"34" [
+		label = "jmp     loc_1CD3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"35" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_3C], eax\ljg      short loc_1ABC\l"
+	];
+	"36" [
+		label = "jmp     loc_2239\ldb    0\ldb    0\ldb    0\l"
+	];
+	"37" [
+		label = "jmp     loc_24A5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"38" [
+		label = "add     [rbp+var_3C], 1\ljmp     short loc_1AA2\ldb  45h ; E\ldb 0B8h\ldb  65h ; e\ldb    0\ldb    0\ldb    0\l"
+	];
+	"39" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_4], eax\ljge     short loc_1AF4\l"
+	];
+	"40" [
+		label = "jmp     loc_1F0B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"41" [
+		label = "jmp     loc_233B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"42" [
+		label = "cmp     [rbp+var_34], 0\ljs      short loc_1B14\l"
+	];
+	"43" [
+		label = "jmp     loc_22B4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"44" [
+		label = "jmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"45" [
+		label = "mov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_3C], eax\ljmp     loc_1AA2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"46" [
+		label = "mov     eax, [rbp+var_24]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_28]\lcdqe\lmov     eax, [rdx+rax*4]\lcmp     [rbp+var_5C], eax\ljz      short loc_1B6F\l"
+	];
+	"47" [
+		label = "jmp     loc_1DB4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"48" [
+		label = "jmp     loc_19F8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"49" [
+		label = "movzx   eax, [rbp+var_4D]\lmovsx   eax, al\lsub     eax, 41h ; 'A'\lmov     [rbp+var_18], eax\lmov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_4C], eax\ljmp     loc_20A8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"50" [
+		label = "mov     eax, [rbp+var_2C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_30]\lcdqe\lmov     dword ptr [rdx+rax*4], 0FFFFFFFFh\ljmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"51" [
+		label = "cmp     [rbp+var_3C], 9\ljg      short loc_1BE9\l"
+	];
+	"52" [
+		label = "jmp     loc_2120\ldb    0\ldb    0\ldb    0\l"
+	];
+	"53" [
+		label = "jmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"54" [
+		label = "cmp     [rbp+var_10], 0\ljnz     short loc_1C09\l"
+	];
+	"55" [
+		label = "jmp     loc_1E6B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"56" [
+		label = "jmp     loc_224F\ldb    0\ldb    0\ldb    0\l"
+	];
+	"57" [
+		label = "cmp     [rbp+var_C], 1\ljz      short loc_1C29\l"
+	];
+	"58" [
+		label = "jmp     loc_1C9E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"59" [
+		label = "jmp     loc_1B7C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"60" [
+		label = "mov     eax, [rbp+var_1C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_20]\lcdqe\lmov     dword ptr [rdx+rax*4], 0FFFFFFFFh\ljmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"61" [
+		label = "cmp     [rbp+var_8], 1\ljz      short loc_1C80\l"
+	];
+	"62" [
+		label = "jmp     short loc_1C9E\ldb  45h ; E\ldb 0B8h\ldb  24h ; $\ldb    0\ldb    0\ldb    0\l"
+	];
+	"63" [
+		label = "jmp     loc_1A43\ldb    0\ldb    0\ldb    0\l"
+	];
+	"64" [
+		label = "add     [rbp+var_38], 1\ljmp     loc_1A78\ldb    0\ldb    0\ldb    0\l"
+	];
+	"65" [
+		label = "lea     rdi, s; \"Position unavailable!\"\lcall    _puts\llea     rdx, [rbp+var_4D]\llea     rax, [rbp+var_4C]\lmov     rsi, rax\llea     rdi, aDC; \"%d %c\"\lmov     eax, 0\lcall    ___isoc99_scanf\ljmp     loc_2457\ldb    0\ldb    0\ldb    0\l"
+	];
+	"66" [
+		label = "add     [rbp+var_34], 1\ljmp     loc_23BA\ldb    0\ldb    0\ldb    0\l"
+	];
+	"67" [
+		label = "add     [rbp+var_20], 1\ljmp     loc_1EC4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"68" [
+		label = "cmp     [rbp+var_2C], 9\ljg      short loc_1D08\l"
+	];
+	"69" [
+		label = "jmp     loc_1897\ldb    0\ldb    0\ldb    0\l"
+	];
+	"70" [
+		label = "jmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"71" [
+		label = "cmp     [rbp+var_24], 9\ljg      short loc_1D28\l"
+	];
+	"72" [
+		label = "jmp     loc_19D8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"73" [
+		label = "jmp     loc_19F8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"74" [
+		label = "cmp     [rbp+var_38], 9\ljg      short loc_1D48\l"
+	];
+	"75" [
+		label = "jmp     loc_2023\ldb    0\ldb    0\ldb    0\l"
+	];
+	"76" [
+		label = "jmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"77" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_4], eax\ljge     short loc_1D6F\l"
+	];
+	"78" [
+		label = "jmp     loc_1920\ldb    0\ldb    0\ldb    0\l"
+	];
+	"79" [
+		label = "jmp     loc_18C8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"80" [
+		label = "add     [rbp+var_24], 1\ljmp     loc_220F\ldb    0\ldb    0\ldb    0\l"
+	];
+	"81" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_40], eax\ljge     short loc_1DA7\l"
+	];
+	"82" [
+		label = "jmp     loc_1EEB\ldb    0\ldb    0\ldb    0\l"
+	];
+	"83" [
+		label = "jmp     loc_1AC9\ldb    0\ldb    0\ldb    0\l"
+	];
+	"84" [
+		label = "mov     eax, [rbp+var_24]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_28]\lcdqe\lmov     dword ptr [rdx+rax*4], 0FFFFFFFFh\ljmp     loc_19F8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"85" [
+		label = "mov     eax, [rbp+var_4C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\llea     rcx, [rdx+rax]\lmov     eax, [rbp+var_4]\lcdqe\lmov     edx, [rbp+var_5C]\lmov     [rcx+rax*4], edx\ladd     [rbp+var_4], 1\ljmp     loc_1FD5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"86" [
+		label = "mov     eax, [rbp+var_3C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_40]\lcdqe\lmov     eax, [rdx+rax*4]\lcmp     [rbp+var_5C], eax\ljz      short loc_1E5E\l"
+	];
+	"87" [
+		label = "jmp     loc_1F8B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"88" [
+		label = "jmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"89" [
+		label = "lea     rdi, s; \"Position unavailable!\"\lcall    _puts\llea     rcx, [rbp+var_4E]\llea     rdx, [rbp+var_4D]\llea     rax, [rbp+var_4C]\lmov     rsi, rax\llea     rdi, aDCC; \"%d %c %c\"\lmov     eax, 0\lcall    ___isoc99_scanf\ljmp     loc_197B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"90" [
+		label = "cmp     [rbp+var_1C], 0\ljs      short loc_1EB7\l"
+	];
+	"91" [
+		label = "jmp     loc_21BE\ldb    0\ldb    0\ldb    0\l"
+	];
+	"92" [
+		label = "jmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"93" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_20], eax\ljg      short loc_1EDE\l"
+	];
+	"94" [
+		label = "jmp     short loc_1EA4\ldb  45h ; E\ldb 0B8h\ldb  13h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"95" [
+		label = "jmp     loc_1A1C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"96" [
+		label = "cmp     [rbp+var_3C], 0\ljs      short loc_1EFE\l"
+	];
+	"97" [
+		label = "jmp     loc_1BD6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"98" [
+		label = "jmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"99" [
+		label = "mov     eax, [rbp+var_4C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\llea     rcx, [rdx+rax]\lmov     eax, [rbp+var_4]\lcdqe\lmov     edx, [rbp+var_5C]\lmov     [rcx+rax*4], edx\ladd     [rbp+var_4], 1\ljmp     loc_1ADA\ldb    0\ldb    0\ldb    0\l"
+	];
+	"100" [
+		label = "mov     eax, [rbp+var_1C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_20]\lcdqe\lmov     eax, [rdx+rax*4]\lcmp     [rbp+var_5C], eax\ljz      short loc_1F7E\l"
+	];
+	"101" [
+		label = "jmp     loc_1C36\ldb    0\ldb    0\ldb    0\l"
+	];
+	"102" [
+		label = "jmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"103" [
+		label = "mov     eax, [rbp+var_3C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_40]\lcdqe\lmov     dword ptr [rdx+rax*4], 0FFFFFFFFh\ljmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"104" [
+		label = "mov     eax, [rbp+var_4C]\lmov     [rbp+var_4], eax\ljmp     loc_1D55\ldb    0\ldb    0\ldb    0\l"
+	];
+	"105" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_4], eax\ljge     short loc_1FEF\l"
+	];
+	"106" [
+		label = "jmp     loc_1DEB\ldb    0\ldb    0\ldb    0\l"
+	];
+	"107" [
+		label = "jmp     loc_2288\ldb    0\ldb    0\ldb    0\l"
+	];
+	"108" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_1C], eax\ljg      short loc_2016\l"
+	];
+	"109" [
+		label = "jmp     loc_1A2D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"110" [
+		label = "jmp     loc_18E8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"111" [
+		label = "mov     eax, [rbp+var_34]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_38]\lcdqe\lmov     eax, [rdx+rax*4]\lcmp     [rbp+var_5C], eax\ljz      short loc_205B\l"
+	];
+	"112" [
+		label = "jmp     loc_2187\ldb    0\ldb    0\ldb    0\l"
+	];
+	"113" [
+		label = "jmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"114" [
+		label = "cmp     [rbp+var_30], 9\ljg      short loc_207B\l"
+	];
+	"115" [
+		label = "jmp     loc_23F7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"116" [
+		label = "jmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"117" [
+		label = "cmp     [rbp+var_20], 9\ljg      short loc_209B\l"
+	];
+	"118" [
+		label = "jmp     loc_1F46\ldb    0\ldb    0\ldb    0\l"
+	];
+	"119" [
+		label = "jmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"120" [
+		label = "cmp     [rbp+var_5C], 1\ljnz     short loc_20BB\l"
+	];
+	"121" [
+		label = "jmp     loc_2387\ldb    0\ldb    0\ldb    0\l"
+	];
+	"122" [
+		label = "jmp     loc_18E8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"123" [
+		label = "cmp     [rbp+var_38], 0\ljs      short loc_20DB\l"
+	];
+	"124" [
+		label = "jmp     loc_1D35\ldb    0\ldb    0\ldb    0\l"
+	];
+	"125" [
+		label = "jmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"126" [
+		label = "movzx   eax, [rbp+var_4E]\lcmp     al, 56h ; 'V'\ljnz     short loc_20FD\l"
+	];
+	"127" [
+		label = "jmp     loc_1FC2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"128" [
+		label = "jmp     loc_24A5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"129" [
+		label = "mov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_24], eax\ljmp     loc_220F\ldb    0\ldb    0\ldb    0\l"
+	];
+	"130" [
+		label = "cmp     [rbp+var_40], 0\ljs      short loc_2133\l"
+	];
+	"131" [
+		label = "jmp     loc_239A\ldb    0\ldb    0\ldb    0\l"
+	];
+	"132" [
+		label = "jmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"133" [
+		label = "cmp     [rbp+var_14], 0\ljnz     short loc_2153\l"
+	];
+	"134" [
+		label = "jmp     loc_1E6B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"135" [
+		label = "jmp     loc_1B7C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"136" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_30], eax\ljg      short loc_217A\l"
+	];
+	"137" [
+		label = "jmp     short loc_21DE\ldb  45h ; E\ldb 0B8h\ldb  35h ; 5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"138" [
+		label = "jmp     loc_21FE\ldb    0\ldb    0\ldb    0\l"
+	];
+	"139" [
+		label = "mov     eax, [rbp+var_34]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_38]\lcdqe\lmov     dword ptr [rdx+rax*4], 0FFFFFFFFh\ljmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"140" [
+		label = "cmp     [rbp+var_1C], 9\ljg      short loc_21D1\l"
+	];
+	"141" [
+		label = "jmp     loc_231B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"142" [
+		label = "jmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"143" [
+		label = "cmp     [rbp+var_2C], 0\ljs      short loc_21F1\l"
+	];
+	"144" [
+		label = "jmp     loc_1CF5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"145" [
+		label = "jmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"146" [
+		label = "add     [rbp+var_2C], 1\ljmp     loc_22F4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"147" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lsub     eax, 1\lcmp     [rbp+var_24], eax\ljge     short loc_222C\l"
+	];
+	"148" [
+		label = "jmp     loc_2371\ldb    0\ldb    0\ldb    0\l"
+	];
+	"149" [
+		label = "jmp     loc_20E8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"150" [
+		label = "mov     eax, [rbp+var_18]\lsub     eax, 1\lmov     [rbp+var_40], eax\ljmp     loc_1D8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"151" [
+		label = "movzx   eax, [rbp+var_4E]\lmovsx   edi, al\lmovzx   eax, [rbp+var_4D]\lmovsx   eax, al\llea     ecx, [rax-41h]\lmov     eax, [rbp+var_4C]\llea     edx, [rax-1]\lmov     esi, [rbp+var_5C]\lmov     rax, [rbp+var_58]\lmov     r8d, edi\lmov     rdi, rax\lcall    validatePosition\lmov     [rbp+var_14], eax\ljmp     loc_2140\ldb    0\ldb    0\ldb    0\l"
+	];
+	"152" [
+		label = "mov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_1C], eax\ljmp     loc_1FFC\ldb    0\ldb    0\ldb    0\l"
+	];
+	"153" [
+		label = "mov     eax, [rbp+var_18]\lsub     eax, 1\lmov     [rbp+var_30], eax\ljmp     loc_2160\ldb    0\ldb    0\ldb    0\l"
+	];
+	"154" [
+		label = "cmp     [rbp+var_34], 9\ljg      short loc_22C7\l"
+	];
+	"155" [
+		label = "jmp     loc_20C8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"156" [
+		label = "jmp     loc_1C8D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"157" [
+		label = "cmp     [rbp+var_28], 9\ljg      short loc_22E7\l"
+	];
+	"158" [
+		label = "jmp     loc_1B37\ldb    0\ldb    0\ldb    0\l"
+	];
+	"159" [
+		label = "jmp     loc_19F8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"160" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_2C], eax\ljge     short loc_230E\l"
+	];
+	"161" [
+		label = "jmp     short loc_229E\ldb  45h ; E\ldb 0B8h\ldb  61h ; a\ldb    0\ldb    0\ldb    0\l"
+	];
+	"162" [
+		label = "jmp     loc_20E8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"163" [
+		label = "cmp     [rbp+var_20], 0\ljs      short loc_232E\l"
+	];
+	"164" [
+		label = "jmp     loc_2088\ldb    0\ldb    0\ldb    0\l"
+	];
+	"165" [
+		label = "jmp     loc_1CE4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"166" [
+		label = "cmp     [rbp+var_5C], 3\ljnz     short loc_234E\l"
+	];
+	"167" [
+		label = "jmp     loc_210A\ldb    0\ldb    0\ldb    0\l"
+	];
+	"168" [
+		label = "jmp     short loc_235B\ldb  45h ; E\ldb 0B8h\ldb  73h ; s\ldb    0\ldb    0\ldb    0\l"
+	];
+	"169" [
+		label = "mov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_2C], eax\ljmp     short loc_22F4\ldb  45h ; E\ldb 0B8h\ldb  40h ; @\ldb    0\ldb    0\ldb    0\l"
+	];
+	"170" [
+		label = "mov     eax, [rbp+var_18]\lsub     eax, 1\lmov     [rbp+var_28], eax\ljmp     loc_2436\ldb    0\ldb    0\ldb    0\l"
+	];
+	"171" [
+		label = "mov     eax, [rbp+var_18]\lmov     [rbp+var_4], eax\ljmp     loc_1FD5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"172" [
+		label = "cmp     [rbp+var_40], 9\ljg      short loc_23AD\l"
+	];
+	"173" [
+		label = "jmp     loc_1E26\ldb    0\ldb    0\ldb    0\l"
+	];
+	"174" [
+		label = "jmp     loc_18B7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"175" [
+		label = "mov     edx, [rbp+var_4C]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_34], eax\ljg      short loc_23D4\l"
+	];
+	"176" [
+		label = "jmp     loc_190A\ldb    0\ldb    0\ldb    0\l"
+	];
+	"177" [
+		label = "jmp     loc_24A5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"178" [
+		label = "mov     eax, [rbp+var_4C]\lsub     eax, 1\lmov     [rbp+var_34], eax\ljmp     short loc_23BA\ldb  45h ; E\ldb 0B8h\ldb  42h ; B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"179" [
+		label = "mov     eax, [rbp+var_2C]\lmovsxd  rdx, eax\lmov     rax, rdx\lshl     rax, 2\ladd     rax, rdx\lshl     rax, 3\lmov     rdx, rax\lmov     rax, [rbp+var_58]\ladd     rdx, rax\lmov     eax, [rbp+var_30]\lcdqe\lmov     eax, [rdx+rax*4]\lcmp     [rbp+var_5C], eax\ljz      short loc_242C\l"
+	];
+	"180" [
+		label = "jmp     loc_1B9F\ldb    0\ldb    0\ldb    0\l"
+	];
+	"181" [
+		label = "jmp     loc_199E\ldb    0\ldb    0\ldb    0\l"
+	];
+	"182" [
+		label = "mov     edx, [rbp+var_18]\lmov     eax, [rbp+var_5C]\ladd     eax, edx\lcmp     [rbp+var_28], eax\ljg      short loc_244D\l"
+	];
+	"183" [
+		label = "jmp     loc_195B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"184" [
+		label = "jmp     loc_1D7C\ldb    0\ldb    0\ldb    0\l"
+	];
+	"185" [
+		label = "movzx   eax, [rbp+var_4D]\lmovsx   edx, al\lmov     eax, [rbp+var_4C]\lmov     esi, edx\lmov     edi, eax\lcall    validEntryLineColumn\lmov     [rbp+var_8], eax\ljmp     loc_1C6D\ldb    0\ldb    0\ldb    0\l"
+	];
+	"186" [
+		label = "lea     rcx, [rbp+var_4E]\llea     rdx, [rbp+var_4D]\llea     rax, [rbp+var_4C]\lmov     rsi, rax\llea     rdi, aDCC; \"%d %c %c\"\lmov     eax, 0\lcall    ___isoc99_scanf\ljmp     loc_197B\ldb    0\ldb    0\ldb    0\l"
+	];
+	"187" [
+		label = "jmp     loc_184C\l"
+	];
+	"188" [
+		label = "nop\lleave\lretn\l"
+	];
+	"189" [
+		label = "unk_1876\l"
+	];
+// node 0
+	"0" -> "3" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "189" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "23" [ ];
+// node 5
+	"5" -> "186" [ ];
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "8" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "114" [ ];
+// node 8
+	"8" -> "22" [ ];
+// node 9
+	"9" -> "81" [ ];
+// node 10
+	"10" -> "11" [ label = "false", color = red ];
+	"10" -> "12" [ label = "true", color = darkgreen ];
+// node 11
+	"11" -> "178" [ ];
+// node 12
+	"12" -> "45" [ ];
+// node 13
+	"13" -> "14" [ label = "false", color = red ];
+	"13" -> "15" [ label = "true", color = darkgreen ];
+// node 14
+	"14" -> "28" [ ];
+// node 15
+	"15" -> "126" [ ];
+// node 16
+	"16" -> "32" [ ];
+// node 17
+	"17" -> "77" [ ];
+// node 18
+	"18" -> "19" [ label = "false", color = red ];
+	"18" -> "20" [ label = "true", color = darkgreen ];
+// node 19
+	"19" -> "71" [ ];
+// node 20
+	"20" -> "27" [ ];
+// node 21
+	"21" -> "54" [ ];
+// node 22
+	"22" -> "136" [ ];
+// node 23
+	"23" -> "185" [ ];
+// node 24
+	"24" -> "25" [ label = "false", color = red ];
+	"24" -> "26" [ label = "true", color = darkgreen ];
+// node 25
+	"25" -> "157" [ ];
+// node 26
+	"26" -> "27" [ ];
+// node 27
+	"27" -> "182" [ ];
+// node 28
+	"28" -> "39" [ ];
+// node 29
+	"29" -> "108" [ ];
+// node 30
+	"30" -> "93" [ ];
+// node 31
+	"31" -> "57" [ ];
+// node 32
+	"32" -> "33" [ label = "false", color = red ];
+	"32" -> "34" [ label = "true", color = darkgreen ];
+// node 33
+	"33" -> "42" [ ];
+// node 34
+	"34" -> "66" [ ];
+// node 35
+	"35" -> "36" [ label = "false", color = red ];
+	"35" -> "37" [ label = "true", color = darkgreen ];
+// node 36
+	"36" -> "150" [ ];
+// node 37
+	"37" -> "188" [ ];
+// node 38
+	"38" -> "35" [ ];
+// node 39
+	"39" -> "40" [ label = "false", color = red ];
+	"39" -> "41" [ label = "true", color = darkgreen ];
+// node 40
+	"40" -> "99" [ ];
+// node 41
+	"41" -> "166" [ ];
+// node 42
+	"42" -> "43" [ label = "false", color = red ];
+	"42" -> "44" [ label = "true", color = darkgreen ];
+// node 43
+	"43" -> "154" [ ];
+// node 44
+	"44" -> "64" [ ];
+// node 45
+	"45" -> "35" [ ];
+// node 46
+	"46" -> "47" [ label = "false", color = red ];
+	"46" -> "48" [ label = "true", color = darkgreen ];
+// node 47
+	"47" -> "84" [ ];
+// node 48
+	"48" -> "27" [ ];
+// node 49
+	"49" -> "120" [ ];
+// node 50
+	"50" -> "22" [ ];
+// node 51
+	"51" -> "52" [ label = "false", color = red ];
+	"51" -> "53" [ label = "true", color = darkgreen ];
+// node 52
+	"52" -> "130" [ ];
+// node 53
+	"53" -> "9" [ ];
+// node 54
+	"54" -> "55" [ label = "false", color = red ];
+	"54" -> "56" [ label = "true", color = darkgreen ];
+// node 55
+	"55" -> "89" [ ];
+// node 56
+	"56" -> "151" [ ];
+// node 57
+	"57" -> "58" [ label = "false", color = red ];
+	"57" -> "59" [ label = "true", color = darkgreen ];
+// node 58
+	"58" -> "65" [ ];
+// node 59
+	"59" -> "49" [ ];
+// node 60
+	"60" -> "67" [ ];
+// node 61
+	"61" -> "62" [ label = "false", color = red ];
+	"61" -> "63" [ label = "true", color = darkgreen ];
+// node 62
+	"62" -> "65" [ ];
+// node 63
+	"63" -> "31" [ ];
+// node 64
+	"64" -> "32" [ ];
+// node 65
+	"65" -> "185" [ ];
+// node 66
+	"66" -> "175" [ ];
+// node 67
+	"67" -> "93" [ ];
+// node 68
+	"68" -> "69" [ label = "false", color = red ];
+	"68" -> "70" [ label = "true", color = darkgreen ];
+// node 69
+	"69" -> "6" [ ];
+// node 70
+	"70" -> "22" [ ];
+// node 71
+	"71" -> "72" [ label = "false", color = red ];
+	"71" -> "73" [ label = "true", color = darkgreen ];
+// node 72
+	"72" -> "24" [ ];
+// node 73
+	"73" -> "27" [ ];
+// node 74
+	"74" -> "75" [ label = "false", color = red ];
+	"74" -> "76" [ label = "true", color = darkgreen ];
+// node 75
+	"75" -> "111" [ ];
+// node 76
+	"76" -> "64" [ ];
+// node 77
+	"77" -> "78" [ label = "false", color = red ];
+	"77" -> "79" [ label = "true", color = darkgreen ];
+// node 78
+	"78" -> "17" [ ];
+// node 79
+	"79" -> "10" [ ];
+// node 80
+	"80" -> "147" [ ];
+// node 81
+	"81" -> "82" [ label = "false", color = red ];
+	"81" -> "83" [ label = "true", color = darkgreen ];
+// node 82
+	"82" -> "96" [ ];
+// node 83
+	"83" -> "38" [ ];
+// node 84
+	"84" -> "27" [ ];
+// node 85
+	"85" -> "105" [ ];
+// node 86
+	"86" -> "87" [ label = "false", color = red ];
+	"86" -> "88" [ label = "true", color = darkgreen ];
+// node 87
+	"87" -> "103" [ ];
+// node 88
+	"88" -> "9" [ ];
+// node 89
+	"89" -> "21" [ ];
+// node 90
+	"90" -> "91" [ label = "false", color = red ];
+	"90" -> "92" [ label = "true", color = darkgreen ];
+// node 91
+	"91" -> "140" [ ];
+// node 92
+	"92" -> "67" [ ];
+// node 93
+	"93" -> "94" [ label = "false", color = red ];
+	"93" -> "95" [ label = "true", color = darkgreen ];
+// node 94
+	"94" -> "90" [ ];
+// node 95
+	"95" -> "29" [ ];
+// node 96
+	"96" -> "97" [ label = "false", color = red ];
+	"96" -> "98" [ label = "true", color = darkgreen ];
+// node 97
+	"97" -> "51" [ ];
+// node 98
+	"98" -> "9" [ ];
+// node 99
+	"99" -> "39" [ ];
+// node 100
+	"100" -> "101" [ label = "false", color = red ];
+	"100" -> "102" [ label = "true", color = darkgreen ];
+// node 101
+	"101" -> "60" [ ];
+// node 102
+	"102" -> "67" [ ];
+// node 103
+	"103" -> "9" [ ];
+// node 104
+	"104" -> "77" [ ];
+// node 105
+	"105" -> "106" [ label = "false", color = red ];
+	"105" -> "107" [ label = "true", color = darkgreen ];
+// node 106
+	"106" -> "85" [ ];
+// node 107
+	"107" -> "152" [ ];
+// node 108
+	"108" -> "109" [ label = "false", color = red ];
+	"108" -> "110" [ label = "true", color = darkgreen ];
+// node 109
+	"109" -> "30" [ ];
+// node 110
+	"110" -> "13" [ ];
+// node 111
+	"111" -> "112" [ label = "false", color = red ];
+	"111" -> "113" [ label = "true", color = darkgreen ];
+// node 112
+	"112" -> "139" [ ];
+// node 113
+	"113" -> "64" [ ];
+// node 114
+	"114" -> "115" [ label = "false", color = red ];
+	"114" -> "116" [ label = "true", color = darkgreen ];
+// node 115
+	"115" -> "179" [ ];
+// node 116
+	"116" -> "22" [ ];
+// node 117
+	"117" -> "118" [ label = "false", color = red ];
+	"117" -> "119" [ label = "true", color = darkgreen ];
+// node 118
+	"118" -> "100" [ ];
+// node 119
+	"119" -> "67" [ ];
+// node 120
+	"120" -> "121" [ label = "false", color = red ];
+	"120" -> "122" [ label = "true", color = darkgreen ];
+// node 121
+	"121" -> "171" [ ];
+// node 122
+	"122" -> "13" [ ];
+// node 123
+	"123" -> "124" [ label = "false", color = red ];
+	"123" -> "125" [ label = "true", color = darkgreen ];
+// node 124
+	"124" -> "74" [ ];
+// node 125
+	"125" -> "64" [ ];
+// node 126
+	"126" -> "127" [ label = "false", color = red ];
+	"126" -> "128" [ label = "true", color = darkgreen ];
+// node 127
+	"127" -> "104" [ ];
+// node 128
+	"128" -> "188" [ ];
+// node 129
+	"129" -> "147" [ ];
+// node 130
+	"130" -> "131" [ label = "false", color = red ];
+	"130" -> "132" [ label = "true", color = darkgreen ];
+// node 131
+	"131" -> "172" [ ];
+// node 132
+	"132" -> "9" [ ];
+// node 133
+	"133" -> "134" [ label = "false", color = red ];
+	"133" -> "135" [ label = "true", color = darkgreen ];
+// node 134
+	"134" -> "89" [ ];
+// node 135
+	"135" -> "49" [ ];
+// node 136
+	"136" -> "137" [ label = "false", color = red ];
+	"136" -> "138" [ label = "true", color = darkgreen ];
+// node 137
+	"137" -> "143" [ ];
+// node 138
+	"138" -> "146" [ ];
+// node 139
+	"139" -> "64" [ ];
+// node 140
+	"140" -> "141" [ label = "false", color = red ];
+	"140" -> "142" [ label = "true", color = darkgreen ];
+// node 141
+	"141" -> "163" [ ];
+// node 142
+	"142" -> "67" [ ];
+// node 143
+	"143" -> "144" [ label = "false", color = red ];
+	"143" -> "145" [ label = "true", color = darkgreen ];
+// node 144
+	"144" -> "68" [ ];
+// node 145
+	"145" -> "22" [ ];
+// node 146
+	"146" -> "160" [ ];
+// node 147
+	"147" -> "148" [ label = "false", color = red ];
+	"147" -> "149" [ label = "true", color = darkgreen ];
+// node 148
+	"148" -> "170" [ ];
+// node 149
+	"149" -> "126" [ ];
+// node 150
+	"150" -> "81" [ ];
+// node 151
+	"151" -> "133" [ ];
+// node 152
+	"152" -> "108" [ ];
+// node 153
+	"153" -> "136" [ ];
+// node 154
+	"154" -> "155" [ label = "false", color = red ];
+	"154" -> "156" [ label = "true", color = darkgreen ];
+// node 155
+	"155" -> "123" [ ];
+// node 156
+	"156" -> "64" [ ];
+// node 157
+	"157" -> "158" [ label = "false", color = red ];
+	"157" -> "159" [ label = "true", color = darkgreen ];
+// node 158
+	"158" -> "46" [ ];
+// node 159
+	"159" -> "27" [ ];
+// node 160
+	"160" -> "161" [ label = "false", color = red ];
+	"160" -> "162" [ label = "true", color = darkgreen ];
+// node 161
+	"161" -> "153" [ ];
+// node 162
+	"162" -> "126" [ ];
+// node 163
+	"163" -> "164" [ label = "false", color = red ];
+	"163" -> "165" [ label = "true", color = darkgreen ];
+// node 164
+	"164" -> "117" [ ];
+// node 165
+	"165" -> "67" [ ];
+// node 166
+	"166" -> "167" [ label = "false", color = red ];
+	"166" -> "168" [ label = "true", color = darkgreen ];
+// node 167
+	"167" -> "129" [ ];
+// node 168
+	"168" -> "169" [ ];
+// node 169
+	"169" -> "160" [ ];
+// node 170
+	"170" -> "182" [ ];
+// node 171
+	"171" -> "105" [ ];
+// node 172
+	"172" -> "173" [ label = "false", color = red ];
+	"172" -> "174" [ label = "true", color = darkgreen ];
+// node 173
+	"173" -> "86" [ ];
+// node 174
+	"174" -> "9" [ ];
+// node 175
+	"175" -> "176" [ label = "false", color = red ];
+	"175" -> "177" [ label = "true", color = darkgreen ];
+// node 176
+	"176" -> "16" [ ];
+// node 177
+	"177" -> "188" [ ];
+// node 178
+	"178" -> "175" [ ];
+// node 179
+	"179" -> "180" [ label = "false", color = red ];
+	"179" -> "181" [ label = "true", color = darkgreen ];
+// node 180
+	"180" -> "50" [ ];
+// node 181
+	"181" -> "22" [ ];
+// node 182
+	"182" -> "183" [ label = "false", color = red ];
+	"182" -> "184" [ label = "true", color = darkgreen ];
+// node 183
+	"183" -> "18" [ ];
+// node 184
+	"184" -> "80" [ ];
+// node 185
+	"185" -> "61" [ ];
+// node 186
+	"186" -> "21" [ ];
+// node 187
+	"187" -> "1" [ ];
+// node 188
+// node 189
+}

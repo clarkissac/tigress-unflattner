@@ -1,0 +1,74 @@
+digraph "Cipher" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "Cipher:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\ljmp     short loc_2270\ldb  45h ; E\ldb 0F0h\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 7\lja      short loc_2245\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, dword_4020\lmov     eax, ds:(dword_4020 - 4020h)[rdx+rax]\lcdqe\llea     rdx, dword_4020\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "mov     [rbp+var_1], 0\lmov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0\lcall    AddRoundKey\lmov     [rbp+var_1], 1\ljmp     short loc_2303\ldb  45h ; E\ldb 0F0h\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     rdx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     rsi, rax\lmov     edi, 0Ah\lcall    AddRoundKey\ljmp     short loc_2329\ldb  45h ; E\ldb 0F0h\ldb    4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "cmp     [rbp+var_1], 0Ah\ljnz     short loc_22C9\l"
+	];
+	"6" [
+		label = "jmp     short loc_229A\ldb  45h ; E\ldb 0F0h\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "jmp     short loc_22D3\ldb  45h ; E\ldb 0F0h\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    MixColumns\lmovzx   eax, [rbp+var_1]\lmov     rdx, [rbp+var_20]\lmov     rcx, [rbp+var_18]\lmov     rsi, rcx\lmov     edi, eax\lcall    AddRoundKey\ladd     [rbp+var_1], 1\ljmp     short loc_2303\ldb  45h ; E\ldb 0F0h\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "mov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    SubBytes\lmov     rax, [rbp+var_18]\lmov     rdi, rax\lcall    ShiftRows\ljmp     short loc_22B9\ldb  45h ; E\ldb 0F0h\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "jmp     loc_2245\l"
+	];
+	"11" [
+		label = "nop\lleave\lretn\l"
+	];
+	"12" [
+		label = "unk_226F\l"
+	];
+// node 0
+	"0" -> "3" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "12" [ ];
+// node 3
+	"3" -> "9" [ ];
+// node 4
+	"4" -> "11" [ ];
+// node 5
+	"5" -> "6" [ label = "false", color = red ];
+	"5" -> "7" [ label = "true", color = darkgreen ];
+// node 6
+	"6" -> "4" [ ];
+// node 7
+	"7" -> "8" [ ];
+// node 8
+	"8" -> "9" [ ];
+// node 9
+	"9" -> "5" [ ];
+// node 10
+	"10" -> "1" [ ];
+// node 11
+// node 12
+}

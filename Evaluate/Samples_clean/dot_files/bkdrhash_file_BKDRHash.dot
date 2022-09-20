@@ -1,0 +1,29 @@
+digraph "BKDRHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "BKDRHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_4], 83h\lmov     [rbp+var_C], 0\lmov     [rbp+var_8], 0\lmov     [rbp+var_8], 0\ljmp     short loc_1253\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_C]\limul    eax, [rbp+var_4]\lmov     edx, eax\lmov     rax, [rbp+var_18]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_C], eax\ladd     [rbp+var_18], 1\ladd     [rbp+var_8], 1\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_8]\lcmp     eax, [rbp+var_1C]\ljb      short loc_1232\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_C]\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "2" [ ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+}

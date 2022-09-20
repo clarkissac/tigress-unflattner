@@ -1,0 +1,229 @@
+digraph "merge" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "merge:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 70h\lmov     [rbp+var_58], rdi\lmov     [rbp+var_5C], esi\lmov     [rbp+var_60], edx\lmov     [rbp+var_64], ecx\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\lmov     [rbp+var_20], 13h\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_20], 1Ah; switch 27 cases\lja      short def_14CF; jumptable 00000000000014CF default case, cases 0,2,4,5,7,9,11,14,21\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_20]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_14CF\lmov     eax, ds:(jpt_14CF - 2060h)[rdx+rax]\lcdqe\llea     rdx, jpt_14CF\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 18\lcmp     eax, [rbp+var_40]\ljge     short loc_14E6\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_20], 11h\ljmp     loc_186D\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_20], 17h\ljmp     loc_186D\l"
+	];
+	"6" [
+		label = "add     [rbp+var_44], 1; jumptable 00000000000014CF case 25\lmov     [rbp+var_20], 1Ah\ljmp     loc_186D\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_48]; jumptable 00000000000014CF case 15\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\lmov     [rbp+var_20], 19h\ljmp     loc_186D\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_48]; jumptable 00000000000014CF case 12\lcmp     eax, [rbp+var_3C]\ljge     short loc_1557\l"
+	];
+	"9" [
+		label = "mov     [rbp+var_20], 16h\ljmp     loc_186D\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_20], 18h\ljmp     loc_186D\l"
+	];
+	"11" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 8\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\lmov     [rbp+var_20], 19h\ljmp     loc_186D\l"
+	];
+	"12" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 1\lcmp     eax, [rbp+var_40]\ljge     short loc_15B7\l"
+	];
+	"13" [
+		label = "mov     [rbp+var_20], 6\ljmp     loc_186D\l"
+	];
+	"14" [
+		label = "mov     [rbp+var_20], 0Dh\ljmp     loc_186D\l"
+	];
+	"15" [
+		label = "mov     eax, [rbp+var_48]; jumptable 00000000000014CF case 23\lcmp     eax, [rbp+var_3C]\ljge     short loc_15D9\l"
+	];
+	"16" [
+		label = "mov     [rbp+var_20], 10h\ljmp     loc_186D\l"
+	];
+	"17" [
+		label = "mov     [rbp+var_20], 14h\ljmp     loc_186D\l"
+	];
+	"18" [
+		label = "mov     eax, [rbp+var_48]; jumptable 00000000000014CF case 3\lcmp     eax, [rbp+var_3C]\ljge     short loc_15FB\l"
+	];
+	"19" [
+		label = "mov     [rbp+var_20], 0Ah\ljmp     loc_186D\l"
+	];
+	"20" [
+		label = "mov     [rbp+var_20], 12h\ljmp     loc_186D\l"
+	];
+	"21" [
+		label = "mov     eax, [rbp+var_48]; jumptable 00000000000014CF case 16\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\ladd     [rbp+var_44], 1\lmov     [rbp+var_20], 17h\ljmp     loc_186D\l"
+	];
+	"22" [
+		label = "mov     [rbp+var_4C], 0; jumptable 00000000000014CF case 24\lmov     [rbp+var_48], 0\lmov     eax, [rbp+var_5C]\lmov     [rbp+var_44], eax\lmov     [rbp+var_20], 1Ah\ljmp     loc_186D\l"
+	];
+	"23" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 26\lcmp     eax, [rbp+var_40]\ljge     short loc_1680\l"
+	];
+	"24" [
+		label = "mov     [rbp+var_20], 3\ljmp     loc_186D\l"
+	];
+	"25" [
+		label = "mov     [rbp+var_20], 12h\ljmp     loc_186D\l"
+	];
+	"26" [
+		label = "mov     [rbp+var_48], 0; jumptable 00000000000014CF case 13\lmov     [rbp+var_20], 0Ch\ljmp     loc_186D\l"
+	];
+	"27" [
+		label = "mov     eax, [rbp+var_60]; jumptable 00000000000014CF case 19\lsub     eax, [rbp+var_5C]\ladd     eax, 1\lmov     [rbp+var_40], eax\lmov     eax, [rbp+var_64]\lsub     eax, [rbp+var_60]\lmov     [rbp+var_3C], eax\lmov     eax, [rbp+var_40]\lmov     [rbp+var_38], eax\lmov     eax, [rbp+var_38]\lshl     rax, 2\llea     rdx, [rax+8]\lmov     eax, 10h\lsub     rax, 1\ladd     rax, rdx\lmov     esi, 10h\lmov     edx, 0\ldiv     rsi\limul    rax, 10h\lsub     rsp, rax\lmov     rax, rsp\ladd     rax, 0Fh\lshr     rax, 4\lshl     rax, 4\lmov     [rbp+var_18], rax\lmov     rax, [rbp+var_18]\lmov     [rbp+var_30], rax\lmov     eax, [rbp+var_3C]\lmov     [rbp+var_34], eax\lmov     eax, [rbp+var_34]\lshl     rax, 2\llea     rdx, [rax+8]\lmov     eax, 10h\lsub     rax, 1\ladd     rax, rdx\lmov     edi, 10h\lmov     edx, 0\ldiv     rdi\limul    rax, 10h\lsub     rsp, rax\lmov     rax, rsp\ladd     rax, 0Fh\lshr     rax, 4\lshl     rax, 4\lmov     [rbp+var_10], rax\lmov     rax, [rbp+var_10]\lmov     [rbp+var_28], rax\lmov     [rbp+var_4C], 0\lmov     [rbp+var_20], 1\ljmp     loc_186D\l"
+	];
+	"28" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 17\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_44]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_58]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\ladd     [rbp+var_44], 1\lmov     [rbp+var_20], 12h\ljmp     loc_186D\l"
+	];
+	"29" [
+		label = "mov     edx, [rbp+var_5C]; jumptable 00000000000014CF case 6\lmov     eax, [rbp+var_4C]\ladd     eax, edx\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_58]\ladd     rax, rdx\lmov     edx, [rbp+var_4C]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_30]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_4C], 1\lmov     [rbp+var_20], 1\ljmp     loc_186D\l"
+	];
+	"30" [
+		label = "mov     eax, [rbp+var_60]; jumptable 00000000000014CF case 22\llea     edx, [rax+1]\lmov     eax, [rbp+var_48]\ladd     eax, edx\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_58]\ladd     rax, rdx\lmov     edx, [rbp+var_48]\lmovsxd  rdx, edx\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\ladd     [rbp+var_48], 1\lmov     [rbp+var_20], 0Ch\ljmp     short loc_186D\l"
+	];
+	"31" [
+		label = "mov     eax, [rbp+var_4C]; jumptable 00000000000014CF case 10\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rax]\lmov     eax, [rbp+var_48]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_28]\ladd     rax, rcx\lmov     eax, [rax]\lcmp     edx, eax\ljg      short loc_1864\l"
+	];
+	"32" [
+		label = "mov     [rbp+var_20], 8\ljmp     short loc_186C\l"
+	];
+	"33" [
+		label = "mov     [rbp+var_20], 0Fh\l"
+	];
+	"34" [
+		label = "nop\l"
+	];
+	"35" [
+		label = "jmp     def_14CF; jumptable 00000000000014CF default case, cases 0,2,4,5,7,9,11,14,21\l"
+	];
+	"36" [
+		label = "nop; jumptable 00000000000014CF case 20\lmov     rax, [rbp+var_8]\lsub     rax, fs:28h\ljz      short locret_1887\l"
+	];
+	"37" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"38" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "11" [ ];
+	"2" -> "12" [ ];
+	"2" -> "15" [ ];
+	"2" -> "18" [ ];
+	"2" -> "21" [ ];
+	"2" -> "22" [ ];
+	"2" -> "23" [ ];
+	"2" -> "26" [ ];
+	"2" -> "27" [ ];
+	"2" -> "28" [ ];
+	"2" -> "29" [ ];
+	"2" -> "30" [ ];
+	"2" -> "31" [ ];
+	"2" -> "36" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "35" [ ];
+// node 5
+	"5" -> "35" [ ];
+// node 6
+	"6" -> "35" [ ];
+// node 7
+	"7" -> "35" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "35" [ ];
+// node 10
+	"10" -> "35" [ ];
+// node 11
+	"11" -> "35" [ ];
+// node 12
+	"12" -> "13" [ label = "false", color = red ];
+	"12" -> "14" [ label = "true", color = darkgreen ];
+// node 13
+	"13" -> "35" [ ];
+// node 14
+	"14" -> "35" [ ];
+// node 15
+	"15" -> "16" [ label = "false", color = red ];
+	"15" -> "17" [ label = "true", color = darkgreen ];
+// node 16
+	"16" -> "35" [ ];
+// node 17
+	"17" -> "35" [ ];
+// node 18
+	"18" -> "19" [ label = "false", color = red ];
+	"18" -> "20" [ label = "true", color = darkgreen ];
+// node 19
+	"19" -> "35" [ ];
+// node 20
+	"20" -> "35" [ ];
+// node 21
+	"21" -> "35" [ ];
+// node 22
+	"22" -> "35" [ ];
+// node 23
+	"23" -> "24" [ label = "false", color = red ];
+	"23" -> "25" [ label = "true", color = darkgreen ];
+// node 24
+	"24" -> "35" [ ];
+// node 25
+	"25" -> "35" [ ];
+// node 26
+	"26" -> "35" [ ];
+// node 27
+	"27" -> "35" [ ];
+// node 28
+	"28" -> "35" [ ];
+// node 29
+	"29" -> "35" [ ];
+// node 30
+	"30" -> "35" [ ];
+// node 31
+	"31" -> "32" [ label = "false", color = red ];
+	"31" -> "33" [ label = "true", color = darkgreen ];
+// node 32
+	"32" -> "34" [ ];
+// node 33
+	"33" -> "34" [ ];
+// node 34
+	"34" -> "35" [ ];
+// node 35
+	"35" -> "1" [ ];
+// node 36
+	"36" -> "37" [ label = "false", color = red ];
+	"36" -> "38" [ label = "true", color = darkgreen ];
+// node 37
+// node 38
+}

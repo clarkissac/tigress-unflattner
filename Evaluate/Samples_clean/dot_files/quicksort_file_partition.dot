@@ -1,0 +1,40 @@
+digraph "partition" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "partition:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_20], edx\lmov     eax, [rbp+var_20]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     eax, [rax]\lmov     [rbp+var_4], eax\lmov     eax, [rbp+var_1C]\lsub     eax, 1\lmov     [rbp+var_8], eax\lmov     eax, [rbp+var_1C]\lmov     [rbp+var_C], eax\ljmp     short loc_12A8\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     eax, [rax]\lcmp     [rbp+var_4], eax\ljle     short loc_12A4\l"
+	];
+	"2" [
+		label = "add     [rbp+var_8], 1\lmov     eax, [rbp+var_C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rdx, rax\lmov     eax, [rbp+var_8]\lcdqe\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rcx\lmov     rsi, rdx\lmov     rdi, rax\lcall    swap\l"
+	];
+	"3" [
+		label = "add     [rbp+var_C], 1\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_20]\lcmp     eax, [rbp+var_C]\ljg      short loc_1252\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_20]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rdx, rax\lmov     eax, [rbp+var_8]\lcdqe\ladd     rax, 1\llea     rcx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rcx\lmov     rsi, rdx\lmov     rdi, rax\lcall    swap\lmov     eax, [rbp+var_8]\ladd     eax, 1\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "4" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "3" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "3" [ ];
+// node 3
+	"3" -> "4" [ ];
+// node 4
+	"4" -> "1" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+}

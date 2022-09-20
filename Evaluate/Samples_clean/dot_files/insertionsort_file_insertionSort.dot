@@ -1,0 +1,51 @@
+digraph "insertionSort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "insertionSort:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_C], 1\ljmp     loc_129B\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_C]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     eax, [rax]\lmov     [rbp+var_4], eax\lmov     eax, [rbp+var_C]\lsub     eax, 1\lmov     [rbp+var_8], eax\ljmp     short loc_1259\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_8]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     edx, [rbp+var_8]\lmovsxd  rdx, edx\ladd     rdx, 1\llea     rcx, ds:0[rdx*4]\lmov     rdx, [rbp+var_18]\ladd     rdx, rcx\lmov     eax, [rax]\lmov     [rdx], eax\lsub     [rbp+var_8], 1\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_8], 0\ljs      short loc_127A\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_8]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rax, rdx\lmov     eax, [rax]\lcmp     [rbp+var_4], eax\ljl      short loc_1224\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_8]\lcdqe\ladd     rax, 1\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_18]\ladd     rdx, rax\lmov     eax, [rbp+var_4]\lmov     [rdx], eax\ladd     [rbp+var_C], 1\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_C]\lcmp     eax, [rbp+var_1C]\ljl      loc_1200\l"
+	];
+	"7" [
+		label = "nop\lnop\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "6" [ ];
+// node 1
+	"1" -> "3" [ ];
+// node 2
+	"2" -> "3" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "2" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+	"5" -> "6" [ ];
+// node 6
+	"6" -> "1" [ label = "true", color = darkgreen ];
+	"6" -> "7" [ label = "false", color = red ];
+// node 7
+}

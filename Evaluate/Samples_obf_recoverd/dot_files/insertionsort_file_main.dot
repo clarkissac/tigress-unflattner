@@ -1,0 +1,289 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 270h\lmov     [rbp+var_254], edi\lmov     [rbp+var_260], rsi\lmov     [rbp+var_268], rdx\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\lcall    megaInit\lmov     eax, [rbp+var_254]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_260]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_268]\lmov     cs:_global_envp, rax\lmov     [rbp+var_234], 1\ljmp     loc_139D\ldb 0FFh\ldb 0FFh\ldb  1Fh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_218], 24h ; '$'\lja      short loc_1260\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_218]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2044\lmov     eax, ds:(dword_2044 - 2044h)[rdx+rax]\lcdqe\llea     rdx, dword_2044\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "lea     rdx, [rbp+var_249]\lmov     rax, [rbp+stream]\llea     rcx, format; \"%c\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     loc_169E\ldb 0FFh\ldb 0FFh\ldb  22h ; \"\ldb    0\ldb    0\ldb    0\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_248]\lcmp     eax, [rbp+var_240]\ljge     short loc_12E4\l"
+	];
+	"5" [
+		label = "jmp     short loc_1354\ldb  85h\ldb 0E8h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb  0Fh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "jmp     loc_1415\ldb 0FFh\ldb 0FFh\ldb  17h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_244]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_228]\ladd     rax, rdx\lmov     dword ptr [rax], 0\ladd     [rbp+var_244], 1\ljmp     loc_16EA\ldb 0FFh\ldb 0FFh\ldb    0\ldb    0\ldb    0\ldb    0\l"
+	];
+	"8" [
+		label = "cmp     [rbp+var_254], 2\ljz      short loc_1344\l"
+	];
+	"9" [
+		label = "jmp     loc_16E0\ldb 0FFh\ldb 0FFh\ldb  0Ah\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "jmp     loc_1609\ldb 0FFh\ldb 0FFh\ldb  11h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "mov     eax, [rbp+var_248]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_228]\ladd     rax, rdx\lmov     eax, [rax]\lmov     esi, eax\llea     rax, aD; \"%d\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ladd     [rbp+var_248], 1\ljmp     loc_12C6\ldb 0FFh\ldb 0FFh\ldb  19h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_240], 0\lmov     [rbp+var_249], 0\ljmp     loc_132B\ldb 0FFh\ldb 0FFh\ldb  0Eh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"13" [
+		label = "add     [rbp+var_240], 1\ljmp     loc_1291\ldb 0FFh\ldb 0FFh\ldb  12h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"14" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     edx, [rbp+var_240]\lmov     rax, [rbp+var_228]\lmov     esi, edx\lmov     rdi, rax\lcall    insertionSort\lmov     [rbp+var_248], 0\ljmp     loc_12C6\ldb 0FFh\ldb 0FFh\ldb  19h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"15" [
+		label = "mov     edi, 0Ah; c\lcall    _putchar\ljmp     loc_16C3\ldb 0FFh\ldb 0FFh\ldb  1Ch\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "add     [rbp+var_240], 1\ljmp     loc_1291\ldb 0FFh\ldb 0FFh\ldb  12h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"17" [
+		label = "movzx   eax, [rbp+var_249]\lcmp     al, 20h ; ' '\ljnz     short loc_1461\l"
+	];
+	"18" [
+		label = "jmp     loc_13BE\ldb 0FFh\ldb 0FFh\ldb  0Ch\ldb    0\ldb    0\ldb    0\l"
+	];
+	"19" [
+		label = "jmp     loc_153D\ldb 0FFh\ldb 0FFh\ldb    9\ldb    0\ldb    0\ldb    0\l"
+	];
+	"20" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 1Eh; n\lmov     esi, 1; size\llea     rax, aErrorCopyingAr; \"Error copying argv to string!\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"21" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 14h; n\lmov     esi, 1; size\llea     rax, aUnableToReadFi; \"Unable to read file\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"22" [
+		label = "lea     rax, [rbp+filename]\llea     rdx, modes; \"r\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\lmov     [rbp+var_248], 0\lmov     eax, [rbp+var_248]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_228]\ladd     rdx, rax\lmov     rax, [rbp+stream]\llea     rcx, aD; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     loc_15E4\ldb 0FFh\ldb 0FFh\ldb  20h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"23" [
+		label = "movzx   eax, [rbp+var_249]\lcmp     al, 0Ah\ljnz     short loc_1558\l"
+	];
+	"24" [
+		label = "jmp     loc_142F\ldb 0FFh\ldb 0FFh\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"25" [
+		label = "jmp     loc_1291\ldb 0FFh\ldb 0FFh\ldb  12h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"26" [
+		label = "cmp     [rbp+var_220], 0\ljz      short loc_1582\l"
+	];
+	"27" [
+		label = "jmp     loc_166E\ldb 0FFh\ldb 0FFh\ldb  1Bh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"28" [
+		label = "jmp     loc_1471\ldb 0FFh\ldb 0FFh\ldb  24h ; $\ldb    0\ldb    0\ldb    0\l"
+	];
+	"29" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     eax, [rbp+var_240]\lmov     eax, eax\lshl     rax, 2\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+var_210], rax\lmov     rax, [rbp+var_210]\lmov     [rbp+var_228], rax\lmov     [rbp+var_244], 0\ljmp     loc_16EA\ldb 0FFh\ldb 0FFh\ldb    0\ldb    0\ldb    0\ldb    0\l"
+	];
+	"30" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _feof\lmov     [rbp+var_238], eax\ljmp     loc_1718\ldb 0FFh\ldb 0FFh\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"31" [
+		label = "mov     rax, [rbp+var_260]\ladd     rax, 8\lmov     rcx, [rax]\llea     rax, [rbp+filename]\lmov     edx, 200h; n\lmov     rsi, rcx; src\lmov     rdi, rax; dest\lcall    _strncpy\lmov     [rbp+var_220], rax\ljmp     loc_1568\ldb 0FFh\ldb 0FFh\ldb  0Dh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"32" [
+		label = "cmp     [rbp+var_23C], 0\ljz      short loc_165E\l"
+	];
+	"33" [
+		label = "jmp     loc_1592\ldb 0FFh\ldb 0FFh\ldb  13h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"34" [
+		label = "jmp     loc_1446\ldb 0FFh\ldb 0FFh\ldb  18h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"35" [
+		label = "lea     rax, [rbp+filename]\llea     rdx, aRb; \"rb\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\ljmp     loc_178D\ldb 0FFh\ldb 0FFh\ldb  1Dh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"36" [
+		label = "mov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _feof\lmov     [rbp+var_23C], eax\ljmp     short loc_1645\ldb  85h\ldb 0E8h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"37" [
+		label = "mov     eax, 0\lmov     rdx, [rbp+var_8]\lsub     rdx, fs:28h\ljz      locret_17EC\l"
+	];
+	"38" [
+		label = "jmp     loc_17E7\l"
+	];
+	"39" [
+		label = "mov     edi, 1; status\lcall    _exit\l"
+	];
+	"40" [
+		label = "mov     eax, [rbp+var_244]\lcmp     eax, [rbp+var_240]\ljge     short loc_1708\l"
+	];
+	"41" [
+		label = "jmp     loc_12F4\ldb 0FFh\ldb 0FFh\ldb  1Eh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"42" [
+		label = "jmp     loc_14CB\ldb 0FFh\ldb 0FFh\ldb  0Bh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"43" [
+		label = "cmp     [rbp+var_238], 0\ljz      short loc_1731\l"
+	];
+	"44" [
+		label = "jmp     loc_13D5\ldb 0FFh\ldb 0FFh\ldb    8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"45" [
+		label = "jmp     short loc_1741\ldb  85h\ldb 0E8h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb  23h ; #\ldb    0\ldb    0\ldb    0\l"
+	];
+	"46" [
+		label = "add     [rbp+var_248], 1\lmov     eax, [rbp+var_248]\lcdqe\llea     rdx, ds:0[rax*4]\lmov     rax, [rbp+var_228]\ladd     rdx, rax\lmov     rax, [rbp+stream]\llea     rcx, aD; \"%d\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     loc_15E4\ldb 0FFh\ldb 0FFh\ldb  20h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"47" [
+		label = "cmp     [rbp+stream], 0\ljnz     short loc_17A4\l"
+	];
+	"48" [
+		label = "jmp     loc_149E\ldb 0FFh\ldb 0FFh\ldb  1Ah\ldb    0\ldb    0\ldb    0\l"
+	];
+	"49" [
+		label = "jmp     short loc_17B1\ldb  85h\ldb 0E8h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb  14h\ldb    0\ldb    0\ldb    0\l"
+	];
+	"50" [
+		label = "lea     rdx, [rbp+var_249]\lmov     rax, [rbp+stream]\llea     rcx, format; \"%c\"\lmov     rsi, rcx; format\lmov     rdi, rax; stream\lmov     eax, 0\lcall    _fscanf\ljmp     loc_169E\ldb 0FFh\ldb 0FFh\ldb  22h ; \"\ldb    0\ldb    0\ldb    0\l"
+	];
+	"51" [
+		label = "jmp     loc_1260\l"
+	];
+	"52" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"53" [
+		label = "leave\lretn\l"
+	];
+	"54" [
+		label = "unk_1290\l"
+	];
+// node 0
+	"0" -> "12" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "54" [ ];
+// node 3
+	"3" -> "36" [ ];
+// node 4
+	"4" -> "5" [ label = "false", color = red ];
+	"4" -> "6" [ label = "true", color = darkgreen ];
+// node 5
+	"5" -> "11" [ ];
+// node 6
+	"6" -> "15" [ ];
+// node 7
+	"7" -> "40" [ ];
+// node 8
+	"8" -> "9" [ label = "false", color = red ];
+	"8" -> "10" [ label = "true", color = darkgreen ];
+// node 9
+	"9" -> "39" [ ];
+// node 10
+	"10" -> "31" [ ];
+// node 11
+	"11" -> "4" [ ];
+// node 12
+	"12" -> "8" [ ];
+// node 13
+	"13" -> "3" [ ];
+// node 14
+	"14" -> "4" [ ];
+// node 15
+	"15" -> "37" [ ];
+// node 16
+	"16" -> "3" [ ];
+// node 17
+	"17" -> "18" [ label = "false", color = red ];
+	"17" -> "19" [ label = "true", color = darkgreen ];
+// node 18
+	"18" -> "13" [ ];
+// node 19
+	"19" -> "23" [ ];
+// node 20
+// node 21
+// node 22
+	"22" -> "30" [ ];
+// node 23
+	"23" -> "24" [ label = "false", color = red ];
+	"23" -> "25" [ label = "true", color = darkgreen ];
+// node 24
+	"24" -> "16" [ ];
+// node 25
+	"25" -> "3" [ ];
+// node 26
+	"26" -> "27" [ label = "false", color = red ];
+	"26" -> "28" [ label = "true", color = darkgreen ];
+// node 27
+	"27" -> "35" [ ];
+// node 28
+	"28" -> "20" [ ];
+// node 29
+	"29" -> "40" [ ];
+// node 30
+	"30" -> "43" [ ];
+// node 31
+	"31" -> "26" [ ];
+// node 32
+	"32" -> "33" [ label = "false", color = red ];
+	"32" -> "34" [ label = "true", color = darkgreen ];
+// node 33
+	"33" -> "29" [ ];
+// node 34
+	"34" -> "17" [ ];
+// node 35
+	"35" -> "47" [ ];
+// node 36
+	"36" -> "32" [ ];
+// node 37
+	"37" -> "38" [ label = "false", color = red ];
+	"37" -> "53" [ label = "true", color = darkgreen ];
+// node 38
+	"38" -> "52" [ ];
+// node 39
+// node 40
+	"40" -> "41" [ label = "false", color = red ];
+	"40" -> "42" [ label = "true", color = darkgreen ];
+// node 41
+	"41" -> "7" [ ];
+// node 42
+	"42" -> "22" [ ];
+// node 43
+	"43" -> "44" [ label = "false", color = red ];
+	"43" -> "45" [ label = "true", color = darkgreen ];
+// node 44
+	"44" -> "14" [ ];
+// node 45
+	"45" -> "46" [ ];
+// node 46
+	"46" -> "30" [ ];
+// node 47
+	"47" -> "48" [ label = "false", color = red ];
+	"47" -> "49" [ label = "true", color = darkgreen ];
+// node 48
+	"48" -> "21" [ ];
+// node 49
+	"49" -> "50" [ ];
+// node 50
+	"50" -> "36" [ ];
+// node 51
+	"51" -> "1" [ ];
+// node 52
+// node 53
+// node 54
+}

@@ -1,0 +1,29 @@
+digraph "AES_CBC_encrypt_buffer" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "AES_CBC_encrypt_buffer:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 28h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_20], rsi\lmov     [rbp+var_28], rdx\lmov     rax, [rbp+var_18]\ladd     rax, 0B0h\lmov     [rbp+var_10], rax\lmov     [rbp+var_8], 0\ljmp     short loc_236A\l"
+	];
+	"1" [
+		label = "mov     rdx, [rbp+var_10]\lmov     rax, [rbp+var_20]\lmov     rsi, rdx\lmov     rdi, rax\lcall    XorWithIv\lmov     rdx, [rbp+var_18]\lmov     rax, [rbp+var_20]\lmov     rsi, rdx\lmov     rdi, rax\lcall    Cipher\lmov     rax, [rbp+var_20]\lmov     [rbp+var_10], rax\ladd     [rbp+var_20], 10h\ladd     [rbp+var_8], 10h\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_8]\lcmp     rax, [rbp+var_28]\ljb      short loc_2332\l"
+	];
+	"3" [
+		label = "mov     rax, [rbp+var_18]\llea     rcx, [rax+0B0h]\lmov     rax, [rbp+var_10]\lmov     rdx, [rax+8]\lmov     rax, [rax]\lmov     [rcx], rax\lmov     [rcx+8], rdx\lnop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "2" [ ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+}

@@ -1,0 +1,73 @@
+digraph "quickSort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "quickSort:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_20], edx\lmov     [rbp+var_8], 2\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_8], 2\ljz      short loc_18D5\l"
+	];
+	"2" [
+		label = "cmp     [rbp+var_8], 2\lja      short loc_1864\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_8], 0\ljz      short loc_18F5\l"
+	];
+	"4" [
+		label = "cmp     [rbp+var_8], 1\ljnz     short loc_1864\l"
+	];
+	"5" [
+		label = "mov     edx, [rbp+var_20]\lmov     ecx, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    partition\lmov     [rbp+var_10], eax\lmov     eax, [rbp+var_10]\lmov     [rbp+var_C], eax\lmov     eax, [rbp+var_C]\llea     edx, [rax-1]\lmov     ecx, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    quickSort\lmov     eax, [rbp+var_C]\llea     ecx, [rax+1]\lmov     edx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    quickSort\lmov     [rbp+var_8], 0\ljmp     short loc_18F0\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_1C]\lcmp     eax, [rbp+var_20]\ljge     short loc_18E7\l"
+	];
+	"7" [
+		label = "mov     [rbp+var_8], 1\ljmp     short loc_18EF\l"
+	];
+	"8" [
+		label = "mov     [rbp+var_8], 0\l"
+	];
+	"9" [
+		label = "nop\l"
+	];
+	"10" [
+		label = "jmp     loc_1864\l"
+	];
+	"11" [
+		label = "nop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "6" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "11" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "1" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+	"5" -> "10" [ ];
+// node 6
+	"6" -> "7" [ label = "false", color = red ];
+	"6" -> "8" [ label = "true", color = darkgreen ];
+// node 7
+	"7" -> "9" [ ];
+// node 8
+	"8" -> "9" [ ];
+// node 9
+	"9" -> "10" [ ];
+// node 10
+	"10" -> "1" [ ];
+// node 11
+}

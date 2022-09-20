@@ -1,0 +1,40 @@
+digraph "PJWHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "PJWHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_2C], esi\lmov     [rbp+var_14], 20h ; ' '\lmov     edx, [rbp+var_14]\lmov     eax, edx\ladd     eax, eax\ladd     eax, edx\lshr     eax, 2\lmov     [rbp+var_10], eax\lmov     eax, [rbp+var_14]\lshr     eax, 3\lmov     [rbp+var_C], eax\lmov     eax, [rbp+var_14]\lsub     eax, [rbp+var_C]\lmov     edx, 0FFFFFFFFh\lmov     ecx, eax\lshl     edx, cl\lmov     eax, edx\lmov     [rbp+var_8], eax\lmov     [rbp+var_1C], 0\lmov     [rbp+var_4], 0\lmov     [rbp+var_18], 0\lmov     [rbp+var_18], 0\ljmp     short loc_120F\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_C]\lmov     edx, [rbp+var_1C]\lmov     ecx, eax\lshl     edx, cl\lmov     rax, [rbp+var_28]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_1C], eax\lmov     eax, [rbp+var_1C]\land     eax, [rbp+var_8]\lmov     [rbp+var_4], eax\lcmp     [rbp+var_4], 0\ljz      short loc_1206\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_10]\lmov     edx, [rbp+var_4]\lmov     ecx, eax\lshr     edx, cl\lmov     eax, edx\lxor     eax, [rbp+var_1C]\lmov     edx, [rbp+var_8]\lnot     edx\land     eax, edx\lmov     [rbp+var_1C], eax\l"
+	];
+	"3" [
+		label = "add     [rbp+var_28], 1\ladd     [rbp+var_18], 1\l"
+	];
+	"4" [
+		label = "mov     eax, [rbp+var_18]\lcmp     eax, [rbp+var_2C]\ljb      short loc_11C5\l"
+	];
+	"5" [
+		label = "mov     eax, [rbp+var_1C]\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "4" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "3" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "3" [ ];
+// node 3
+	"3" -> "4" [ ];
+// node 4
+	"4" -> "1" [ label = "true", color = darkgreen ];
+	"4" -> "5" [ label = "false", color = red ];
+// node 5
+}

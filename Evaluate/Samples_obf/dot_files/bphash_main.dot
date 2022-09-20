@@ -1,0 +1,80 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 50h\lmov     [rbp+var_34], edi\lmov     [rbp+var_40], rsi\lmov     [rbp+var_48], rdx\lcall    megaInit\lmov     eax, [rbp+var_34]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_40]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_48]\lmov     cs:_global_envp, rax\lmov     [rbp+var_20], 1\lmov     [rbp+var_18], 2\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_18], 5; switch 6 cases\lja      short def_128E; jumptable 000000000000128E default case\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_18]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_128E\lmov     eax, ds:(jpt_128E - 2020h)[rdx+rax]\lcdqe\llea     rdx, jpt_128E\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_24], 5BFAF2F9h; jumptable 000000000000128E case 4\ljnz     short loc_12A6\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_18], 0\ljmp     loc_1351\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_18], 3\ljmp     loc_1351\l"
+	];
+	"6" [
+		label = "mov     eax, [rbp+var_24]; jumptable 000000000000128E case 1\lmov     esi, eax\llea     rax, format; \"Hash: 0x%x\\n\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\lmov     [rbp+var_18], 5\ljmp     short loc_1351\l"
+	];
+	"7" [
+		label = "lea     rax, s; jumptable 000000000000128E case 3\lmov     rdi, rax; s\lcall    _puts\lmov     [rbp+var_18], 1\ljmp     short loc_1351\l"
+	];
+	"8" [
+		label = "mov     eax, 0; jumptable 000000000000128E case 5\ljmp     short locret_1356\l"
+	];
+	"9" [
+		label = "lea     rax, aYouWin; jumptable 000000000000128E case 0\lmov     rdi, rax; s\lcall    _puts\lmov     [rbp+var_18], 1\ljmp     short loc_1351\l"
+	];
+	"10" [
+		label = "mov     rax, [rbp+var_40]; jumptable 000000000000128E case 2\lmov     rax, [rax+8]\lmov     [rbp+s], rax\lmov     rax, [rbp+s]\lmov     rdi, rax; s\lcall    _strlen\lmov     [rbp+var_8], rax\lmov     rax, [rbp+var_8]\lmov     edx, eax\lmov     rax, [rbp+s]\lmov     esi, edx\lmov     rdi, rax\lcall    BPHash\lmov     [rbp+var_1C], eax\lmov     eax, [rbp+var_1C]\lmov     [rbp+var_24], eax\lmov     [rbp+var_18], 4\lnop\l"
+	];
+	"11" [
+		label = "jmp     def_128E; jumptable 000000000000128E default case\l"
+	];
+	"12" [
+		label = "leave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "3" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "9" [ ];
+	"2" -> "10" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "11" [ ];
+// node 5
+	"5" -> "11" [ ];
+// node 6
+	"6" -> "11" [ ];
+// node 7
+	"7" -> "11" [ ];
+// node 8
+	"8" -> "12" [ ];
+// node 9
+	"9" -> "11" [ ];
+// node 10
+	"10" -> "11" [ ];
+// node 11
+	"11" -> "1" [ ];
+// node 12
+}

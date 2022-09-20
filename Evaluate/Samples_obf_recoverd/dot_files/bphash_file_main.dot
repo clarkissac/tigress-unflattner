@@ -1,0 +1,164 @@
+digraph "main" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "main:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 270h\lmov     [rbp+var_254], edi\lmov     [rbp+var_260], rsi\lmov     [rbp+var_268], rdx\lmov     rax, fs:28h\lmov     [rbp+var_8], rax\lxor     eax, eax\lcall    megaInit\lmov     eax, [rbp+var_254]\lmov     cs:_global_argc, eax\lmov     rax, [rbp+var_260]\lmov     cs:_global_argv, rax\lmov     rax, [rbp+var_268]\lmov     cs:_global_envp, rax\lmov     [rbp+var_244], 1\ljmp     loc_13FA\ldb 0FFh\ldb 0FFh\ldb    1\ldb    0\ldb    0\ldb    0\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_230], 0Eh\lja      short loc_1328\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_230]\llea     rdx, ds:0[rax*4]\llea     rax, dword_2058\lmov     eax, ds:(dword_2058 - 2058h)[rdx+rax]\lcdqe\llea     rdx, dword_2058\ladd     rax, rdx\lnop\l"
+	];
+	"3" [
+		label = "cmp     [rbp+var_248], 5BFAF2F9h\ljnz     short loc_1375\l"
+	];
+	"4" [
+		label = "jmp     short loc_13DB\ldb  85h\ldb 0D0h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb    8\ldb    0\ldb    0\ldb    0\l"
+	];
+	"5" [
+		label = "jmp     loc_1485\ldb 0FFh\ldb 0FFh\ldb    6\ldb    0\ldb    0\ldb    0\l"
+	];
+	"6" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 1Eh; n\lmov     esi, 1; size\llea     rax, aErrorCopyingAr; \"Error copying argv to string!\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"7" [
+		label = "cmp     [rbp+var_254], 2\ljz      short loc_13CB\l"
+	];
+	"8" [
+		label = "jmp     short loc_140A\ldb  85h\ldb 0D0h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb    3\ldb    0\ldb    0\ldb    0\l"
+	];
+	"9" [
+		label = "jmp     loc_15E8\ldb 0FFh\ldb 0FFh\ldb    7\ldb    0\ldb    0\ldb    0\l"
+	];
+	"10" [
+		label = "lea     rax, s; \"You win!\"\lmov     rdi, rax; s\lcall    _puts\ljmp     loc_1621\ldb 0FFh\ldb 0FFh\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"11" [
+		label = "jmp     short loc_13B2\ldb  85h\ldb 0D0h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb  0Ch\ldb    0\ldb    0\ldb    0\l"
+	];
+	"12" [
+		label = "mov     edi, 1; status\lcall    _exit\l"
+	];
+	"13" [
+		label = "cmp     [rbp+stream], 0\ljnz     short loc_142E\l"
+	];
+	"14" [
+		label = "jmp     loc_15BB\ldb 0FFh\ldb 0FFh\ldb    0\ldb    0\ldb    0\ldb    0\l"
+	];
+	"15" [
+		label = "jmp     loc_14D4\ldb 0FFh\ldb 0FFh\ldb  0Ah\ldb    0\ldb    0\ldb    0\l"
+	];
+	"16" [
+		label = "cmp     [rbp+var_238], 0\ljz      short loc_1458\l"
+	];
+	"17" [
+		label = "jmp     short loc_14A4\ldb  85h\ldb 0D0h\ldb 0FDh\ldb 0FFh\ldb 0FFh\ldb    5\ldb    0\ldb    0\ldb    0\l"
+	];
+	"18" [
+		label = "jmp     loc_1385\ldb 0FFh\ldb 0FFh\ldb  0Eh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"19" [
+		label = "mov     eax, 0\lmov     rdx, [rbp+var_8]\lsub     rdx, fs:28h\ljz      locret_1653\l"
+	];
+	"20" [
+		label = "jmp     loc_164E\l"
+	];
+	"21" [
+		label = "lea     rax, aYouLoose; \"You loose!\"\lmov     rdi, rax; s\lcall    _puts\ljmp     loc_1621\ldb 0FFh\ldb 0FFh\ldb    2\ldb    0\ldb    0\ldb    0\l"
+	];
+	"22" [
+		label = "lea     rax, [rbp+filename]\llea     rdx, modes; \"rb\"\lmov     rsi, rdx; modes\lmov     rdi, rax; filename\lcall    _fopen\lmov     [rbp+stream], rax\ljmp     loc_1414\ldb 0FFh\ldb 0FFh\ldb  0Bh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"23" [
+		label = "mov     rax, [rbp+stream]\lmov     edx, 2; whence\lmov     esi, 0; off\lmov     rdi, rax; stream\lcall    _fseek\lmov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _ftell\lmov     [rbp+n], rax\lmov     rax, [rbp+stream]\lmov     edx, 0; whence\lmov     esi, 0; off\lmov     rdi, rax; stream\lcall    _fseek\lmov     rax, [rbp+n]\ladd     rax, 1\lmov     rdi, rax; size\lcall    _malloc\lmov     [rbp+var_220], rax\lmov     rax, [rbp+var_220]\lmov     [rbp+ptr], rax\lmov     rdx, [rbp+n]; n\lmov     rcx, [rbp+stream]; stream\lmov     rax, [rbp+ptr]\lmov     esi, 1; size\lmov     rdi, rax; ptr\lcall    _fread\lmov     rax, [rbp+stream]\lmov     rdi, rax; stream\lcall    _fclose\lmov     rax, [rbp+ptr]\lmov     rdi, rax; s\lcall    _strlen\lmov     [rbp+var_210], rax\lmov     rax, [rbp+var_210]\lmov     edx, eax\lmov     rax, [rbp+ptr]\lmov     esi, edx\lmov     rdi, rax\lcall    BPHash\lmov     [rbp+var_248], eax\ljmp     loc_1359\ldb 0FFh\ldb 0FFh\ldb    4\ldb    0\ldb    0\ldb    0\l"
+	];
+	"24" [
+		label = "mov     rax, cs:stderr\lmov     rcx, rax; s\lmov     edx, 14h; n\lmov     esi, 1; size\llea     rax, aUnableToReadFi; \"Unable to read file\\n\"\lmov     rdi, rax; ptr\lcall    _fwrite\lmov     edi, 1; status\lcall    _exit\l"
+	];
+	"25" [
+		label = "mov     rax, [rbp+var_260]\ladd     rax, 8\lmov     rcx, [rax]\llea     rax, [rbp+filename]\lmov     edx, 200h; n\lmov     rsi, rcx; src\lmov     rdi, rax; dest\lcall    _strncpy\lmov     [rbp+var_238], rax\ljmp     loc_143E\ldb 0FFh\ldb 0FFh\ldb    9\ldb    0\ldb    0\ldb    0\l"
+	];
+	"26" [
+		label = "mov     eax, [rbp+var_248]\lmov     esi, eax\llea     rax, format; \"Hash: 0x%x\\n\"\lmov     rdi, rax; format\lmov     eax, 0\lcall    _printf\ljmp     loc_1468\ldb 0FFh\ldb 0FFh\ldb  0Dh\ldb    0\ldb    0\ldb    0\l"
+	];
+	"27" [
+		label = "jmp     loc_1328\l"
+	];
+	"28" [
+		label = "call    ___stack_chk_fail\l"
+	];
+	"29" [
+		label = "leave\lretn\l"
+	];
+	"30" [
+		label = "unk_1358\l"
+	];
+// node 0
+	"0" -> "11" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "30" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "10" [ ];
+// node 5
+	"5" -> "21" [ ];
+// node 6
+// node 7
+	"7" -> "8" [ label = "false", color = red ];
+	"7" -> "9" [ label = "true", color = darkgreen ];
+// node 8
+	"8" -> "12" [ ];
+// node 9
+	"9" -> "25" [ ];
+// node 10
+	"10" -> "26" [ ];
+// node 11
+	"11" -> "7" [ ];
+// node 12
+// node 13
+	"13" -> "14" [ label = "false", color = red ];
+	"13" -> "15" [ label = "true", color = darkgreen ];
+// node 14
+	"14" -> "24" [ ];
+// node 15
+	"15" -> "23" [ ];
+// node 16
+	"16" -> "17" [ label = "false", color = red ];
+	"16" -> "18" [ label = "true", color = darkgreen ];
+// node 17
+	"17" -> "22" [ ];
+// node 18
+	"18" -> "6" [ ];
+// node 19
+	"19" -> "20" [ label = "false", color = red ];
+	"19" -> "29" [ label = "true", color = darkgreen ];
+// node 20
+	"20" -> "28" [ ];
+// node 21
+	"21" -> "26" [ ];
+// node 22
+	"22" -> "13" [ ];
+// node 23
+	"23" -> "3" [ ];
+// node 24
+// node 25
+	"25" -> "16" [ ];
+// node 26
+	"26" -> "19" [ ];
+// node 27
+	"27" -> "1" [ ];
+// node 28
+// node 29
+// node 30
+}

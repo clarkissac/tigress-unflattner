@@ -1,0 +1,24 @@
+[0;34m[INFO][0m: /opt/tigress/3.1/tigress --Environment=x86_64:Linux:Gcc:12.1     --gcc="/usr/sbin/musl-gcc -mno-mmx -mno-sse -Wl,-Map=% -O0"     --Transform=Info --InfoKind=* --Transform=Flatten --Functions=strnunvis,unvis,strnvis,vis /opt/samplegenerator_code/src/tmux_3_2_a/tmux_3_2_a.c --out=tmux_3_2_a.c -o tmux_3_2_a -L/usr/lib/x86_64-linux-gnu -lutil -Bsymbolic-functions -ltinfo -levent_core -lm -lresolv
+old type = TFun(TInt(int, ), : TNamed(clockid_t, TInt(int, ), ),
+                : TPtr(TComp(struct timespec,
+                             tv_sec : TNamed(time_t, TInt(long, ), ),
+                             ___missing_field_name : TInt(int, ),
+                             tv_nsec : TInt(long, ),
+                             ___missing_field_name : TInt(int, ), , ), ), )
+new type = TFun(TInt(int, ), __clock_id: TNamed(clockid_t___0,
+                                                TNamed(__clockid_t, TInt(int, ),
+                                                ), ),
+                __tp: TPtr(TComp(struct timespec___0,
+                                 tv_sec : TNamed(__time_t, TInt(long, ), ),
+                                 tv_nsec : TNamed(__syscall_slong_t,
+                                                  TInt(long, ), ), , ), ),
+                 __attribute__((__leaf__)) )
+/usr/include/time.h:213: Error: Declaration of clock_gettime does not match previous declaration from /usr/lib/musl/include/time.h:104 (different structs(number of fields)).
+error in createGlobal(clock_gettime: /usr/include/time.h:213): Errormsg.ErrorError: Cabs2cil had some errors
+/usr/sbin/ld: cannot find -ltinfo: No such file or directory
+/usr/sbin/ld: cannot find -levent_core: No such file or directory
+collect2: error: ld returned 1 exit status
+
+real	0m7.360s
+user	0m3.073s
+sys	0m0.129s

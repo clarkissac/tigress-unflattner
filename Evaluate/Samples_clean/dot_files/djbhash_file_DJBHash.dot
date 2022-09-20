@@ -1,0 +1,29 @@
+digraph "DJBHash" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "DJBHash:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_8], 1505h\lmov     [rbp+var_4], 0\lmov     [rbp+var_4], 0\ljmp     short loc_1250\l"
+	];
+	"1" [
+		label = "mov     eax, [rbp+var_8]\lshl     eax, 5\lmov     edx, eax\lmov     eax, [rbp+var_8]\ladd     edx, eax\lmov     rax, [rbp+var_18]\lmovzx   eax, byte ptr [rax]\lmovsx   eax, al\ladd     eax, edx\lmov     [rbp+var_8], eax\ladd     [rbp+var_18], 1\ladd     [rbp+var_4], 1\l"
+	];
+	"2" [
+		label = "mov     eax, [rbp+var_4]\lcmp     eax, [rbp+var_1C]\ljb      short loc_122B\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_8]\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "2" [ ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+	"2" -> "1" [ label = "true", color = darkgreen ];
+	"2" -> "3" [ label = "false", color = red ];
+// node 3
+}

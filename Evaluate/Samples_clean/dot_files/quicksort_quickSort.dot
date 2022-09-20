@@ -1,0 +1,24 @@
+digraph "quickSort" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "quickSort:\lpush    rbp\lmov     rbp, rsp\lsub     rsp, 20h\lmov     [rbp+var_18], rdi\lmov     [rbp+var_1C], esi\lmov     [rbp+var_20], edx\lmov     eax, [rbp+var_1C]\lcmp     eax, [rbp+var_20]\ljge     short loc_12FE\l"
+	];
+	"1" [
+		label = "mov     edx, [rbp+var_20]\lmov     ecx, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    partition\lmov     [rbp+var_4], eax\lmov     eax, [rbp+var_4]\llea     edx, [rax-1]\lmov     ecx, [rbp+var_1C]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    quickSort\lmov     eax, [rbp+var_4]\llea     ecx, [rax+1]\lmov     edx, [rbp+var_20]\lmov     rax, [rbp+var_18]\lmov     esi, ecx\lmov     rdi, rax\lcall    quickSort\l"
+	];
+	"2" [
+		label = "nop\lleave\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ label = "false", color = red ];
+	"0" -> "2" [ label = "true", color = darkgreen ];
+// node 1
+	"1" -> "2" [ ];
+// node 2
+}

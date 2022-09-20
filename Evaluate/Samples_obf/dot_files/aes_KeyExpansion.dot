@@ -1,0 +1,127 @@
+digraph "KeyExpansion" {
+	graph [
+	];
+	node [
+		shape = "box"
+	];
+	edge [
+	];
+	"0" [
+		label = "KeyExpansion:\lpush    rbp\lmov     rbp, rsp\lmov     [rbp+var_28], rdi\lmov     [rbp+var_30], rsi\lmov     [rbp+var_10], 7\l"
+	];
+	"1" [
+		label = "cmp     [rbp+var_10], 0Dh; switch 14 cases\lja      short def_37F9; jumptable 00000000000037F9 default case, cases 5,6,9,10\l"
+	];
+	"2" [
+		label = "mov     rax, [rbp+var_10]\llea     rdx, ds:0[rax*4]\llea     rax, jpt_37F9\lmov     eax, ds:(jpt_37F9 - 40ACh)[rdx+rax]\lcdqe\llea     rdx, jpt_37F9\ladd     rax, rdx\ljmp     rax; switch jump\l"
+	];
+	"3" [
+		label = "mov     eax, [rbp+var_4]; jumptable 00000000000037F9 case 4\land     eax, 3\ltest    eax, eax\ljnz     short loc_3812\l"
+	];
+	"4" [
+		label = "mov     [rbp+var_10], 0Ch\ljmp     loc_3AF0\l"
+	];
+	"5" [
+		label = "mov     [rbp+var_10], 1\ljmp     loc_3AF0\l"
+	];
+	"6" [
+		label = "movzx   eax, [rbp+var_20]; jumptable 00000000000037F9 case 12\lmov     [rbp+var_11], al\lmovzx   eax, [rbp+var_1F]\lmov     [rbp+var_20], al\lmovzx   eax, [rbp+var_1E]\lmov     [rbp+var_1F], al\lmovzx   eax, [rbp+var_1D]\lmov     [rbp+var_1E], al\lmovzx   eax, [rbp+var_11]\lmov     [rbp+var_1D], al\lmovzx   eax, [rbp+var_20]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_20], al\lmovzx   eax, [rbp+var_1F]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_1F], al\lmovzx   eax, [rbp+var_1E]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_1E], al\lmovzx   eax, [rbp+var_1D]\lmovzx   eax, al\lcdqe\llea     rdx, sbox\lmovzx   eax, byte ptr [rax+rdx]\lmov     [rbp+var_1D], al\lmovzx   edx, [rbp+var_20]\lmov     eax, [rbp+var_4]\lshr     eax, 2\lmov     ecx, eax\llea     rax, Rcon\lmovzx   eax, byte ptr [rcx+rax]\lxor     eax, edx\lmov     [rbp+var_20], al\lmov     [rbp+var_10], 1\ljmp     loc_3AF0\l"
+	];
+	"7" [
+		label = "mov     eax, [rbp+var_4]; jumptable 00000000000037F9 case 8\lshl     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 1\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 2\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\lmov     eax, [rbp+var_4]\lshl     eax, 2\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_30]\ladd     rax, rdx\lmov     edx, [rbp+var_4]\lshl     edx, 2\ladd     edx, 3\lmov     ecx, edx\lmov     rdx, [rbp+var_28]\ladd     rdx, rcx\lmovzx   eax, byte ptr [rax]\lmov     [rdx], al\ladd     [rbp+var_4], 1\lmov     [rbp+var_10], 2\ljmp     loc_3AF0\l"
+	];
+	"8" [
+		label = "mov     eax, [rbp+var_4]; jumptable 00000000000037F9 case 1\lshl     eax, 2\lmov     [rbp+var_1C], eax\lmov     eax, [rbp+var_4]\lsub     eax, 4\lshl     eax, 2\lmov     [rbp+var_18], eax\lmov     edx, [rbp+var_18]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_20]\lmov     esi, [rbp+var_1C]\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_18]\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_1F]\lmov     eax, [rbp+var_1C]\ladd     eax, 1\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_18]\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_1E]\lmov     eax, [rbp+var_1C]\ladd     eax, 2\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\lmov     eax, [rbp+var_18]\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   ecx, byte ptr [rax]\lmovzx   edx, [rbp+var_1D]\lmov     eax, [rbp+var_1C]\ladd     eax, 3\lmov     esi, eax\lmov     rax, [rbp+var_28]\ladd     rax, rsi\lxor     edx, ecx\lmov     [rax], dl\ladd     [rbp+var_4], 1\lmov     [rbp+var_10], 0\ljmp     loc_3AF0\l"
+	];
+	"9" [
+		label = "mov     eax, [rbp+var_4]; jumptable 00000000000037F9 case 11\lsub     eax, 1\lshl     eax, 2\lmov     [rbp+var_18], eax\lmov     edx, [rbp+var_18]\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_20], al\lmov     eax, [rbp+var_18]\ladd     eax, 1\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_1F], al\lmov     eax, [rbp+var_18]\ladd     eax, 2\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_1E], al\lmov     eax, [rbp+var_18]\ladd     eax, 3\lmov     edx, eax\lmov     rax, [rbp+var_28]\ladd     rax, rdx\lmovzx   eax, byte ptr [rax]\lmov     [rbp+var_1D], al\lmov     [rbp+var_10], 4\ljmp     short loc_3AF0\l"
+	];
+	"10" [
+		label = "mov     [rbp+var_4], 4; jumptable 00000000000037F9 case 13\lmov     [rbp+var_10], 0\ljmp     short loc_3AF0\l"
+	];
+	"11" [
+		label = "cmp     [rbp+var_4], 2Bh ; '+'; jumptable 00000000000037F9 case 0\lja      short loc_3ABC\l"
+	];
+	"12" [
+		label = "mov     [rbp+var_10], 0Bh\ljmp     short loc_3AF0\l"
+	];
+	"13" [
+		label = "mov     [rbp+var_10], 3\ljmp     short loc_3AF0\l"
+	];
+	"14" [
+		label = "mov     [rbp+var_4], 0; jumptable 00000000000037F9 case 7\lmov     [rbp+var_10], 2\ljmp     short loc_3AF0\l"
+	];
+	"15" [
+		label = "cmp     [rbp+var_4], 3; jumptable 00000000000037F9 case 2\lja      short loc_3AE7\l"
+	];
+	"16" [
+		label = "mov     [rbp+var_10], 8\ljmp     short loc_3AEF\l"
+	];
+	"17" [
+		label = "mov     [rbp+var_10], 0Dh\l"
+	];
+	"18" [
+		label = "nop\l"
+	];
+	"19" [
+		label = "jmp     def_37F9; jumptable 00000000000037F9 default case, cases 5,6,9,10\l"
+	];
+	"20" [
+		label = "nop; jumptable 00000000000037F9 case 3\lpop     rbp\lretn\l"
+	];
+// node 0
+	"0" -> "1" [ ];
+// node 1
+	"1" -> "2" [ label = "false", color = red ];
+	"1" -> "1" [ label = "true", color = darkgreen ];
+// node 2
+	"2" -> "1" [ ];
+	"2" -> "3" [ ];
+	"2" -> "6" [ ];
+	"2" -> "7" [ ];
+	"2" -> "8" [ ];
+	"2" -> "9" [ ];
+	"2" -> "10" [ ];
+	"2" -> "11" [ ];
+	"2" -> "14" [ ];
+	"2" -> "15" [ ];
+	"2" -> "20" [ ];
+// node 3
+	"3" -> "4" [ label = "false", color = red ];
+	"3" -> "5" [ label = "true", color = darkgreen ];
+// node 4
+	"4" -> "19" [ ];
+// node 5
+	"5" -> "19" [ ];
+// node 6
+	"6" -> "19" [ ];
+// node 7
+	"7" -> "19" [ ];
+// node 8
+	"8" -> "19" [ ];
+// node 9
+	"9" -> "19" [ ];
+// node 10
+	"10" -> "19" [ ];
+// node 11
+	"11" -> "12" [ label = "false", color = red ];
+	"11" -> "13" [ label = "true", color = darkgreen ];
+// node 12
+	"12" -> "19" [ ];
+// node 13
+	"13" -> "19" [ ];
+// node 14
+	"14" -> "19" [ ];
+// node 15
+	"15" -> "16" [ label = "false", color = red ];
+	"15" -> "17" [ label = "true", color = darkgreen ];
+// node 16
+	"16" -> "18" [ ];
+// node 17
+	"17" -> "18" [ ];
+// node 18
+	"18" -> "19" [ ];
+// node 19
+	"19" -> "1" [ ];
+// node 20
+}
