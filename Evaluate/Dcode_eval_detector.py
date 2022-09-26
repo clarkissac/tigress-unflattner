@@ -14,7 +14,7 @@ def main():
     for file in os.listdir(os.path.join(recoverd_dir,"pseudocode")):
         detector = CopyDetector(extensions=["c"],display_t=0.5,out_file=os.path.join(obf_dir,"reports",f"{file}.html"),autoopen=False)
         detector.add_file(os.path.join(clean_dir,"pseudocode",file))
-        detector.add_file(os.path.join(obf_dir,"pseudocode",file))
+        detector.add_file(os.path.join(obf_dir,"pseudocode",file)) # Change this obf_dir | recoverd_dir
         detector.run()
         temp_list = detector.get_copied_code_list()
         detector.generate_html_report()
