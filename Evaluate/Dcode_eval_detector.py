@@ -7,10 +7,11 @@ from copydetect import CopyDetector
 def main():
     obf_dir = "F:\BAKK2\Evaluate\Samples_obf"
     clean_dir = "F:\BAKK2\Evaluate\Samples_clean"
+    recoverd_dir = "F:\BAKK2\Evaluate\Samples_obf_recoverd"
     match_rate_dict = {}
 
 
-    for file in os.listdir(os.path.join("F:\BAKK2\Evaluate\Samples_obf_recoverd","pseudocode")):
+    for file in os.listdir(os.path.join(recoverd_dir,"pseudocode")):
         detector = CopyDetector(extensions=["c"],display_t=0.5,out_file=os.path.join(obf_dir,"reports",f"{file}.html"),autoopen=False)
         detector.add_file(os.path.join(clean_dir,"pseudocode",file))
         detector.add_file(os.path.join(obf_dir,"pseudocode",file))
